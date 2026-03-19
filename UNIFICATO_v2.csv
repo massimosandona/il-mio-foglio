@@ -1,766 +1,649 @@
-﻿Nome;Isin;Categoria Morningstar;Rating  Overall;Quotazione;Data agg.;Valuta;Tipo;Macro Classe;Zona Geografica
-AB FCP I European Income Ptf. S1 Cap EUR;LU0264314336;Obbligazionari Flessibili EUR;****;25,21;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-AB SICAV I Select Absolute Alpha Ptf. S1 Cap $;LU0736560953;Alternativi Long/Short Azionario US;-;37,6;17/03/2026;USD;FONDO;ALTERNATIVO;Nord America
-AB SICAV I Select Absolute Alpha Ptf. S13 EUR Hdg;LU1998907437;Alternativi Long/Short Azionario Altro;-;148,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-Abrdn I Asia Pacific Sust. Equity I Cap $;LU0231477265;Azionari Asia-Pacifico ex Giappone;**;138,5443;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Abrdn I Asian Smaller Companies I Cap $;LU0231483313;Azionari Asia ex Giappone Small/Mid Cap;****;82,4287;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Abrdn I China A Share Sust. Equity I Cap $;LU1130125799;Azionari Cina - A Shares;***;19,5094;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Abrdn I EM Corporate Bond I Cap EUR Hdg;LU0700927352;Obbligazionari Corporate Paesi Emergenti EUR;****;15,8439;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Abrdn I Em. Mkts Smaller Companies G Cap $;LU0886779940;Azionari Paesi Emergenti Small/Mid Cap;***;18,4358;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Abrdn I Emerging Markets Income Equity K Cap $;LU2763021248;Azionari Paesi Emergenti;*****;15,57;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Abrdn I Euro HY Bond I Cap EUR;LU0231473439;Obbligazionari High Yield EUR;****;21,5347;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Abrdn I European Sust. Equity K EUR;LU1998017088;Azionari Europa Large Cap Growth;**;13,3525;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Abrdn I GDP Weighted Gl. Gov. Bond I Cap $;LU0963897953;Obbligazionari Governativi Globali;*****;11,1163;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-Abrdn I Jap. Sm.Comp. Sust. Eq. I Cap JPY;LU0278930234;Azionari Giappone Small/Mid Cap;***;3.061,41;18/03/2026;JPY;FONDO;AZIONARIO;Giappone
-Abrdn I North American Small. Co. I Cap $;LU0566484704;Azionari USA Small Cap;***;42,9969;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-Ailis Eurizon Diversified Credit I Cap EUR;LU2309818925;Obbligazionari Flessibili Globali - EUR Hedged;**;9,021;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Ailis Global Equity Market Neutral I;LU2009201802;Alternativi Market Neutral EUR;***;13,464;17/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-Algebris Financial Equity I EUR;IE00BWY56Y06;Azionari Settore Servizi Finanziari;****;314,56;16/03/2026;EUR;FONDO;AZIONARIO;Globale
-Algebris Financial Income I EUR;IE00BCZNWT08;Bilanciati Moderati EUR - Globali;*****;281,94;16/03/2026;EUR;FONDO;BILANCIATO;Globale
-Algebris IG Financial Credit I Cap EUR;IE00BK1KH528;Obbligazionari Subordinati EUR;**;119,18;16/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Allianz Gl.Artificial Intelligence IT Cap $;LU1548496618;Azionari Settore Tecnologia;**;2.806,29;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Allianz Gl.Artificial Intelligence IT-H2 Cap EUR Hd;LU1548496964;Azionari Altro;-;3.002,96;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Allianz Pet and Animal Wellbeing IT Cap EUR;LU1931536236;Azionari Altro;-;1.375,84;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Allspring (Lux) WF USD Inv. Gr. Cr I Cap $;LU1528096115;Obbligazionari Corporate USD;***;132,27;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Amundi Eur Corporate Bond Esg UCITS ETF 2 DR - EUR (C);LU1681039647;Obbligazionari Corporate EUR;***;226,5386;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi Euro Government Bond 10-15Y UCITS ETF Acc;LU1650489385;Obbligazionari Lungo Termine EUR;*****;200,2907;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi Euro Government Bond 3-5Y UCITS ETF Acc;LU1650488494;Obbligazionari Governativi EUR;****;151,9642;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi Euro Government Bond 5-7Y UCITS ETF Acc;LU1287023003;Obbligazionari Governativi EUR;****;160,1562;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi Euro Government Bond 7-10Y UCITS ETF Acc;LU1287023185;Obbligazionari Governativi EUR;****;169,6172;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi Euro Stoxx Banks UCITS ETF Acc;LU1829219390;Azionari Settore Servizi Finanziari;****;302,4178;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Amundi F. EM Equity Focus M $;LU0329442304;Azionari Paesi Emergenti;***;207,76;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Amundi F. Emerging Markets Bond M2 EUR;LU1882454553;Obbligazionari Paesi Emergenti;****;3.208,50;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Amundi F. Euro HY Short Term Bond M EUR;LU0907331176;Obbligazionari High Yield EUR;***;134,47;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Amundi F. Euroland Equity Small Cap Select M EUR;LU0568607039;Azionari Area Euro Mid Cap;***;286,89;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Amundi F. Gl. Aggregate Bond M $;LU0329444938;Obbligazionari Globali USD - Hedged;****;178,38;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-Amundi F. Gl. Aggregate Bond M EUR Hdg;LU0613076487;Obbligazionari Globali EUR - Hedged;*****;131,47;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Amundi F. Global Equity Responsible I2 EUR;LU1883320050;Azionari Settore Ecologia;*****;3.062,50;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Amundi F. Global Multi-Asset Conserv. M2 EUR;LU1883330109;Bilanciati Prudenti EUR - Globali;*****;1.589,54;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Amundi F. Income Opportunities M2 EUR;LU2002723158;Bilanciati Moderati USD;*****;1.664,18;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Amundi F. Multi-Asset Conservative Responsible M EUR;LU1941682509;Bilanciati Prudenti EUR - Globali;****;113,87;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Amundi F. US Equity Research Value M Cap $;LU1894685475;Azionari USA Large Cap Value;**;1.834,71;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-Amundi F. Volatility World M EUR Hdg;LU1954167539;Alternativi Trading Opzioni;-;118,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-Amundi Global Aggr. Green Bond UCITS ETF Acc;LU1563454310;Obbligazionari Globali;***;48,9351;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Amundi Global Bioenergy UCITS ETF Eur Acc;LU1681046006;Azionari Settore Energia Alternativa;-;452,2876;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Amundi IS Core Global Government Bond UCITS ETF Acc;LU1437016204;Obbligazionari Governativi Globali;***;45,458;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Amundi IS Core Stoxx Europe 600 UCITS ETF Acc;LU0908500753;Azionari Europa Large Cap Blend;*****;291,3474;18/03/2026;EUR;ETF;AZIONARIO;Europa
-Amundi IS Euro Gov. Tilted Green Bond UCITS ETF Acc;LU1681046261;Obbligazionari Governativi EUR;***;220,565;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Amundi IS FTSE EPRA Europe Real Est. UCITS ETF EUR;LU1681039480;Immobiliare indiretto - Europa;***;335,6889;18/03/2026;EUR;ETF;IMMOBILIARE;Europa
-Amundi IS MSCI Europe Quality Factor UCITS ETF EUR;LU1681041890;Azionari Europa Large Cap Growth;*****;116,2068;18/03/2026;EUR;ETF;AZIONARIO;Europa
-Amundi IS USD Float. Rate Corp. Bd ESG UCITS ETFEUR H;LU1681041031;Obbligazionari Altro;-;55,8661;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Altro
-Amundi MSCI EMU Value Factor UCITS ETF Dist;LU1598690169;Azionari Area Euro Large Cap;*****;169,9523;18/03/2026;EUR;ETF;AZIONARIO;Europa
-Amundi MSCI India Swap UCITS ETF EUR Acc;FR0010361683;Azionari India;***;24,9048;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico
-Amundi MSCI Water UCITS ETF Dist;FR0010527275;Azionari Settore Acqua;****;69,2865;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Amundi RI Impact Green Bond DP EUR;FR0013188745;Obbligazionari Globali EUR - Hedged;**;96,0022;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Amundi S&P World Energy Screened UCITS ETF;IE000J0LN0R5;Azionari Settore Energia;**;14,5417;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Amundi US Treasury Bond Long Dated UCITS ETF Dist;LU1407890620;Obbligazionari Governativi USD;-;88,6157;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-Anima Star High Potential Europe I EUR;IE0032464921;Alternativi Long/Short Azionario Europa;****;11,17;16/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-Asteria Financial Credit Opportunities IH Cap EUR;LU2756541673;Obbligazionari Altro;-;108,86;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Asteria Global Investment Grade Opps IH Cap EUR;LU2915465871;Obbligazionari Diversificati EUR;-;106,59;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-AXA IM FIIS Europ.Sh. Dur. High Yield A Cap EUR;LU0658025209;Obbligazionari High Yield EUR;***;163,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-AXA WF Euro Credit Total Return I EUR;LU1164223015;Obbligazionari Flessibili EUR;*****;160,87;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-AXA WF Gl. Infl. Short Dur. Bonds I EUR Hdg;LU1353952267;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;111,85;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-AXA WF Global Responsible Aggr. I EUR;LU0255028333;Obbligazionari Globali EUR - Hedged;***;141,51;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-AXA WF Inflation Plus I EUR;LU2257473426;Obbligazionari Inflation-Linked Globali - EUR Hedged;*****;116,01;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-AXA WF Sustainable Equity QI I EUR;LU0943665348;Azionari Internazionali Large Cap Blend;****;376,65;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF Asian Dragon D2 Cap EUR;LU0329592298;Azionari Asia ex Giappone;-;63,97;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-BGF China Bond D2 Cap $;LU0719319435;Obbligazionari Cina;****;16,58;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-BGF Circular Economy I2 Cap EUR;LU2041044764;Azionari Settore Ecologia;-;12,08;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF Emerging Markets Equity Income D2 Cap $;LU0653880228;Azionari Paesi Emergenti;*****;28,63;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-BGF Euro Bond D2 Cap EUR;LU0297941469;Obbligazionari Diversificati EUR;***;29,6;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BGF Euro Corporate Bond I2 Cap EUR;LU1373033965;Obbligazionari Corporate EUR;***;11,83;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BGF Euro Short Duration Bond SI2 Cap EUR;LU1966276856;Obbligazionari Diversificati Breve Termine EUR;***;10,76;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BGF European Equity Income D2 Cap EUR;LU0579997130;Azionari Europa Reddito;****;35,96;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-BGF European Equity Transition I2 Cap EUR;LU0603021113;Azionari Europa Large Cap Growth;-;50,45;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-BGF European Value D2 Cap EUR;LU0329592454;Azionari Europa Large Cap Value;****;144,36;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-BGF Global Allocation D2 Cap $;LU0329592538;Bilanciati Moderati USD;*****;105,59;18/03/2026;USD;FONDO;BILANCIATO;Globale
-BGF Global Allocation D2 Cap EUR Hdg;LU0329591480;Bilanciati Moderati EUR - Globali;****;57,65;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-BGF Global High Yield Bond I2 Cap $;LU0369584726;Obbligazionari High Yield Globali;****;37,89;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-BGF Global High Yield Bond I2 Cap EUR Hdg;LU1791806000;Obbligazionari High Yield Globali - EUR Hedged;***;12,37;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-BGF Global Inflation Linked Bond D2 Cap $;LU0448666684;Obbligazionari Inflation-Linked Globali - USD Hedged;*****;18,47;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-BGF Global Inflation Linked Bond D2 Cap EUR Hdg;LU0448666502;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;14,65;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-BGF Global Multi-Asset Income D2 Cap EUR Hdg;LU1062843344;Bilanciati Moderati EUR - Globali;***;13,42;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-BGF Sustainable Energy I2 Cap EUR;LU0368234703;Azionari Settore Energia Alternativa;-;22,76;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF Systematic China A-Share Opps I2 Cap $;LU1580142898;Azionari Cina - A Shares;****;15,53;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-BGF World Energy D2 Cap EUR;LU0252963896;Azionari Settore Energia;-;34,81;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF World Gold D2 Cap EUR;LU0252963623;Azionari Settore Metalli Preziosi;-;104,68;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF World Gold D2 Cap EUR Hdg;LU0326423067;Azionari Altro;-;15,07;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-BGF World Healthscience I2 Cap EUR;LU1960219571;Azionari Settore Salute;-;14,74;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF World Mining D2 Cap EUR;LU0252963383;Azionari Settore Risorse Naturali;-;104,54;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BGF World Technology I2 Cap EUR;LU1722863211;Azionari Settore Tecnologia;-;40,64;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BlueBay Gl. High Yield ESG Bd S Cap EUR Hdg;LU1573123160;Obbligazionari High Yield Globali - EUR Hedged;***;126,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-BNP P.Easy Low Carbon 100 Europe PAB UCITS ETF;LU1377382368;Azionari Europa Large Cap Blend;***;270,4887;18/03/2026;EUR;ETF;AZIONARIO;Europa
-BNP P.Easy MSCI Pacific ex Japan Min TE UCITS ETF;LU1291106356;Azionari Pacifico ex Giappone;****;16,4699;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico
-BNP Paribas  Climate Change I EUR;LU0406802768;Azionari Settore Ecologia;***;367,01;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Bnp Paribas Bond 6M I EUR;FR0013263811;Obbligazionari Brevissimo Termine EUR;***;110.379,65;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BNP Paribas Euro HY Short Duration Bond I Cap EUR;LU1022395633;Obbligazionari High Yield EUR;****;144,58;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BNP Paribas SMaRT Food I EUR;LU1165137651;Azionari Settore Beni e Servizi di Consumo;***;129,69;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-BNP Paribas Sust. Enhanced Bond 12M I Cap EUR;LU1819949246;Obbligazionari Diversificati Breve Termine EUR;****;112.970,79;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BNP Paribas Sust. Euro Corporate Bond I EUR;LU0265317569;Obbligazionari Corporate EUR;***;165,62;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-BNY Mellon Global Equity Income W EUR;IE00B90JKR63;Azionari Globali Reddito;****;3,7972;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-BSF European Absolute Return I2 Cap EUR;LU0776931064;Alternativi Market Neutral EUR;***;181,14;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-BSF Syst. Asia Pacific Eq. Abs. Ret. D2 Cap EUR Hdg;LU1593227850;Alternativi Market Neutral EUR;*****;179,82;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-BSF Systematic World Equity D2 Cap EUR;LU1254583435;Azionari Internazionali Large Cap Blend;*****;310,25;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Candriam Bonds Global High Yield I Euro;LU0170293806;Obbligazionari High Yield Globali - EUR Hedged;*****;304,55;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Candriam Eq. L Oncology I $;LU1864482358;Azionari Settore Salute;***;3.207,53;17/03/2026;USD;FONDO;AZIONARIO;Globale
-Candriam Eq. L Oncology I EUR Hdg;LU2015349330;Azionari Altro;-;2.253,92;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-Capital Group Euro Bond Z Cap EUR;LU0817809279;Obbligazionari Diversificati EUR;***;17,4034;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Capital Group Gl. Allocation Zh Cap EUR;LU1615060362;Bilanciati Moderati EUR - Globali;****;21,9995;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Capital Group Global Corporate Bond Z Cap EUR;LU1746179701;Obbligazionari Corporate Globali - USD Hedged;-;11,1465;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Capital Group Multi-Sector Income Z Cap EUR;LU2530432702;Obbligazionari Flessibili USD;-;11,0072;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America
-Capital Group Multi-Sector Income Zh-EUR Cap EUR;LU2530432611;Obbligazionari Altro;-;11,4183;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Capital Group New Perspective Z Cap EUR;LU1295554833;Azionari Internazionali Large Cap Growth;*****;26,2637;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Capital Group New Perspective Zh-EUR Cap EUR;LU1295556887;Azionari Altro;-;23,6728;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Capital Group New World Z Cap EUR;LU1481181086;Azionari Paesi Emergenti;-;19,7512;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Carmignac Global Bond F Cap EUR;LU0992630599;Obbligazionari Flessibili Globali;***;148,68;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Carmignac Grande Europe F EUR Acc;LU0992628858;Azionari Europa Large Cap Growth;****;213,67;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-Carmignac Patrimoine Europe F EUR Acc;LU1744630424;Bilanciati Moderati EUR;**;148,81;17/03/2026;EUR;FONDO;BILANCIATO;Europa
-Carmignac Patrimoine F EUR Acc;LU0992627611;Bilanciati Moderati EUR - Globali;**;151,7;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Carmignac Sécurité FW Cap EUR;LU0992624949;Obbligazionari Diversificati Breve Termine EUR;*****;120,71;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-CPR Invest Hydrogen M2 EUR;LU2389406484;Azionari Altro;-;140,52;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-CT (Lux) American Smaller Co. IE EUR;LU2005601161;Azionari USA Small Cap;***;18,9345;17/03/2026;EUR;FONDO;AZIONARIO;Nord America
-CT (Lux) Responsible Global Equity I Cap $;LU0382361482;Azionari Internazionali Large Cap Growth;***;17,34;17/03/2026;USD;FONDO;AZIONARIO;Globale
-DNCA Invest Alpha Bonds I Cap EUR;LU1694789378;Obbligazionari Flessibili Globali;*****;137,15;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-DNCA Invest Convertibles I Cap EUR;LU0401808935;Obbligazionari Convertibili Europa;***;206,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-DNCA Invest Eurose I Cap EUR;LU0284394151;Bilanciati Prudenti EUR;*****;223,19;17/03/2026;EUR;FONDO;BILANCIATO;Europa
-DNCA Invest SRI Europe Growth I Cap EUR;LU0870552998;Azionari Europa Flex Cap;**;307,16;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-DNCA Invest Value Europe I Cap EUR;LU0284395984;Azionari Europa Large Cap Value;****;328,56;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-DWS Concept Kaldemorgen TFC Cap EUR;LU1663838545;Bilanciati Flessibili EUR - Globali;****;138,88;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-DWS Invest Artificial Intelligence IC Cap EUR;LU2760761598;Azionari Settore Tecnologia;-;129,39;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-DWS Invest Top Dividend IC Cap EUR;LU1472572954;Azionari Globali Reddito;****;198,85;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-D-X Bloomb. Div. Commodities And Str. Metals UCITS ETF X Acc;LU3132432900;Materie Prime - Generiche;-;6,5757;18/03/2026;EUR;ETF;MATERIE PRIME;Globale
-D-X Bloomb. Div. Commodities And Str. Metals UCITS ETF XH Acc;LU3132433031;Materie Prime - Generiche;-;6,5582;18/03/2026;EUR;ETF;MATERIE PRIME;Globale
-D-X Bloomb. MSCI Euro Gov Bd 1-3 UCITS ETF X Acc;LU2870273039;Obbligazionari Governativi Breve Termine EUR;-;5,1278;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-D-X Bloomb. MSCI Euro Gov Bd 3-5 UCITS ETF X Acc;LU2870273203;Obbligazionari Governativi EUR;-;5,1146;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-D-X Bloomb. MSCI Euro Gov Bd 7-10 UCITS ETF X Acc;LU2870273385;Obbligazionari Governativi EUR;-;5,0421;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-D-X MSCI Europe Screened UCITS ETF X Acc;LU2870272734;Azionari Europa Large Cap Blend;-;5,871;18/03/2026;EUR;ETF;AZIONARIO;Europa
-D-X MSCI USA Screened UCITS ETF X Acc;LU2870272577;Azionari USA Large Cap Blend;-;5,7388;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-D-X MSCI USA Screened UCITS ETF XH Acc;LU2870272650;Azionari USA Large Cap Blend;-;5,7167;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-D-X MSCI World Screened UCITS ETF X Acc;LU2870272908;Azionari Internazionali Large Cap Blend;-;5,8315;18/03/2026;EUR;ETF;AZIONARIO;Globale
-EdR SICAV Financial Bonds NC-EUR EUR;FR0013233707;Obbligazionari Subordinati EUR;****;135,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF Absolute Green Bonds Z Cap EUR;LU1693963883;Obbligazionari Globali EUR - Hedged;***;98,92;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-EF Absolute Prudent Z Cap EUR;LU0335993746;Alternativi Global Macro EUR;***;141,21;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-EF Active Allocation Z Cap EUR;LU0735549858;Bilanciati Flessibili EUR - Globali;***;1.002,07;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-EF Bond Aggregate EUR Z EUR;LU1529954825;Obbligazionari Diversificati EUR;**;103,53;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF Bond Aggregate RMB Z EUR;LU1529955392;Obbligazionari RMB - Onshore;****;138,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-EF Bond Corporate EUR Z EUR;LU0719365891;Obbligazionari Corporate EUR;****;142,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF Bond Emerging Markets Z EUR;LU0335990726;Obbligazionari Paesi Emergenti;***;487,35;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-EF Bond Emerging Markets ZH EUR;LU0335991294;Obbligazionari Paesi Emergenti EUR;***;402,45;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-EF Bond GBP LTE Z EUR;LU0335988746;Obbligazionari Governativi GBP;***;154,82;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF Bond High Yield Z EUR;LU0335991534;Obbligazionari High Yield Globali - EUR Hedged;****;318,59;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-EF Bond Inflation Linked Z EUR;LU0335993407;Obbligazionari Inflation-Linked EUR;***;165,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF Bond JPY LTE Z EUR;LU0335989983;Obbligazionari JPY;****;71,66;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Giappone
-EF Bond JPY LTE ZH EUR;LU0335990304;Obbligazionari Altro;-;197,5;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-EF Conservative Allocation Z Cap EUR;LU1090960912;Bilanciati Prudenti EUR - Globali;****;133,51;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-EF Euro Emerging Markets Bonds Z EUR;LU2215043055;Obbligazionari Paesi Emergenti EUR;**;94,17;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-EF Flexible Equity Strategy Z EUR;LU0497418391;Bilanciati Flessibili EUR - Globali;***;241,56;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-EF Flexible Multistrategy Z Cap EUR;LU1341632757;Alternativi Global Macro EUR;***;113,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-EF Green Euro Credit Z EUR;LU2215042594;Obbligazionari Corporate EUR;**;96,34;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF II Emerging Bond Total Return Z Cap EUR;LU0365358570;Obbligazionari Paesi Emergenti EUR;***;148,09;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-EF II Euro Bond Z Cap EUR;LU0278427041;Obbligazionari Governativi EUR;****;180,44;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-EF II Q-Flexible Z Cap EUR;LU0365359545;Bilanciati Flessibili EUR - Globali;****;218,13;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-EF Italian Equity Opportunities Z EUR;LU0725143274;Azionari Italia;***;270,32;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-EF SLJ Local Emerging Markets Debt Z EUR;LU1529956952;Obbligazionari Paesi Emergenti Valuta Locale;***;110,24;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-EF Strategic Allocation Z Cap EUR;LU1396958792;Bilanciati Flessibili EUR - Globali;****;766,45;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-EF Top European Research Z EUR;LU1393924268;Azionari Europa Large Cap Blend;****;218,11;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-Eleva Absolute Return Europe I Cap EUR;LU1331972494;Alternativi Long/Short Azionario Europa;****;1.480,91;16/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-ESI M&G European Credit Invest. QI EUR;LU2188668326;Obbligazionari Corporate EUR;*****;102,2915;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Fidelity China Consumer Y Cap $;LU0594300500;Azionari Cina;**;17,6;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Fidelity China Consumer Y Cap EUR;LU0605514057;Azionari Cina;**;15,05;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-Fidelity Euro Cash Y EUR;LU0346390353;Monetari EUR;-;10,966;18/03/2026;EUR;FONDO;MONETARIO;Europa
-Fidelity Euro Corporate Bond Y Cap EUR;LU0370787359;Obbligazionari Corporate EUR;**;34,95;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Fidelity Euro Short Term Bond Y Cap EUR;LU0346393704;Obbligazionari Diversificati Breve Termine EUR;**;28,0638;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Fidelity Europe Equity ESG Y EUR;LU0346388290;Azionari Europa Large Cap Blend;***;25,54;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Fidelity European High Yield Y EUR;LU0346390270;Obbligazionari High Yield EUR;****;28,07;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Fidelity European Multi Asset Income Y Cap EUR;LU0346389934;Bilanciati Moderati EUR;***;21,52;18/03/2026;EUR;FONDO;BILANCIATO;Europa
-Fidelity FAST Europe Y PF EUR;LU0348529875;Azionari Europa Large Cap Growth;**;304,5;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Fidelity FAST Global Y PF Cap EUR;LU0966156712;Azionari Internazionali Flex Cap;****;370,19;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity Future Connectivity Y Cap EUR;LU1881514779;Azionari Settore Comunicazioni;*;22,88;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity Gl. Multi Asset Growth&Income Y $;LU0346392300;Bilanciati Moderati USD;***;15,76;18/03/2026;USD;FONDO;BILANCIATO;Globale
-Fidelity Global Consumer Brands Y EUR;LU0346388613;Azionari Settore Beni e Servizi di Consumo;****;57,28;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity Global Demographics Y Cap $;LU0528228231;Azionari Internazionali Large Cap Growth;***;35,77;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Fidelity Global Dividend Y Cap $;LU0605515963;Azionari Globali Reddito;****;39,23;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Fidelity Global Dividend Y Cap EUR Hdg;LU0605515880;Azionari Altro;-;39,35;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Fidelity Global Multi Asset Income Y Cap EUR;LU0979392502;Bilanciati Moderati USD;***;19,1;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fidelity Global Multi Asset Income Y Cap EUR Hdg;LU1097728445;Bilanciati Moderati EUR - Globali;***;13,06;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fidelity Global Short Duration Income Y Cap EUR;LU0766124803;Obbligazionari Flessibili Globali;*****;13,38;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Fidelity Global Technology Y Cap EUR Hdg;LU1482751903;Azionari Altro;-;50,58;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Fidelity Global Technology Y EUR;LU0346389348;Azionari Settore Tecnologia;****;199,6;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity Greater China Y $;LU0346391161;Azionari Grande Cina;***;32,54;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Fidelity Italy Y EUR;LU0318940342;Azionari Italia;***;22,85;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Fidelity Latin America Y $;LU0346391674;Azionari America Latina;***;14,64;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Fidelity Water & Waste Y Cap EUR;LU1892830081;Azionari Settore Acqua;**;15,66;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity Water & Waste Y Cap EUR Hdg;LU1892830321;Azionari Settore Acqua;-;13,33;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity World RY Cap EUR;LU2158760806;Azionari Internazionali Large Cap Blend;-;21,03;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fidelity World Y Cap EUR Hdg;LU1723463326;Azionari Altro;-;19,88;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-First Eagle Amundi International IE EUR;LU0565136040;Bilanciati Aggressivi USD;*****;3.479,19;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-First Eagle Amundi International IHE EUR;LU0433182507;Bilanciati Aggressivi EUR - Globali;*****;2.659,99;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-First Eagle Amundi International IU $;LU0433182176;Bilanciati Aggressivi USD;*****;3.620,97;17/03/2026;USD;FONDO;BILANCIATO;Globale
-Flossbach von Storch Global Quality I Cap EUR;LU2423020796;Azionari Internazionali Large Cap Growth;***;124,98;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Flossbach von Storch Mult. Opps II IT Cap EUR;LU1038809049;Bilanciati Flessibili EUR - Globali;****;196;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia 4Children T;LU2342239683;Bilanciati Aggressivi EUR - Globali;*;8,489;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia Active Allocation T;LU2251305236;Bilanciati Flessibili EUR - Globali;**;11,315;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia China Bond T;LU2342239170;Obbligazionari Cina;***;10,894;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-Fonditalia Clean Energy Solutions T Cap EUR;LU2626792258;Azionari Settore Energia Alternativa;-;13,594;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fonditalia Credit Absolute Return T;LU1278883456;Obbligazionari Flessibili EUR;***;11,064;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Fonditalia Dynamic Allocation Multi-Asset T;LU0388709478;Bilanciati Flessibili EUR - Globali;**;9,078;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia Emerging Markets Local Currency Bond T;LU0937586419;Obbligazionari Paesi Emergenti Valuta Locale;****;12,421;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Fonditalia Eq. China T;LU0553727057;Azionari Cina;***;12,992;17/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-Fonditalia Eq. Italy T;LU0388707183;Azionari Italia;****;48,661;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-Fonditalia Equity GEM Innovators T Cap EUR;LU2626792506;Azionari Paesi Emergenti;-;14,257;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Fonditalia Equity Latin America T Cap EUR;LU0553727305;Azionari America Latina;***;8,268;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Fonditalia Fidelity Equity Low Volatility T;LU2274958631;Azionari Internazionali Large Cap Blend;**;13,272;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fonditalia Flex. Emerging Mkts T;LU0388706961;Alternativi Long/Short Azionario Altro;-;3,144;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-Fonditalia Flexible Equity Strategy T Cap EUR;LU1481510243;Bilanciati Flessibili EUR - Globali;**;11,292;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia Flexible Italy T;LU0553727644;Alternativi Long/Short Azionario Altro;-;19,788;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-Fonditalia Flexible Short Duration T;LU2120070300;Obbligazionari Flessibili Globali - EUR Hedged;****;11,691;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Fonditalia Global Bond T;LU0553728535;Obbligazionari Altro;-;10,205;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Fonditalia Income Mix T;LU1811051868;Bilanciati Prudenti EUR - Globali;****;13,279;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Fonditalia Millennials Equity T;LU1811052247;Azionari Internazionali Large Cap Growth;****;24,195;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fonditalia Opport. Diversified Income T;LU1750082254;Obbligazionari Flessibili Globali - EUR Hedged;***;11,354;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Fonditalia Quality Innovation Sust. T Cap EUR;LU2342239840;Azionari Internazionali Large Cap Growth;****;12,035;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Fonditalia SLJ Flexible China T;LU2342239410;Bilanciati Grande Cina;**;9,766;17/03/2026;EUR;FONDO;BILANCIATO;Asia Pacifico
-Franklin Biotechnology Discovery I $;LU0195948822;Azionari Settore Biotecnologia;*****;94,44;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Franklin EM Debt Opportunities Hard Curr. I Cap $;LU1926204220;Obbligazionari Paesi Emergenti;***;12,91;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Franklin EM Debt Opportunities Hard Curr. I Dis EUR Hdg;LU1926204493;Obbligazionari Paesi Emergenti EUR;***;7,51;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Franklin Euro High Yield I EUR;LU0195952261;Obbligazionari High Yield EUR;****;26,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Franklin Euro Short Duration Bond EB EUR;LU2386637925;Obbligazionari Diversificati Breve Termine EUR;****;10,84;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Franklin European Total Return P2 EUR;LU2216205182;Obbligazionari Diversificati EUR;****;9,96;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Franklin Global Real Estate I $;LU0229949309;Immobiliare Indiretto - Globale;***;17,35;17/03/2026;USD;FONDO;IMMOBILIARE;Globale
-Franklin Income I $;LU0195951883;Bilanciati Moderati USD;****;34,14;17/03/2026;USD;FONDO;BILANCIATO;Globale
-Franklin India S Cap $;LU0971935258;Azionari India;****;33,16;17/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Franklin Innovation I $;LU2063272608;Azionari USA Large Cap Growth;**;23,74;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-Franklin Strategic Income I $;LU0300738357;Obbligazionari Flessibili USD;***;19,77;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Franklin Technology I EUR;LU0366762994;Azionari Settore Tecnologia;****;102;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Franklin U.S. Opportunities I EUR;LU0260870075;Azionari USA Large Cap Growth;***;84,66;18/03/2026;EUR;FONDO;AZIONARIO;Nord America
-FTGF Brand. Global Inc Optim Pr EUR Hdg;IE00B7VSG479;Obbligazionari Flessibili Globali - EUR Hedged;***;121,64;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-FTGF Clear. Gl. Infr. Income U EUR;IE000228C5P2;Azionari Settore Infrastrutture;***;132,97;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-FTGF Clear. US Eq. Sust. Leaders S $;IE00BZ1BLN67;Azionari USA Large Cap Blend;*;238,86;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-FTGF Clear. US Eq. Sust. Leaders S EUR Hdg;IE00BL71K799;Azionari Altro;-;161,76;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-FTGF ClearBridge Infr. Value U EUR;IE00BKX8G809;Azionari Settore Infrastrutture;-;13,62;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-FTGF ClearBridge US Value U $;IE00012I4449;Azionari USA Large Cap Value;-;138,24;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-GIS Euro Bond 1-3 Years BX Cap EUR;LU0396183112;Obbligazionari Governativi Breve Termine EUR;*****;146,641;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-GS Em. Mkts Equity Ptf I Cap EUR;LU1357028627;Azionari Paesi Emergenti;***;24,66;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-GS Europe CORE Equity Ptf I Cap EUR;LU0234682044;Azionari Europa Large Cap Blend;*****;37,38;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-GS Global CORE Equity Ptf I Close Cap EUR;LU0280841296;Azionari Internazionali Large Cap Blend;*****;48,74;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-GS Global Credit Ptf (Hdg) I Cap EUR Hdg;LU0234688595;Obbligazionari Corporate Globali - EUR Hedged;****;16,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-GS Global Fixed Income Ptf (Hdg) I Cap EUR Hdg;LU0234681319;Obbligazionari Globali EUR - Hedged;****;14,95;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-GS Global Small Cap CORE Eq. Ptf I Snap Cap EUR;LU0328436547;Azionari Internazionali Small/Mid Cap;*****;51,82;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-GS III Europe Sustainable Equity I Cap EUR;LU0991964247;Azionari Europa Large Cap Growth;*****;13.016,04;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-GS III Eurozone Equity Income I Cap EUR;LU0191250090;Azionari Area Euro Large Cap;*****;1.272,44;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-GS India Equity Ptf I Cap $;LU0333811072;Azionari India;****;42,08;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-GS Japan Equity Ptf I Snap Cap EUR Hdg;LU0906985758;Azionari Altro;-;44,12;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-GS Japan Equity Ptf I Snap Cap JPY;LU0328437438;Non Classificati;*****;34.613,84;18/03/2026;JPY;FONDO;NON CLASSIFICATO;Altro
-GS US CORE Equity Ptf I Snap Cap $;LU0234571999;Azionari USA Large Cap Blend;***;34,55;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-GS US CORE Equity Ptf I Snap Cap EUR Hdg;LU1759635375;Azionari Altro;-;20,29;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-HSBC GIF Chinese Equity XC EUR;LU2685190501;Azionari Cina;-;13,977;16/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-HSBC GIF Euro High Yield Bond X EUR;LU0404498767;Obbligazionari High Yield EUR;****;58,498;16/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-HSBC GIF Global Emerg. Markets Eq. X $;LU0404504754;Azionari Paesi Emergenti;****;19,893;16/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Interfund Bond Global Emerging Markets;LU0109669498;Obbligazionari Paesi Emergenti EUR;***;15,664;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Interfund Equity Global Emerging Markets;LU0109669738;Azionari Paesi Emergenti;***;17,775;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Interfund Equity South East Asia;LU0109671478;Azionari Settore Tecnologia;****;275,397;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Interfund Euro Bond Long Term;LU0074297978;Obbligazionari Lungo Termine EUR;***;10,888;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Interfund Euro Bond Medium Term;LU0074297200;Obbligazionari Governativi EUR;***;10,574;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Interfund Euro Bond Short Term 1-3;LU0074297549;Obbligazionari Governativi Breve Termine EUR;**;7,177;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Interfund Euro Bond Short Term 3-5;LU0250744751;Obbligazionari Governativi EUR;***;12,992;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Interfund Multi Thematic A Cap EUR;LU2360594993;Azionari Internazionali Large Cap Blend;****;14,798;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Invesco Asia Asset Allocation S Cap $;LU1934329134;Bilanciati Asia;**;11,42;18/03/2026;USD;FONDO;BILANCIATO;Asia Pacifico
-Invesco Asia Asset Allocation S Cap EUR Hgd;LU2367677106;Bilanciati Altro;-;9,32;18/03/2026;EUR;FONDO;BILANCIATO;Altro
-Invesco Asia Consumer Demand S Cap $;LU1934328839;Azionari Settore Beni e Servizi di Consumo;***;13,74;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Invesco Asian Equity S Cap $;LU1775950634;Azionari Asia ex Giappone;****;24,53;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Invesco Balanced-Risk Allocation S Acc EUR;LU1297941194;Bilanciati Flessibili EUR - Globali;***;15,1;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Invesco Cons. Discr. S&P US Sel. S. UCITS ETF Acc;IE00B449XP68;Azionari Settore Beni e Servizi di Consumo;-;703,6607;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Invesco Developing Initiatives Bond S Cap $;LU1934329217;Obbligazionari Asia;**;11,2619;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-Invesco Developing Initiatives Bond S Cap EUR Hgd;LU2367677528;Obbligazionari Altro;-;8,5918;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Invesco Emerging Markets Eq. S Cap $;LU2553179461;Azionari Paesi Emergenti;*****;19,25;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Invesco Emerging Markets Local Debt S Cap EUR;LU2014294636;Obbligazionari Paesi Emergenti Valuta Locale;****;11,5987;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Invesco Environ. Climate Opps Bond S Cap $;LU2367678096;Obbligazionari Corporate Globali - USD Hedged;****;11,0568;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-Invesco Euro Bond S Cap EUR;LU2367677791;Obbligazionari Diversificati EUR;****;9,2427;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Invesco Euro Short Term Bond S Cap EUR;LU1297941517;Obbligazionari Diversificati Breve Termine EUR;****;10,918;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Invesco Euro Ultra-Short Term Debt S Cap EUR;LU2065167475;Obbligazionari Brevissimo Termine EUR;***;10,8752;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Invesco Gl. Investment Grade Corp. Bond SH Cap EUR;LU1701679299;Obbligazionari Corporate Globali - EUR Hedged;***;10,4483;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Invesco Global Consumer Trends S Cap $;LU1887442066;Azionari Settore Beni e Servizi di Consumo;**;16,72;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Invesco Global Equity Income S Cap $;LU2367678179;Azionari Globali Reddito;****;16,38;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Invesco Global Income S Cap EUR;LU2181881173;Bilanciati Moderati EUR - Globali;*****;14,8657;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Invesco Global Total Return Bond S Cap EUR;LU2040206711;Obbligazionari Flessibili Globali - EUR Hedged;****;11,4859;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Invesco Greater China Equity S Cap $;LU1549405709;Azionari Grande Cina;***;18,58;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-Invesco Greater China Equity S Cap EUR Hgd;LU2367678336;Azionari Altro;-;10,58;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Invesco Health Care S&P US Sel. S. UCITS ETF Acc;IE00B3WMTH43;Azionari Settore Salute;-;635,6578;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Invesco India Bond S Cap $;LU1762221825;Obbligazionari Altro;-;10,8655;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Altro
-Invesco MSCI World UCITS ETF Acc;IE00B60SX394;Azionari Internazionali Large Cap Blend;-;120,5717;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Invesco Pan European High Income S Cap EUR;LU1981114652;Bilanciati Prudenti EUR;*****;13,29;18/03/2026;EUR;FONDO;BILANCIATO;Europa
-Invesco Physical Gold ETC;IE00B579F325;Materie Prime - Metalli Preziosi;-;410,5434;18/03/2026;EUR;ETC;MATERIE PRIME;Globale
-Invesco Physical Gold ETC;IE00B579F325;Materie Prime - Metalli Preziosi;-;410,5434;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale
-Invesco Sust. Pan European Systematic Eq. S Cap EUR;LU1701702026;Azionari Europa Large Cap Blend;****;16,6;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Invesco US HY Fallen Angels UCITS ETF Dist;IE00BD0Q9673;Obbligazionari High Yield USD;-;18,3075;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-iShares  EUR Corp Bond 1-5yr UCITS ETF EUR (Dist);IE00B4L60045;Obbligazionari Corporate Breve Termine EUR;***;106,6313;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Govt Bond 0-1yr UCITS ETF EUR (Dist);IE00B3FH7618;Obbligazionari Brevissimo Termine EUR;**;98,7337;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Govt Bond 1-3yr UCITS ETF EUR (Acc);IE00B3VTMJ91;Obbligazionari Governativi Breve Termine EUR;****;115,8026;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Govt Bond 1-3yr UCITS ETF EUR (Dist);IE00B14X4Q57;Obbligazionari Governativi Breve Termine EUR;****;141,8213;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Govt Bond 3-7yr UCITS ETF EUR (Acc);IE00B3VTML14;Obbligazionari Governativi EUR;****;133,699;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Govt Bond 7-10yr UCITS ETF EUR (Acc);IE00B3VTN290;Obbligazionari Governativi EUR;***;152,539;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR High Yield Corp Bond UCITS ETF;IE00B66F4759;Obbligazionari High Yield EUR;***;92,3634;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares  EUR Inflation Linked Govt Bond UCITS ETF EUR (Acc);IE00B0M62X26;Obbligazionari Inflation-Linked EUR;***;235,6758;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares $ Short Duration High Yield Corp Bond UCITS ETF USD (Dist);IE00BCRY6003;Obbligazionari High Yield USD;-;76,1679;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-iShares $ Treasury Bond 1-3yr UCITS ETF USD (Acc) B;IE00B3VWN179;Obbligazionari Governativi Breve Termine USD;-;108,5648;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-iShares $ Treasury Bond 1-3yr UCITS ETF USD (Dist);IE00B14X4S71;Obbligazionari Governativi Breve Termine USD;-;112,4655;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-iShares $ Treasury Bond 20+yr UCITS ETF USD (Dist);IE00BSKRJZ44;Obbligazionari Governativi USD;**;3,2411;18/03/2026;USD;ETF;OBBLIGAZIONARIO;Nord America
-iShares $ Treasury Bond 3-7yr UCITS ETF USD (Acc);IE00B3VWN393;Obbligazionari Governativi USD;-;124,7696;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-iShares € Ultrashort Bond UCITS ETF EUR (Dist);IE00BCRY6557;Obbligazionari Brevissimo Termine EUR;****;101,2853;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares Ageing Population UCITS ETF USD (Acc);IE00BYZK4669;Azionari Settore Salute;-;8,0859;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Automation & Robotics UCITS ETF USD (Acc);IE00BYZK4552;Azionari Settore Tecnologia;-;13,8694;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Core  EUR Corp Bond UCITS ETF EUR (Dist);IE00B3F81R35;Obbligazionari Corporate EUR;***;119,032;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares Core  EUR Govt Bond UCITS ETF EUR (Dist);IE00B4WXJJ64;Obbligazionari Governativi EUR;***;109,1973;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares Core EURO STOXX 50 UCITS ETF EUR;IE00B53L3W79;Azionari Area Euro Large Cap;*****;221,0785;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares Core MSCI EM IMI UCITS ETF USD (Acc);IE00BKM4GZ66;Azionari Paesi Emergenti;-;41,8655;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti
-iShares Core MSCI Europe UCITS ETF EUR (Acc);IE00B4K48X80;Azionari Europa Large Cap Blend;****;95,9488;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares Core MSCI Japan IMI UCITS ETF USD (Acc);IE00B4L5YX21;Azionari Giappone Large Cap;-;63,3277;18/03/2026;EUR;ETF;AZIONARIO;Giappone
-iShares Core MSCI Pacific ex-Japan UCITS ETF USD (Acc);IE00B52MJY50;Azionari Pacifico ex Giappone;-;203,2629;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico
-iShares Core MSCI World UCITS ETF USD (Acc);IE00B4L5Y983;Azionari Internazionali Large Cap Blend;-;112,1349;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Core S&P 500 UCITS ETF USD (Acc);IE00B5BMR087;Azionari USA Large Cap Blend;-;625,357;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-iShares Developed Markets Property Yield UCITS ETF USD (Dist);IE00B1FZS350;Immobiliare Indiretto - Globale;-;21,7894;18/03/2026;EUR;ETF;IMMOBILIARE;Globale
-iShares Diversified Commodity Swap UCITS ETF (DE);DE000A0H0728;Materie Prime - Generiche;-;33,4823;18/03/2026;EUR;ETF;MATERIE PRIME;Globale
-iShares Dow Jones Global Leaders Screened UCITS ETF USD (Acc);IE00B57X3V84;Azionari Internazionali Large Cap Blend;-;76,59;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Edge MSCI Europe Momentum Factor UCITS ETF EUR (Acc);IE00BQN1K786;Azionari Europa Large Cap Blend;*****;14,7441;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares Edge MSCI World Minimum Volatility UCITS ETF USD (Acc);IE00B8FHGS14;Azionari Internazionali Large Cap Blend;-;65,0232;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Euro Dividend UCITS ETF EUR (Dist);IE00B0M62S72;Azionari Area Euro Large Cap;***;23,959;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares EURO STOXX Small UCITS ETF EUR (Dist);IE00B02KXM00;Azionari Area Euro Mid Cap;****;48,6411;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares European Property Yield UCITS ETF EUR (Dist);IE00B0M63284;Immobiliare indiretto - Europa;***;31,57;18/03/2026;EUR;ETF;IMMOBILIARE;Europa
-iShares Gl. Infrastructure UCITS ETF USD (Dist);IE00B1FZS467;Azionari Settore Infrastrutture;-;34,0513;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Global Clean Energy Transition UCITS ETF USD (Dist);IE00B1XNHC34;Azionari Settore Energia Alternativa;-;9,3144;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Global Corp Bond EUR Hedged UCITS ETF (Dist);IE00B9M6SJ31;Obbligazionari Corporate Globali - EUR Hedged;***;85,65;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-iShares Global Corp Bond UCITS ETF USD (Dist);IE00B7J7TB45;Obbligazionari Corporate Globali;-;78,8994;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-iShares Global High Yield Corp Bond UCITS ETF USD (Dist);IE00B74DQ490;Obbligazionari High Yield Globali;-;78,7471;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-iShares Global Water UCITS ETF USD (Dist);IE00B1TXK627;Azionari Settore Acqua;-;66,0757;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Italy Govt Bond UCITS ETF EUR (Dist);IE00B7LW6Y90;Obbligazionari Governativi EUR;*****;151,2962;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-iShares J.P. Morgan $ EM Bond EUR Hedged UCITS ETF (Dist);IE00B9M6RS56;Obbligazionari Paesi Emergenti EUR;***;68,3082;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti
-iShares J.P. Morgan $ EM Bond UCITS ETF USD (Dist);IE00B2NPKV68;Obbligazionari Paesi Emergenti;-;79,9095;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti
-iShares J.P. Morgan EM Local Govt Bond UCITS ETF USD (Dist);IE00B5M4WH52;Obbligazionari Paesi Emergenti Valuta Locale;-;39,8859;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti
-iShares MSCI China Tech UCITS ETF USD (Acc);IE000NFR7C63;Azionari Cina;-;4,29;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico
-iShares MSCI EM CTB Enhanced ESG UCITS ETF;IE00BHZPJ239;Azionari Paesi Emergenti;-;7,1514;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti
-iShares MSCI EM UCITS ETF USD (Acc);IE00B4L5YC18;Azionari Paesi Emergenti;-;48,8043;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti
-iShares MSCI EM UCITS ETF USD (Dist);IE00B0M63177;Azionari Paesi Emergenti;-;50,7648;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti
-iShares MSCI EMU ESG Enhanced CTB UCITS ETF EUR (Acc);IE00BHZPJ015;Azionari Area Euro Large Cap;****;9,4407;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares MSCI Europe CTB Enhanced ESG UCITS ETF;IE00BHZPJ783;Azionari Europa Large Cap Blend;***;8,9166;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares MSCI Japan CTB Enhanced ESG UCITS ETF;IE00BHZPJ452;Azionari Giappone Large Cap;-;7,77;18/03/2026;EUR;ETF;AZIONARIO;Giappone
-iShares MSCI Japan EUR Hedged UCITS ETF (Acc);IE00B42Z5J44;Azionari Altro;-;127,1024;18/03/2026;EUR;ETF;AZIONARIO;Altro
-iShares MSCI USA CTB Enhanced ESG UCITS ETF;IE00BHZPJ908;Azionari USA Large Cap Blend;-;10,3461;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-iShares MSCI USA Screened UCITS ETF EUR Hedged (Acc);IE000G2LIHG9;Azionari Altro;-;7,4974;18/03/2026;EUR;ETF;AZIONARIO;Altro
-iShares MSCI USA SRI UCITS ETF USD (Acc);IE00BYVJRR92;Azionari USA Large Cap Blend;-;15,356;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-iShares MSCI World CTB Enhanced ESG UCITS ETF;IE00BHZPJ569;Azionari Internazionali Large Cap Blend;-;9,4927;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares MSCI World EUR Hedged UCITS ETF (Acc);IE00B441G979;Azionari Altro;-;106,2755;18/03/2026;EUR;ETF;AZIONARIO;Altro
-iShares Nasdaq 100 UCITS ETF USD (Acc);IE00B53SZB19;Azionari USA Large Cap Growth;-;1.238,34;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-iShares S&P 500 EUR Hedged UCITS ETF (Acc);IE00B3ZW0K18;Azionari Altro;-;138,6417;18/03/2026;EUR;ETF;AZIONARIO;Altro
-iShares S&P 500 Health Care Sector UCITS ETF USD (Acc);IE00B43HR379;Azionari Settore Salute;-;10,29;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares S&P 500 Information Technology Sector UCITS ETF USD (Acc);IE00B3WJKG14;Azionari Settore Tecnologia;-;34,26;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares Smart City Infrastructure UCITS ETF USD (Acc);IE00BKTLJC87;Azionari Settore Infrastrutture;-;8,3499;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares STOXX Europe 600 Banks UCITS ETF (DE);DE000A0F5UJ7;Azionari Settore Servizi Finanziari;****;33,495;18/03/2026;EUR;ETF;AZIONARIO;Globale
-iShares STOXX Europe 600 UCITS ETF (DE) EUR (Dist);DE0002635307;Azionari Europa Large Cap Blend;****;59,5457;18/03/2026;EUR;ETF;AZIONARIO;Europa
-iShares US Property Yield UCITS ETF USD (Dist);IE00B1FZSF77;Immobiliare Indiretto - Nord America;-;27,0592;18/03/2026;EUR;ETF;IMMOBILIARE;Nord America
-Janus Hend. Balanced I Cap EUR Hdg;IE00B2B36V48;Bilanciati Moderati EUR - Globali;*****;29,5;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Janus Hend. Balanced I2 Cap $;IE0009515622;Bilanciati Moderati USD;*****;62,64;18/03/2026;USD;FONDO;BILANCIATO;Globale
-Janus Hend. Global Life Sciences U Cap EUR;IE00BRJG7840;Azionari Settore Salute;*****;32,81;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Janus Hend. Global Life Sciences U Cap EUR Hdg;IE00BFRSYK98;Azionari Altro;-;30,38;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Janus Hend. Hor. Biotechnology IU2 EUR;LU2441282626;Azionari Settore Biotecnologia;*****;28,56;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Janus Hend. Hor. Biotechnology IU2 EUR Hdg;LU2342243362;Azionari Altro;-;32,42;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Janus Hend. Hor. Gl. Property Eqs I2 Cap $;LU0209137628;Immobiliare Indiretto - Globale;****;34,15;18/03/2026;USD;FONDO;IMMOBILIARE;Globale
-Janus Hend. Hor. Gl. Property Eqs I2 Cap EUR Hdg;LU0642270333;Immobiliari Indiretto - Altro;-;18,51;18/03/2026;EUR;FONDO;IMMOBILIARE;Altro
-Janus Hend. Hor. Global Smaller Co. IU2 EUR;LU1984712676;Azionari Internazionali Small/Mid Cap;*****;51,52;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Janus Hend. Hor. Pan Europ. Abs. Return I2 EUR;LU0264598268;Alternativi Long/Short Azionario Europa;***;24,41;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-Janus Henderson Pan European G EUR;LU1136954127;Azionari Europa Large Cap Blend;****;10,2293;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-JPM Aggregate Bond I Acc EUR Hdg;LU0958694670;Obbligazionari Globali EUR - Hedged;****;85,37;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-JPM America Equity I2 Acc $;LU1727351345;Azionari USA Large Cap Blend;****;285,39;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-JPM America Equity I2 Acc EUR Hdg;LU1727351857;Azionari Altro;-;238,68;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM ASEAN Equity I2 Acc $;LU1727352079;Azionari ASEAN;****;141,19;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-JPM ASEAN Equity I2 Acc EUR;LU1931928318;Azionari ASEAN;****;140,93;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-JPM Asia Growth I2 Acc $;LU1814670375;Azionari Asia ex Giappone;**;169,67;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-JPM China A-Share Opportunities I2 EUR Hdg;LU2081627569;Azionari Altro;-;130,72;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM Emerging Markets Corporate Bond I2 Acc $;LU1931928409;Obbligazionari Corporate Paesi Emergenti;****;133,11;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-JPM Emerging Markets Debt I2 Acc EUR Hdg;LU1814670532;Obbligazionari Paesi Emergenti EUR;***;108,75;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-JPM Emerging Markets Debt I2 Dis $;LU1989874174;Obbligazionari Paesi Emergenti;***;88,37;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-JPM Emerging Markets Sustainable Equity I2 Cap EUR;LU2184876295;Azionari Paesi Emergenti;***;156,53;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-JPM EU Government Bond I2 Acc EUR;LU1727352749;Obbligazionari Governativi EUR;***;99,163;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-JPM EUR Ultra-Short Income Active UCITS ETF Acc;IE00BD9MMF62;Obbligazionari Brevissimo Termine EUR;***;109,2129;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-JPM Europe Dynamic Technologies I2 Cap EUR;LU1931928581;Azionari Settore Tecnologia;**;207,09;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-JPM Europe Eq. Absolute Alpha I2 (perf) Acc EUR;LU1814671423;Alternativi Market Neutral EUR;*****;180,4;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa
-JPM Europe Strategic Dividend I2 Acc EUR;LU1727361062;Azionari Europa Reddito;*****;199,73;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-JPM Europe Sustainable Equity I2 Cap EUR;LU2094610214;Azionari Europa Large Cap Blend;****;178,1;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-JPM Europe Sustainable Small Cap Equity I2 Cap EUR;LU2076840318;Azionari Europa Small Cap;****;150,43;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-JPM Global Balanced I2 Acc EUR;LU1727361229;Bilanciati Moderati EUR - Globali;***;136,81;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-JPM Global Bond Opportunities I2 Acc $;LU1727353630;Obbligazionari Flessibili Globali - USD Hedged;***;134,38;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-JPM Global Bond Opportunities I2 Acc EUR Hdg;LU1727353556;Obbligazionari Flessibili Globali - EUR Hedged;***;113,05;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-JPM Global Corporate Bond I2 Acc EUR Hdg;LU1727354448;Obbligazionari Corporate Globali - EUR Hedged;***;105,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-JPM Global Dividend I Acc EUR;LU0329203813;Azionari Globali Reddito;***;195,53;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-JPM Global Dividend I Acc EUR Hdg;LU0973650160;Azionari Altro;-;190,12;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM Global Focus I2 Acc EUR Hdg;LU1956949157;Azionari Altro;-;222,77;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM Global Focus I2 Cap EUR;LU1814672314;Azionari Internazionali Large Cap Blend;****;186,29;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-JPM Global Government Bond I2 Acc EUR;LU1727355171;Obbligazionari Governativi Globali EUR Hedged;****;96,55;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-JPM Global Healthcare I2 Acc $;LU1814672405;Azionari Settore Salute;***;174,21;18/03/2026;USD;FONDO;AZIONARIO;Globale
-JPM Global High Yield Bond I2 Acc EUR Hdg;LU1727361658;Obbligazionari Altro;-;125,23;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-JPM Global Income I2 Acc EUR;LU1814672587;Bilanciati Moderati EUR - Globali;***;130,7;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-JPM Global Macro C Acc EUR Hdg;LU0917670746;Alternativi Global Macro EUR;**;98,8;18/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-JPM Global Macro Opportunities C Acc EUR;LU0095623541;Alternativi Global Macro EUR;**;172,26;18/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-JPM Global Strategic Bond I2 (perf) Acc EUR Hdg;LU1727356492;Obbligazionari Flessibili Globali - EUR Hedged;****;112,31;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-JPM Income I2 Cap EUR Hdg;LU2094610057;Obbligazionari Altro;-;106,57;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-JPM Multi-Manager Alternative I2 Acc EUR Hdg;LU1931928748;Alternativi Multistrategy EUR;*;116,89;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-JPM Thematics - Genetic Therapies I2 Cap EUR Hdg;LU2127216625;Azionari Altro;-;99,65;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM Total Emerging Markets Income I2 EUR Hdg;LU2094610487;Bilanciati Altro;-;131,32;18/03/2026;EUR;FONDO;BILANCIATO;Altro
-JPM US Select Equity Plus I2 Acc $;LU1727359249;Azionari USA Large Cap Blend;*****;292,42;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-JPM US Select Equity Plus I2 Acc EUR Hdg;LU1727359595;Azionari Altro;-;244,34;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-JPM US Technology I2 Acc $;LU1814674104;Azionari Settore Tecnologia;***;352,26;18/03/2026;USD;FONDO;AZIONARIO;Globale
-JPM US Technology I2 Acc EUR;LU1931929043;Azionari Settore Tecnologia;***;357,91;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-JPM US Value I2 Acc $;LU1727360171;Azionari USA Large Cap Value;****;204,9;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-JPM US Value I2 Acc EUR Hdg;LU1727360254;Azionari Altro;-;171,38;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Jupiter Dynamic Bond ESG I Cap EUR;LU2403912442;Obbligazionari Flessibili Globali - EUR Hedged;***;95,31;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Jupiter European Growth I Cap EUR;LU0260086037;Azionari Europa Large Cap Blend;***;74,58;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Jupiter Gold & Silver I Cap EUR;IE00BYVJRF70;Azionari Settore Metalli Preziosi;***;52,6713;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Jupiter Strategic Abs. Ret. Bond I Cap EUR Hdg;IE00BLP58Q81;Obbligazionari Flessibili Globali - EUR Hedged;***;11,9338;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-KBI Global Sustainable Infrastructure C EUR;IE0004WX41H7;Azionari Settore Infrastrutture;*;10,848;16/03/2026;EUR;FONDO;AZIONARIO;Globale
-KIS - Bond Plus P - EUR;LU0680824983;Obbligazionari Flessibili EUR;****;181,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-L&G Battery Value-Chain UCITS ETF;IE00BF0M2Z96;Azionari Altro;-;27,386;18/03/2026;EUR;ETF;AZIONARIO;Altro
-L&G Clean Water UCITS ETF;IE00BK5BC891;Azionari Settore Acqua;-;17,9514;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Lazard Global Equity Franchise C Cap EUR;IE00BJ1H1875;Azionari Internazionali Flex Cap;**;138,1374;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-LO Funds All Roads N EUR;LU0718509861;Bilanciati Flessibili EUR - Globali;***;16,5487;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-LO Funds Convertible Bond N EUR;LU0209988657;Obbligazionari Convertibili Globali - EUR Hedged;***;23,3261;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-LO Funds Social Systems Change N EUR Hdg;LU0209992170;Azionari Altro;-;20,3472;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-LO Funds World Brands N EUR;LU1809976365;Azionari Settore Beni e Servizi di Consumo;****;342,1473;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-M&G (Lux) Dynamic Allocation JI EUR;LU1941717735;Bilanciati Flessibili EUR - Globali;*****;14,7419;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-M&G (Lux) Emerging Markets Bond C Cap EUR;LU1670631958;Obbligazionari Paesi Emergenti;*****;14,5698;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-M&G (Lux) Emerging Markets Bond CH Cap EUR;LU1670632170;Obbligazionari Paesi Emergenti EUR;*****;12,0574;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-M&G (Lux) Global Dividend CI Cap EUR;LU1797813448;Azionari Globali Reddito;****;20,6141;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-M&G (Lux) Global Listed Infrastructure CI Cap EUR;LU1665238009;Azionari Settore Infrastrutture;**;19,3499;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-M&G (Lux) Global Listed Infrastructure JIH EUR;LU2576361781;Azionari Altro;-;12,2186;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-M&G (Lux) Global Macro Bond C Cap EUR;LU1670720462;Obbligazionari Flessibili Globali;**;14,8372;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-M&G (Lux) Global Macro Bond CH Cap EUR;LU1670720629;Obbligazionari Flessibili Globali - EUR Hedged;*;10,1681;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-M&G (Lux) Global Maxima CI EUR;LU2065169414;Azionari Internazionali Flex Cap;****;20,3798;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-M&G (Lux) Global Sustain Paris Aligned C Cap EUR;LU1670715546;Azionari Internazionali Large Cap Blend;***;64,289;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-M&G (Lux) Income Allocation JI EUR;LU2088737338;Bilanciati Moderati EUR - Globali;***;11,8804;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-M&G (Lux) Optimal Income JI EUR;LU1881796145;Bilanciati Prudenti EUR - Globali;**;11,4193;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-M&G (Lux) Sustainable Macro Flexible Credit UI EUR;LU2415445670;Obbligazionari Flessibili Globali - EUR Hedged;***;11,7568;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Man Asia (ex Japan) Equity IF Cap EUR;IE00BMWBB563;Azionari Asia ex Giappone;*****;152,37;16/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-Man TargetRisk I EUR Hdg;IE00BRJT7K50;Bilanciati Moderati EUR - Globali;***;173,54;16/03/2026;EUR;FONDO;BILANCIATO;Globale
-MFS Blended Research EM Equity Cap EUR;LU1713319355;Azionari Paesi Emergenti;****;174,9;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-MFS Meridian Contrarian Value I1 EUR;LU1985812830;Azionari Internazionali Large Cap Value;*****;252,18;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-MFS Meridian Global Opportunistic Bond I1 Cap $;LU1340703666;Obbligazionari Flessibili Globali - USD Hedged;**;128,06;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-MFS Meridian Global Opportunistic Bond IH1 EUR;LU1340703740;Obbligazionari Flessibili Globali - EUR Hedged;**;105,46;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-MFS Meridian Prudent Capital I1 EUR;LU1442550114;Bilanciati Moderati USD;***;170,75;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-MFS Meridian Prudent Capital IH1 EUR;LU1442550205;Bilanciati Moderati EUR - Globali;***;144,75;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Mirova Europe Sustenaible Equity I Cap EUR;LU0552643099;Azionari Europa Flex Cap;***;566,69;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-Mirova Global Green Bond I Cap EUR;LU1472740502;Obbligazionari Globali EUR - Hedged;**;766,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Mirova Global Sustainable Eq. I Cap EUR;LU0914729453;Azionari Internazionali Large Cap Growth;****;35.969,07;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-MSIF Asia Opportunity Z $;LU1378878604;Azionari Asia ex Giappone;*;57,87;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-MSIF Emerg. Markets Corp. Debt Z Cap $;LU0603408385;Obbligazionari Corporate Paesi Emergenti;****;49,49;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-MSIF Euro Corporate Bond Duration Hdg Z EUR;LU1832968926;Obbligazionari Altro;-;37,6;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-MSIF Euro Corporate Bond Z EUR;LU0360483100;Obbligazionari Corporate EUR;*****;48,52;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-MSIF Euro Strategic Bond Z EUR;LU0360476740;Obbligazionari Diversificati EUR;****;44,4;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-MSIF Europe Opportunity Z $;LU1387591727;Azionari Europa Large Cap Growth;**;55,73;18/03/2026;USD;FONDO;AZIONARIO;Europa
-MSIF Global Balanced Income Z Cap EUR;LU1078119408;Bilanciati Flessibili EUR - Globali;***;37;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-MSIF Global Balanced Risk Control FoF Z EUR;LU0706093803;Bilanciati Flessibili EUR - Globali;***;50,22;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-MSIF Global Brands Z (USD) EUR;LU0360482987;Azionari Internazionali Large Cap Blend;**;89,28;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-MSIF Global Brands ZH EUR;LU0360483019;Azionari Altro;-;98,95;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-MSIF Global Conver. Bond ZH EUR;LU0360484504;Obbligazionari Convertibili Globali - EUR Hedged;****;58,89;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-MSIF Global Fixed Income Opportunities Z $;LU0694239061;Obbligazionari Flessibili Globali - USD Hedged;****;46,73;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-MSIF Global Fixed Income Opportunities ZH Cap EUR;LU0712124089;Obbligazionari Flessibili Globali - EUR Hedged;****;32,32;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-MSIF Global Opportunity Z EUR;LU0552385535;Azionari Internazionali Large Cap Growth;****;148,97;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-MSIF Global Opportunity ZH EUR;LU1511517010;Azionari Altro;-;68,82;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-MSIF Global Quality Z $;LU0955011258;Azionari Internazionali Large Cap Blend;**;66,2;18/03/2026;USD;FONDO;AZIONARIO;Globale
-MSIF Short Maturity Euro Bond Z EUR;LU0360478795;Obbligazionari Diversificati Breve Termine EUR;****;33,28;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-MSIF US Advantage Z $;LU0360484686;Azionari USA Large Cap Growth;*;165,89;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-MSIF US Advantage ZH EUR;LU0360484769;Azionari Altro;-;151,03;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-MSIF Us Growth Z $;LU0360477805;Azionari USA Large Cap Growth;*;179,44;18/03/2026;USD;FONDO;AZIONARIO;Nord America
-MSIF Us Growth ZH EUR;LU0360477987;Azionari Altro;-;136,78;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-MUZ EnhancedYield Short Term A Cap EUR;IE0033758917;Obbligazionari Flessibili Globali - EUR Hedged;****;183,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-MUZ Global Short Duration Inv.Grade H Cap EUR Hdg;IE00BJCXFM61;Obbligazionari Corporate Globali - EUR Hedged;****;109,98;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-MUZ Global Tactical Credit A Cap EUR Hdg;IE00BHLSJ159;Obbligazionari Flessibili Globali - EUR Hedged;***;113,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Neu.Berman Corporate Hybrid Bond I Cap EUR;IE00BZ090894;Obbligazionari Subordinati EUR;***;13,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Neu.Berman Em. Market Debt Blend I Cap EUR;IE00BK4YYZ03;Obbligazionari Paesi Emergenti EUR;****;12,5;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Neu.Berman Em. Market Debt HC I Cap EUR;IE00B986G486;Obbligazionari Paesi Emergenti EUR;****;14,51;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Neu.Berman Global Eq. Megatrends I Cap $;IE00BFMHRK20;Azionari Internazionali Small/Mid Cap;****;22,16;17/03/2026;USD;FONDO;AZIONARIO;Globale
-Neu.Berman High Yield Bond I Cap $;IE00B12VW565;Obbligazionari High Yield USD;***;32,18;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Neu.Berman Next Gen. Connectivity I Cap EUR Hdg;IE00BMPRXW24;Azionari Altro;-;19,07;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Neu.Berman Next Generation Mobility I Cap EUR;IE00BKPHW879;Azionari Settore Tecnologia;***;21,68;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Neu.Berman Short Dur. Em. Mkt Debt I Cap EUR;IE00BDZRX185;Obbligazionari Paesi Emergenti EUR;****;12,09;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Neu.Berman Short Dur. HY Engagement I Cap EUR;IE00B7FN4F54;Obbligazionari Altro;-;14,31;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Neu.Berman Short Duration Euro Bond I Cap EUR;IE00BFZMJT78;Obbligazionari Diversificati Breve Termine EUR;*****;118,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Neu.Berman Strategic Income I Cap $;IE00B8HX1V50;Obbligazionari Flessibili USD;****;15,37;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Neu.Berman Strategic Income I Cap EUR;IE00B9154717;Obbligazionari Altro;-;12,54;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Neu.Berman US Long Short Equity I Cap EUR;IE00BJTD3X67;Alternativi Long/Short Azionario Altro;-;13,32;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale
-Neu.Berman US Small Cap I $;IE00B66ZT477;Azionari USA Small Cap;**;32,81;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-Nordea 1 European Covered Bond BI EUR;LU0539144625;Obbligazionari Corporate EUR;***;14,6062;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Nordea 1 European Financial Debt BI EUR;LU0772943501;Obbligazionari Subordinati EUR;****;226,6134;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Nordea 1 Global Climate and Environment BI Cap EUR;LU0348927095;Azionari Settore Ecologia;****;41,5106;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Nordea 1 Global Stable Equity BI EUR;LU0097890064;Azionari Internazionali Large Cap Value;**;39,2692;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Nordea 1 Stable Return BD EUR;LU1915151887;Bilanciati Moderati EUR - Globali;**;18,8675;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Nordea 1 Stable Return HBI $;LU1055445297;Bilanciati Moderati USD;**;33,3739;18/03/2026;USD;FONDO;BILANCIATO;Globale
-Nuveen U.S. Core Impact Bond P Cap $;IE00BZ0GCM81;Obbligazionari Diversificati USD;***;24,54;16/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Ossiam Shiller Barc. Cape US Sector Value TR;LU1079841273;Azionari USA Large Cap Blend;***;1.410,80;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-Ossiam Shiller Barc. Cape US Sector Value TR;LU1079841273;Azionari USA Large Cap Blend;***;1.410,80;18/03/2026;EUR;FONDO;AZIONARIO;Nord America
-Pictet-Biotech-HI EUR;LU0328682074;Azionari Altro;-;820,46;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Pictet-Biotech-I $;LU0112497283;Azionari Settore Biotecnologia;****;1.573,81;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Pictet-Digital-I EUR;LU0340554673;Azionari Settore Tecnologia;***;698,18;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-Emerging Local Currency Debt-I EUR;LU0280437160;Obbligazionari Paesi Emergenti Valuta Locale;***;189,82;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Pictet-Emerging Markets Index-IS $;LU0328685416;Azionari Paesi Emergenti;***;480,48;17/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-Pictet-EUR Corporate Bonds-I;LU0128472205;Obbligazionari Corporate EUR;***;225;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Pictet-EUR High Yield-I;LU0133806785;Obbligazionari High Yield EUR;****;339,72;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Pictet-EUR Short Term High Yield I EUR;LU0726357444;Obbligazionari High Yield EUR;***;151,58;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Pictet-Global Emerging Debt-HI EUR;LU0170991672;Obbligazionari Paesi Emergenti EUR;***;298,83;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Pictet-Global Emerging Debt-I $;LU0128469243;Obbligazionari Paesi Emergenti;***;530,78;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Pictet-Global Environmental Opportunities-I EUR;LU0503631631;Azionari Settore Ecologia;****;392,95;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-Global Megatrend Selection-HI EUR;LU0474969937;Azionari Altro;-;256,65;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Pictet-Global Megatrend Selection-I EUR;LU0386875149;Azionari Internazionali Flex Cap;***;420,46;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-Indian Equities-I EUR;LU0255978933;Azionari India;****;820,73;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico
-Pictet-Japanese Equity Opportunities-HI EUR;LU0650148231;Azionari Altro;-;215,17;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Pictet-Multi Asset Global Opportunities I EUR;LU0941348897;Bilanciati Prudenti EUR - Globali;*****;157,08;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Pictet-Premium Brands-I EUR;LU0217138485;Azionari Settore Beni e Servizi di Consumo;****;322,63;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-Quest Europe Sustainable Equities I EUR;LU0144509550;Azionari Europa Large Cap Blend;****;502,18;18/03/2026;EUR;FONDO;AZIONARIO;Europa
-Pictet-Robotics-HI EUR;LU1279334723;Azionari Altro;-;342,6;18/03/2026;EUR;FONDO;AZIONARIO;Altro
-Pictet-Robotics-I EUR;LU1279334053;Azionari Settore Tecnologia;***;427,13;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-Short-Term Money Market $-I;LU0128497707;Monetari a Breve Termine USD;-;174,0928;18/03/2026;USD;FONDO;MONETARIO;Nord America
-Pictet-Short-Term Money Market CHF-I;LU0128499158;Monetari CHF;-;121,067;18/03/2026;CHF;FONDO;MONETARIO;Europa
-Pictet-Short-Term Money Market JPY-I;LU0309035367;Monetari Altro;-;100.466,38;18/03/2026;JPY;FONDO;MONETARIO;Altro
-Pictet-Sovereign Short-Term Money Market EUR-I;LU0366536638;Monetari a Breve Termine EUR;-;108,3632;18/03/2026;EUR;FONDO;MONETARIO;Europa
-Pictet-Timber-I EUR;LU0340558823;Azionari Settore Risorse Naturali;**;213,57;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-Pictet-USD Short Mid-Term Bonds-I;LU0175073468;Obbligazionari Diversificati Breve Termine USD;***;160,98;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-Pictet-Water-I EUR;LU0104884605;Azionari Settore Acqua;***;612,15;18/03/2026;EUR;FONDO;AZIONARIO;Globale
-PIMCO Capital Securities I Cap EUR Hdg;IE00B6VHBN16;Obbligazionari Altro;-;17,06;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-PIMCO Commodity Real Return I Cap $;IE00B1BXJ858;Materie Prime - Generiche;-;13,32;17/03/2026;USD;FONDO;MATERIE PRIME;Globale
-PIMCO Credit Opportunities Bond I Cap EUR Hdg;IE00B6W1GF96;Obbligazionari Altro;-;13,76;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-PIMCO Diversified Income I Cap EUR Hdg;IE00B1JC0H05;Obbligazionari Flessibili Globali - EUR Hedged;****;18,49;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Emerging Markets Bond ESG I Cap EUR Hdg;IE00BDSTPS26;Obbligazionari Paesi Emergenti EUR;****;12,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-PIMCO Emerging Markets Bond I Cap EUR Hdg;IE0032568770;Obbligazionari Paesi Emergenti EUR;*****;46,91;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-PIMCO Euro Bond I Cap EUR;IE0004931386;Obbligazionari Diversificati EUR;***;24,54;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-PIMCO Euro Income Bond I Cap EUR;IE00B3V8Y234;Obbligazionari Flessibili EUR;****;16,86;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-PIMCO Euro Short Term I Cap EUR;IE00B0XJBQ64;Obbligazionari Brevissimo Termine EUR;****;13,27;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-PIMCO European High Yield Bond I Cap EUR;IE00BK9YL094;Obbligazionari High Yield EUR;****;12,55;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-PIMCO European Short-Term Opportunities I Cap EUR;IE00B3R3XF82;Obbligazionari Diversificati Breve Termine EUR;*****;12,63;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-PIMCO Global Advantage I Cap EUR Hdg;IE00B58Z4F45;Obbligazionari Globali;*****;14,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Bond ESG I Cap $;IE00BYXVTY44;Obbligazionari Globali USD - Hedged;***;12,53;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Bond ESG I Cap EUR Hdg;IE00BYXVX196;Obbligazionari Globali EUR - Hedged;***;10,43;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Bond I Cap $;IE0002461055;Obbligazionari Globali USD - Hedged;*****;37,83;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Bond I Cap EUR Hdg;IE0032875985;Obbligazionari Globali EUR - Hedged;*****;28,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global High Yield Bond I Cap EUR Hdg;IE00B2R34Y72;Obbligazionari High Yield Globali - EUR Hedged;****;27,34;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Inv. Grade Credit ESG I Cap EUR Hdg;IE00BFZ89B79;Obbligazionari Corporate Globali - EUR Hedged;***;10,83;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Inv. Grade Credit I Cap EUR;IE00B873BF95;Obbligazionari Corporate Globali;***;14,49;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Inv. Grade Credit I Cap EUR Hdg;IE0032876397;Obbligazionari Corporate Globali - EUR Hedged;***;19,3;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Real Return I Cap $;IE0033591748;Obbligazionari Inflation-Linked Globali - USD Hedged;*****;24,54;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Global Real Return I Cap EUR Hdg;IE0033666466;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;19,29;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Income I Cap $;IE00B87KCF77;Obbligazionari Flessibili Globali - USD Hedged;*****;20,01;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO Income I Cap EUR Hdg;IE00B80G9288;Obbligazionari Flessibili Globali - EUR Hedged;*****;16,16;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-PIMCO StocksPLUS I Cap $;IE0002459539;Azionari USA Large Cap Blend;****;85,21;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-PIMCO StocksPLUS I Cap EUR Hdg;IE00B7W3YB45;Azionari Altro;-;45,27;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-PIMCO Strategic Income I Cap EUR Hdg;IE00BG800W59;Bilanciati Prudenti EUR - Globali;*****;16,72;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-PIMCO Total Return Bond I Cap $;IE0002460867;Obbligazionari Diversificati USD;****;34,6;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America
-PIMCO Total Return Bond I Cap EUR Hdg;IE0033989843;Obbligazionari Altro;-;21,72;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-Raiffeisen Bilanciato Sostenibile I Cap EUR;AT0000A1VG68;Bilanciati Moderati EUR - Globali;***;120,06;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-Responsible Horizons Euro Corporate Bond W EUR;IE00BKWGFQ61;Obbligazionari Corporate EUR;****;1,0151;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Robeco Euro SDG Credits IH Cap EUR;LU0503372780;Obbligazionari Corporate EUR;***;146,8;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Robeco Financial Institutions Bonds IH Cap EUR;LU0622664224;Obbligazionari Subordinati EUR;***;200,28;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Robeco Global Credits I Cap $;LU1479026897;Obbligazionari Corporate Globali;***;125,64;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-Robeco Global Credits IH Cap EUR;LU1071420456;Obbligazionari Corporate Globali - EUR Hedged;****;122,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-Robeco Global Stars Equities IL Cap EUR;LU1408525894;Azionari Internazionali Large Cap Blend;***;308,66;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Robeco Smart Energy I Cap EUR;LU2145462722;Azionari Settore Energia Alternativa;*****;97,17;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Robeco Smart Materials I Cap EUR;LU2145464777;Azionari Settore Beni Industriali;**;562,65;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Robeco Sustainable Water I Cap EUR;LU2146192377;Azionari Settore Acqua;***;633,7;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-SISF Asian Conv. Bond EUR Hedg. C Cap. EUR;LU0352097272;Obbligazionari Convertibili - Altro;-;215,6611;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-SISF Asian Equity Yield C Cap $;LU0188438542;Azionari Asia-Pacifico ex Giappone Reddito;****;61,6317;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-SISF Asian Local Currency Bond C Cap EUR Hdg;LU0953476222;Obbligazionari Altro;-;99,4246;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro
-SISF Asian Opportunities C Cap $;LU0106259988;Azionari Asia ex Giappone;****;41,4135;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-SISF China Local Currency Bond C Cap EUR;LU0845699338;Obbligazionari RMB - Onshore;***;154,0976;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-SISF China Opportunities C Cap. $;LU0244355391;Azionari Cina;***;483,9468;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-SISF EURO Credit Conviction C Cap EUR;LU0995119822;Obbligazionari Corporate EUR;*****;151,2202;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-SISF Frontier Mkts Equity C Acc $;LU0562314715;Azionari Internazionali - Frontier Markets;*****;349,2754;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti
-SISF Global Alternative Energy C $;LU2016063229;Azionari Settore Energia Alternativa;**;182,1261;18/03/2026;USD;FONDO;AZIONARIO;Globale
-SISF Global Cities C Cap $;LU0224508670;Immobiliare Indiretto - Globale;****;239,7879;18/03/2026;USD;FONDO;IMMOBILIARE;Globale
-SISF Global Cities C Cap EUR Hdg;LU0224509561;Immobiliare Indiretto - Globale;-;173,6846;18/03/2026;EUR;FONDO;IMMOBILIARE;Globale
-SISF Global Equity C Cap $;LU0215106450;Azionari Internazionali Large Cap Blend;*****;70,2258;18/03/2026;USD;FONDO;AZIONARIO;Globale
-SISF Global Innovation C Cap $;LU1910165999;Azionari Internazionali Large Cap Growth;***;272,2699;18/03/2026;USD;FONDO;AZIONARIO;Globale
-SISF Global Multi-Asset Balanced C Cap EUR;LU0776414327;Bilanciati Prudenti EUR - Globali;*****;193,699;18/03/2026;EUR;FONDO;BILANCIATO;Globale
-SISF Strategic Credit C Cap EUR Hdg;LU1046235906;Obbligazionari Flessibili Globali - EUR Hedged;*****;139,9944;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-State Street SPDR Bloomberg 1-3 Y Euro Gov. Bond UCITS ETF;IE00B6YX5F63;Obbligazionari Governativi Breve Termine EUR;***;52,0858;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-State Street SPDR Bloomberg 1-3 Y U.S. Treas. Bond UCITS ETF Dis;IE00BC7GZJ81;Obbligazionari Governativi Breve Termine USD;-;41,8423;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America
-State Street SPDR S&P Global Dividend Aristocrats UCITS ETF;IE00B9CQXS71;Azionari Globali Reddito;-;32,7324;18/03/2026;EUR;ETF;AZIONARIO;Globale
-State Street SPDR S&P U.S. Dividend Aristocrats UCITS ETF;IE00B6YX5D40;Azionari USA Reddito;-;71,3827;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-T.Rowe Asian Ex-Japan Equity I1 Cap $;LU2594029212;Azionari Asia ex Giappone;-;13,49;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-T.Rowe Euro Corporate Bond I1 EUR;LU2615257982;Obbligazionari Corporate EUR;-;11,63;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-T.Rowe Global Focused Growth Eq. Q1 Cap $;LU2252236455;Azionari Internazionali Large Cap Growth;***;15,58;18/03/2026;USD;FONDO;AZIONARIO;Globale
-T.Rowe US Equity Q1 EUR;LU2008325073;Azionari USA Large Cap Blend;****;22,28;18/03/2026;EUR;FONDO;AZIONARIO;Nord America
-Templeton Frontier Markets I EUR;LU0390137205;Azionari Internazionali - Frontier Markets;***;43,06;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Tikehau Short Duration I Cap EUR;LU1585265819;Obbligazionari Corporate Breve Termine EUR;*****;144,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-UBS (Lux) AI and Robotics Equity I-A1 Cap EUR Hdg;LU1575199994;Azionari Altro;-;1.877,35;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-UBS (Lux) Bd Sicav China Fixed Income I-A1 Cap EUR;LU2257620158;Obbligazionari RMB - Onshore;***;120,46;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico
-UBS (Lux) Bd Sicav Convert Global Q Cap EUR;LU0358423738;Obbligazionari Convertibili Globali - EUR Hedged;*****;271,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-UBS (Lux) Bd Sicav Global Dynamic Q Cap $;LU1240774783;Obbligazionari Flessibili Globali - USD Hedged;****;142,69;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale
-UBS (Lux) Bd Sicav Global Dynamic Q Cap EUR Hdg;LU1240774601;Obbligazionari Flessibili Globali - EUR Hedged;****;116,89;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-UBS (Lux) Bond F. Euro High Yield I-A3 Cap EUR;LU2094083099;Obbligazionari High Yield EUR;-;126,69;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-UBS (Lux) Eq. Fd China Opportunity Q Cap $;LU0403296170;Azionari Cina;***;202,92;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico
-UBS (Lux) KSS China Alloc Opport Q Cap $;LU2118508683;Bilanciati Grande Cina;**;86,05;18/03/2026;USD;FONDO;BILANCIATO;Asia Pacifico
-UBS (Lux) Security Equity I-A1 Cap EUR Hdg;LU1575200081;Azionari Altro;-;2.106,84;17/03/2026;EUR;FONDO;AZIONARIO;Altro
-UBS BBG USD EM Sovereign UCITS ETF hEUR acc;LU1324516308;Obbligazionari Paesi Emergenti EUR;***;12,8977;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti
-UBS Factor MSCI USA Quality Screened UCITS ETF USD dis;IE00BX7RRJ27;Azionari USA Large Cap Blend;-;51,9709;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-Vanguard Emerging Markets Bond Inst. Plus EUR Hdg;IE00BKLWXV65;Obbligazionari Paesi Emergenti EUR;****;109,9189;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-Vanguard EUR Corporate Bond UCITS ETF (EUR) Dis;IE00BZ163G84;Obbligazionari Corporate EUR;***;48,124;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa
-Vanguard FTSE 250 UCITS ETF (GBP) Acc;IE00BFMXVQ44;Azionari UK Mid Cap;****;40,965;18/03/2026;GBP;ETF;AZIONARIO;Europa
-Vanguard FTSE All-World UCITS ETF (USD) Dis;IE00B3RBWM25;Azionari Internazionali Large Cap Blend;-;143,32;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Vont.II Active Beta I Cap EUR;LU1936094652;Bilanciati Flessibili EUR - Globali;*;108,51;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Vontobel Euro Corporate Bond I EUR;LU0278087860;Obbligazionari Corporate EUR;****;177,57;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Vontobel Global Environmental Change I EUR;LU0384405949;Azionari Settore Ecologia;****;758,38;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Vontobel Global Equity I $;LU0278093595;Azionari Internazionali Large Cap Growth;***;382,4;17/03/2026;USD;FONDO;AZIONARIO;Globale
-Vontobel mtx Emerging Markets Leaders I Cap EUR;LU1626216888;Azionari Paesi Emergenti;***;178,08;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti
-Vontobel Multi Asset Solution I Cap EUR;LU1564308895;Bilanciati Prudenti EUR - Globali;***;128,17;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-Vontobel US Equity G $;LU1428951294;Azionari USA Large Cap Blend;**;305,01;17/03/2026;USD;FONDO;AZIONARIO;Nord America
-Wellingtion MF (Lux) III Global Quality Growth S Cap $;LU0629158030;Azionari Internazionali Large Cap Growth;*****;59,3656;17/03/2026;USD;FONDO;AZIONARIO;Globale
-Wellington Global Stewards S Cap $;IE00BH3Q8N22;Azionari Internazionali Large Cap Blend;***;23,3926;18/03/2026;USD;FONDO;AZIONARIO;Globale
-Willer Flexible Financial Bond I Cap EUR;LU2255813987;Obbligazionari Subordinati EUR;***;11,478;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-Willerequity Switzerland I CHF;LU1155043398;Azionari Svizzera;**;171,667;17/03/2026;CHF;FONDO;AZIONARIO;Europa
-WisdomTree Physical Gold;JE00B1VS3770;Materie Prime - Metalli Preziosi;-;396,0341;18/03/2026;EUR;ETC;MATERIE PRIME;Globale
-WisdomTree Physical Gold;JE00B1VS3770;Materie Prime - Metalli Preziosi;-;396,0341;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale
-WisdomTree Physical Gold - EUR Daily Hedged;JE00B8DFY052;Materie Prime - Metalli Preziosi;-;25,8627;18/03/2026;EUR;ETC;MATERIE PRIME;Globale
-WisdomTree Physical Gold - EUR Daily Hedged;JE00B8DFY052;Materie Prime - Metalli Preziosi;-;25,8627;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale
-WPS Asteria MAN Flexible Allocation  I Cap EUR;LU2512191250;Azionari Settore Ecologia;-;10,92;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-WPS Blackrock Balanced ESG I Cap EUR;LU2401054973;Bilanciati Flessibili EUR - Globali;***;12,016;17/03/2026;EUR;FONDO;BILANCIATO;Globale
-WPS Eurizon Multi-Asset Circular Ec. I Cap EUR;LU2512194353;Bilanciati Altro;****;12,538;17/03/2026;EUR;FONDO;BILANCIATO;Altro
-WPS FAMI Euro Short Term I Cap EUR;LU2512191508;Obbligazionari Diversificati USD;-;10,314;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America
-WPS Fidelity Flexible Short Duration I Cap EUR;LU2449771463;Obbligazionari Flessibili Globali - EUR Hedged;***;11,478;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-WPS Franklin Emerging Corporate Bond I Cap EUR;LU2512192142;Obbligazionari Paesi Emergenti;-;10,842;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-WPS Franklin Emerging Corporate Bond IH Cap EUR;LU2512192225;Obbligazionari Paesi Emergenti EUR;-;10,983;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti
-WPS Invesco Euro Corporate Bond I Cap EUR;LU2693284528;Obbligazionari Corporate EUR;-;10,995;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-WPS JH Strategic Bond I Cap EUR;LU2401052688;Obbligazionari Flessibili Globali;**;9,348;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale
-WPS JPM Europe Equity I Cap EUR;LU2512193033;Azionari Europa Large Cap Blend;-;14,529;17/03/2026;EUR;FONDO;AZIONARIO;Europa
-WPS JPM Global Aggregate Bond I Cap EUR;LU2968552864;-;-;10,095;17/03/2026;EUR;FONDO;NON CLASSIFICATO;Altro
-WPS Lombard Odier Natural Capital I Cap EUR;LU2401053223;Azionari Settore Ecologia;*;9,699;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-WPS Pictet Health Innovation Trends I Cap EUR;LU2401052175;Azionari Settore Salute;****;11,524;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-WPS PIMCO European Income Bond I Cap EUR;LU2957475366;Obbligazionari Flessibili EUR;-;10,357;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-WPS Schroder Global Climate Change I Cap EUR;LU2401051797;Azionari Settore Ecologia;****;15,191;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-WPS T. Rowe Price Equity US Research I Cap EUR;LU2512194940;Azionari USA Large Cap Blend;-;13,483;17/03/2026;EUR;FONDO;AZIONARIO;Nord America
-WPS Vontobel Eq. Global Impact I Cap EUR;LU2512193389;Azionari Internazionali Large Cap Blend;-;10,483;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-WPS Wellington Equity Global Research I Cap EUR;LU2512193629;Azionari Internazionali Large Cap Blend;-;11,493;17/03/2026;EUR;FONDO;AZIONARIO;Globale
-Xtrackers II Gl. Aggr. Bond Swap UCITS ETF 5C;LU0942970798;Obbligazionari Globali EUR - Hedged;**;20,8894;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Xtrackers II Gl. Inf.-Linked Bond UCITS ETF 1C;LU0290357929;Obbligazionari Inflation-Linked Globali - EUR Hedged;***;221,1736;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Xtrackers II Gl. Inf.-Linked Bond UCITS ETF 5C;LU0908508814;Obbligazionari Inflation-Linked Globali;**;22,6515;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Xtrackers II Global Govern. Bond UCITS ETF 5C;LU0908508731;Obbligazionari Governativi Globali;***;219,7567;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale
-Xtrackers II Japan Govern. Bond UCITS ETF 1C;LU0952581584;Obbligazionari JPY;-;6,1086;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Giappone
-Xtrackers MSCI World UCITS ETF 1C;IE00BJ0KDQ92;Azionari Internazionali Large Cap Blend;-;122,5347;18/03/2026;EUR;ETF;AZIONARIO;Globale
-Xtrackers S&P 500 Equal Weight UCITS ETF 1C;IE00BLNMYC90;Azionari USA Large Cap Blend;-;93,9514;18/03/2026;EUR;ETF;AZIONARIO;Nord America
-YIS 1-3 Year EMU Government Bond Z Cap EUR;LU0335987268;Obbligazionari Governativi Breve Termine EUR;***;158,468;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-YIS 1-3 Year Italian Government Bond Z Cap EUR;LU2976321591;Obbligazionari Governativi Breve Termine EUR;-;10,082;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-YIS 3-5 Year Italian Government Bond Z Cap EUR;LU2976318704;Obbligazionari Governativi EUR;-;10,079;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-YIS 5+ Year EMU Government Bond Z Cap EUR;LU0335987854;Obbligazionari Lungo Termine EUR;*****;240,283;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-YIS 5+ Year Italian Government Bond Z Cap EUR;LU2976318969;Obbligazionari Governativi EUR;-;10,145;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa
-YIS US Government Bond  Z Cap EUR;LU0335989553;Obbligazionari Governativi USD;***;207,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
-;;;;;;;;;
+﻿Nome;Isin;Categoria Morningstar;Rating  Overall;Quotazione;Data agg.;Valuta;Tipo;Macro Classe;Zona Geografica;Politica
+AB FCP I European Income Ptf. S1 Cap EUR;LU0264314336;Obbligazionari Flessibili EUR;****;25,21;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+AB SICAV I Select Absolute Alpha Ptf. S1 Cap $;LU0736560953;Alternativi Long/Short Azionario US;-;37,6;17/03/2026;USD;FONDO;ALTERNATIVO;Nord America;CAPITALIZZAZIONE
+AB SICAV I Select Absolute Alpha Ptf. S13 EUR Hdg;LU1998907437;Alternativi Long/Short Azionario Altro;-;148,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+Abrdn I Asia Pacific Sust. Equity I Cap $;LU0231477265;Azionari Asia-Pacifico ex Giappone;**;138,5443;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Abrdn I Asian Smaller Companies I Cap $;LU0231483313;Azionari Asia ex Giappone Small/Mid Cap;****;82,4287;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Abrdn I China A Share Sust. Equity I Cap $;LU1130125799;Azionari Cina - A Shares;***;19,5094;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Abrdn I EM Corporate Bond I Cap EUR Hdg;LU0700927352;Obbligazionari Corporate Paesi Emergenti EUR;****;15,8439;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Abrdn I Em. Mkts Smaller Companies G Cap $;LU0886779940;Azionari Paesi Emergenti Small/Mid Cap;***;18,4358;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Abrdn I Emerging Markets Income Equity K Cap $;LU2763021248;Azionari Paesi Emergenti;*****;15,57;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Abrdn I Euro HY Bond I Cap EUR;LU0231473439;Obbligazionari High Yield EUR;****;21,5347;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Abrdn I European Sust. Equity K EUR;LU1998017088;Azionari Europa Large Cap Growth;**;13,3525;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Abrdn I GDP Weighted Gl. Gov. Bond I Cap $;LU0963897953;Obbligazionari Governativi Globali;*****;11,1163;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Abrdn I Jap. Sm.Comp. Sust. Eq. I Cap JPY;LU0278930234;Azionari Giappone Small/Mid Cap;***;3.061,41;18/03/2026;JPY;FONDO;AZIONARIO;Giappone;CAPITALIZZAZIONE
+Abrdn I North American Small. Co. I Cap $;LU0566484704;Azionari USA Small Cap;***;42,9969;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Ailis Eurizon Diversified Credit I Cap EUR;LU2309818925;Obbligazionari Flessibili Globali - EUR Hedged;**;9,021;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Ailis Global Equity Market Neutral I;LU2009201802;Alternativi Market Neutral EUR;***;13,464;17/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+Algebris Financial Equity I EUR;IE00BWY56Y06;Azionari Settore Servizi Finanziari;****;314,56;16/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Algebris Financial Income I EUR;IE00BCZNWT08;Bilanciati Moderati EUR - Globali;*****;281,94;16/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Algebris IG Financial Credit I Cap EUR;IE00BK1KH528;Obbligazionari Subordinati EUR;**;119,18;16/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Allianz Gl.Artificial Intelligence IT Cap $;LU1548496618;Azionari Settore Tecnologia;**;2.806,29;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Allianz Gl.Artificial Intelligence IT-H2 Cap EUR Hd;LU1548496964;Azionari Altro;-;3.002,96;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Allianz Pet and Animal Wellbeing IT Cap EUR;LU1931536236;Azionari Altro;-;1.375,84;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Allspring (Lux) WF USD Inv. Gr. Cr I Cap $;LU1528096115;Obbligazionari Corporate USD;***;132,27;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Amundi Eur Corporate Bond Esg UCITS ETF 2 DR - EUR (C);LU1681039647;Obbligazionari Corporate EUR;***;226,5386;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi Euro Government Bond 10-15Y UCITS ETF Acc;LU1650489385;Obbligazionari Lungo Termine EUR;*****;200,2907;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi Euro Government Bond 3-5Y UCITS ETF Acc;LU1650488494;Obbligazionari Governativi EUR;****;151,9642;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi Euro Government Bond 5-7Y UCITS ETF Acc;LU1287023003;Obbligazionari Governativi EUR;****;160,1562;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi Euro Government Bond 7-10Y UCITS ETF Acc;LU1287023185;Obbligazionari Governativi EUR;****;169,6172;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi Euro Stoxx Banks UCITS ETF Acc;LU1829219390;Azionari Settore Servizi Finanziari;****;302,4178;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi F. EM Equity Focus M $;LU0329442304;Azionari Paesi Emergenti;***;207,76;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Amundi F. Emerging Markets Bond M2 EUR;LU1882454553;Obbligazionari Paesi Emergenti;****;3.208,50;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Amundi F. Euro HY Short Term Bond M EUR;LU0907331176;Obbligazionari High Yield EUR;***;134,47;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi F. Euroland Equity Small Cap Select M EUR;LU0568607039;Azionari Area Euro Mid Cap;***;286,89;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi F. Gl. Aggregate Bond M $;LU0329444938;Obbligazionari Globali USD - Hedged;****;178,38;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi F. Gl. Aggregate Bond M EUR Hdg;LU0613076487;Obbligazionari Globali EUR - Hedged;*****;131,47;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi F. Global Equity Responsible I2 EUR;LU1883320050;Azionari Settore Ecologia;*****;3.062,50;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi F. Global Multi-Asset Conserv. M2 EUR;LU1883330109;Bilanciati Prudenti EUR - Globali;*****;1.589,54;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Amundi F. Income Opportunities M2 EUR;LU2002723158;Bilanciati Moderati USD;*****;1.664,18;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Amundi F. Multi-Asset Conservative Responsible M EUR;LU1941682509;Bilanciati Prudenti EUR - Globali;****;113,87;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Amundi F. US Equity Research Value M Cap $;LU1894685475;Azionari USA Large Cap Value;**;1.834,71;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Amundi F. Volatility World M EUR Hdg;LU1954167539;Alternativi Trading Opzioni;-;118,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+Amundi Global Aggr. Green Bond UCITS ETF Acc;LU1563454310;Obbligazionari Globali;***;48,9351;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi Global Bioenergy UCITS ETF Eur Acc;LU1681046006;Azionari Settore Energia Alternativa;-;452,2876;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi IS Core Global Government Bond UCITS ETF Acc;LU1437016204;Obbligazionari Governativi Globali;***;45,458;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi IS Core Stoxx Europe 600 UCITS ETF Acc;LU0908500753;Azionari Europa Large Cap Blend;*****;291,3474;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi IS Euro Gov. Tilted Green Bond UCITS ETF Acc;LU1681046261;Obbligazionari Governativi EUR;***;220,565;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi IS FTSE EPRA Europe Real Est. UCITS ETF EUR;LU1681039480;Immobiliare indiretto - Europa;***;335,6889;18/03/2026;EUR;ETF;IMMOBILIARE;Europa;CAPITALIZZAZIONE
+Amundi IS MSCI Europe Quality Factor UCITS ETF EUR;LU1681041890;Azionari Europa Large Cap Growth;*****;116,2068;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+Amundi IS USD Float. Rate Corp. Bd ESG UCITS ETFEUR H;LU1681041031;Obbligazionari Altro;-;55,8661;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Amundi MSCI EMU Value Factor UCITS ETF Dist;LU1598690169;Azionari Area Euro Large Cap;*****;169,9523;18/03/2026;EUR;ETF;AZIONARIO;Europa;DISTRIBUZIONE
+Amundi MSCI India Swap UCITS ETF EUR Acc;FR0010361683;Azionari India;***;24,9048;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Amundi MSCI Water UCITS ETF Dist;FR0010527275;Azionari Settore Acqua;****;69,2865;18/03/2026;EUR;ETF;AZIONARIO;Globale;DISTRIBUZIONE
+Amundi RI Impact Green Bond DP EUR;FR0013188745;Obbligazionari Globali EUR - Hedged;**;96,0022;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi S&P World Energy Screened UCITS ETF;IE000J0LN0R5;Azionari Settore Energia;**;14,5417;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Amundi US Treasury Bond Long Dated UCITS ETF Dist;LU1407890620;Obbligazionari Governativi USD;-;88,6157;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;DISTRIBUZIONE
+Anima Star High Potential Europe I EUR;IE0032464921;Alternativi Long/Short Azionario Europa;****;11,17;16/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+Asteria Financial Credit Opportunities IH Cap EUR;LU2756541673;Obbligazionari Altro;-;108,86;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Asteria Global Investment Grade Opps IH Cap EUR;LU2915465871;Obbligazionari Diversificati EUR;-;106,59;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+AXA IM FIIS Europ.Sh. Dur. High Yield A Cap EUR;LU0658025209;Obbligazionari High Yield EUR;***;163,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+AXA WF Euro Credit Total Return I EUR;LU1164223015;Obbligazionari Flessibili EUR;*****;160,87;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+AXA WF Gl. Infl. Short Dur. Bonds I EUR Hdg;LU1353952267;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;111,85;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+AXA WF Global Responsible Aggr. I EUR;LU0255028333;Obbligazionari Globali EUR - Hedged;***;141,51;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+AXA WF Inflation Plus I EUR;LU2257473426;Obbligazionari Inflation-Linked Globali - EUR Hedged;*****;116,01;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+AXA WF Sustainable Equity QI I EUR;LU0943665348;Azionari Internazionali Large Cap Blend;****;376,65;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Asian Dragon D2 Cap EUR;LU0329592298;Azionari Asia ex Giappone;-;63,97;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+BGF China Bond D2 Cap $;LU0719319435;Obbligazionari Cina;****;16,58;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+BGF Circular Economy I2 Cap EUR;LU2041044764;Azionari Settore Ecologia;-;12,08;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Emerging Markets Equity Income D2 Cap $;LU0653880228;Azionari Paesi Emergenti;*****;28,63;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+BGF Euro Bond D2 Cap EUR;LU0297941469;Obbligazionari Diversificati EUR;***;29,6;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BGF Euro Corporate Bond I2 Cap EUR;LU1373033965;Obbligazionari Corporate EUR;***;11,83;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BGF Euro Short Duration Bond SI2 Cap EUR;LU1966276856;Obbligazionari Diversificati Breve Termine EUR;***;10,76;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BGF European Equity Income D2 Cap EUR;LU0579997130;Azionari Europa Reddito;****;35,96;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+BGF European Equity Transition I2 Cap EUR;LU0603021113;Azionari Europa Large Cap Growth;-;50,45;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+BGF European Value D2 Cap EUR;LU0329592454;Azionari Europa Large Cap Value;****;144,36;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+BGF Global Allocation D2 Cap $;LU0329592538;Bilanciati Moderati USD;*****;105,59;18/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+BGF Global Allocation D2 Cap EUR Hdg;LU0329591480;Bilanciati Moderati EUR - Globali;****;57,65;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+BGF Global High Yield Bond I2 Cap $;LU0369584726;Obbligazionari High Yield Globali;****;37,89;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Global High Yield Bond I2 Cap EUR Hdg;LU1791806000;Obbligazionari High Yield Globali - EUR Hedged;***;12,37;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Global Inflation Linked Bond D2 Cap $;LU0448666684;Obbligazionari Inflation-Linked Globali - USD Hedged;*****;18,47;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Global Inflation Linked Bond D2 Cap EUR Hdg;LU0448666502;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;14,65;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Global Multi-Asset Income D2 Cap EUR Hdg;LU1062843344;Bilanciati Moderati EUR - Globali;***;13,42;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+BGF Sustainable Energy I2 Cap EUR;LU0368234703;Azionari Settore Energia Alternativa;-;22,76;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF Systematic China A-Share Opps I2 Cap $;LU1580142898;Azionari Cina - A Shares;****;15,53;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+BGF World Energy D2 Cap EUR;LU0252963896;Azionari Settore Energia;-;34,81;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF World Gold D2 Cap EUR;LU0252963623;Azionari Settore Metalli Preziosi;-;104,68;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF World Gold D2 Cap EUR Hdg;LU0326423067;Azionari Altro;-;15,07;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+BGF World Healthscience I2 Cap EUR;LU1960219571;Azionari Settore Salute;-;14,74;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF World Mining D2 Cap EUR;LU0252963383;Azionari Settore Risorse Naturali;-;104,54;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BGF World Technology I2 Cap EUR;LU1722863211;Azionari Settore Tecnologia;-;40,64;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BlueBay Gl. High Yield ESG Bd S Cap EUR Hdg;LU1573123160;Obbligazionari High Yield Globali - EUR Hedged;***;126,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+BNP P.Easy Low Carbon 100 Europe PAB UCITS ETF;LU1377382368;Azionari Europa Large Cap Blend;***;270,4887;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+BNP P.Easy MSCI Pacific ex Japan Min TE UCITS ETF;LU1291106356;Azionari Pacifico ex Giappone;****;16,4699;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+BNP Paribas  Climate Change I EUR;LU0406802768;Azionari Settore Ecologia;***;367,01;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Bnp Paribas Bond 6M I EUR;FR0013263811;Obbligazionari Brevissimo Termine EUR;***;110.379,65;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BNP Paribas Euro HY Short Duration Bond I Cap EUR;LU1022395633;Obbligazionari High Yield EUR;****;144,58;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BNP Paribas SMaRT Food I EUR;LU1165137651;Azionari Settore Beni e Servizi di Consumo;***;129,69;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BNP Paribas Sust. Enhanced Bond 12M I Cap EUR;LU1819949246;Obbligazionari Diversificati Breve Termine EUR;****;112.970,79;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BNP Paribas Sust. Euro Corporate Bond I EUR;LU0265317569;Obbligazionari Corporate EUR;***;165,62;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+BNY Mellon Global Equity Income W EUR;IE00B90JKR63;Azionari Globali Reddito;****;3,7972;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+BSF European Absolute Return I2 Cap EUR;LU0776931064;Alternativi Market Neutral EUR;***;181,14;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+BSF Syst. Asia Pacific Eq. Abs. Ret. D2 Cap EUR Hdg;LU1593227850;Alternativi Market Neutral EUR;*****;179,82;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+BSF Systematic World Equity D2 Cap EUR;LU1254583435;Azionari Internazionali Large Cap Blend;*****;310,25;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Candriam Bonds Global High Yield I Euro;LU0170293806;Obbligazionari High Yield Globali - EUR Hedged;*****;304,55;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Candriam Eq. L Oncology I $;LU1864482358;Azionari Settore Salute;***;3.207,53;17/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Candriam Eq. L Oncology I EUR Hdg;LU2015349330;Azionari Altro;-;2.253,92;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Capital Group Euro Bond Z Cap EUR;LU0817809279;Obbligazionari Diversificati EUR;***;17,4034;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Capital Group Gl. Allocation Zh Cap EUR;LU1615060362;Bilanciati Moderati EUR - Globali;****;21,9995;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Capital Group Global Corporate Bond Z Cap EUR;LU1746179701;Obbligazionari Corporate Globali - USD Hedged;-;11,1465;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Capital Group Multi-Sector Income Z Cap EUR;LU2530432702;Obbligazionari Flessibili USD;-;11,0072;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Capital Group Multi-Sector Income Zh-EUR Cap EUR;LU2530432611;Obbligazionari Altro;-;11,4183;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Capital Group New Perspective Z Cap EUR;LU1295554833;Azionari Internazionali Large Cap Growth;*****;26,2637;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Capital Group New Perspective Zh-EUR Cap EUR;LU1295556887;Azionari Altro;-;23,6728;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Capital Group New World Z Cap EUR;LU1481181086;Azionari Paesi Emergenti;-;19,7512;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Carmignac Global Bond F Cap EUR;LU0992630599;Obbligazionari Flessibili Globali;***;148,68;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Carmignac Grande Europe F EUR Acc;LU0992628858;Azionari Europa Large Cap Growth;****;213,67;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Carmignac Patrimoine Europe F EUR Acc;LU1744630424;Bilanciati Moderati EUR;**;148,81;17/03/2026;EUR;FONDO;BILANCIATO;Europa;CAPITALIZZAZIONE
+Carmignac Patrimoine F EUR Acc;LU0992627611;Bilanciati Moderati EUR - Globali;**;151,7;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Carmignac Sécurité FW Cap EUR;LU0992624949;Obbligazionari Diversificati Breve Termine EUR;*****;120,71;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+CPR Invest Hydrogen M2 EUR;LU2389406484;Azionari Altro;-;140,52;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+CT (Lux) American Smaller Co. IE EUR;LU2005601161;Azionari USA Small Cap;***;18,9345;17/03/2026;EUR;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+CT (Lux) Responsible Global Equity I Cap $;LU0382361482;Azionari Internazionali Large Cap Growth;***;17,34;17/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+DNCA Invest Alpha Bonds I Cap EUR;LU1694789378;Obbligazionari Flessibili Globali;*****;137,15;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+DNCA Invest Convertibles I Cap EUR;LU0401808935;Obbligazionari Convertibili Europa;***;206,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+DNCA Invest Eurose I Cap EUR;LU0284394151;Bilanciati Prudenti EUR;*****;223,19;17/03/2026;EUR;FONDO;BILANCIATO;Europa;CAPITALIZZAZIONE
+DNCA Invest SRI Europe Growth I Cap EUR;LU0870552998;Azionari Europa Flex Cap;**;307,16;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+DNCA Invest Value Europe I Cap EUR;LU0284395984;Azionari Europa Large Cap Value;****;328,56;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+DWS Concept Kaldemorgen TFC Cap EUR;LU1663838545;Bilanciati Flessibili EUR - Globali;****;138,88;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+DWS Invest Artificial Intelligence IC Cap EUR;LU2760761598;Azionari Settore Tecnologia;-;129,39;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+DWS Invest Top Dividend IC Cap EUR;LU1472572954;Azionari Globali Reddito;****;198,85;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+D-X Bloomb. Div. Commodities And Str. Metals UCITS ETF X Acc;LU3132432900;Materie Prime - Generiche;-;6,5757;18/03/2026;EUR;ETF;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+D-X Bloomb. Div. Commodities And Str. Metals UCITS ETF XH Acc;LU3132433031;Materie Prime - Generiche;-;6,5582;18/03/2026;EUR;ETF;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+D-X Bloomb. MSCI Euro Gov Bd 1-3 UCITS ETF X Acc;LU2870273039;Obbligazionari Governativi Breve Termine EUR;-;5,1278;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+D-X Bloomb. MSCI Euro Gov Bd 3-5 UCITS ETF X Acc;LU2870273203;Obbligazionari Governativi EUR;-;5,1146;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+D-X Bloomb. MSCI Euro Gov Bd 7-10 UCITS ETF X Acc;LU2870273385;Obbligazionari Governativi EUR;-;5,0421;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+D-X MSCI Europe Screened UCITS ETF X Acc;LU2870272734;Azionari Europa Large Cap Blend;-;5,871;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+D-X MSCI USA Screened UCITS ETF X Acc;LU2870272577;Azionari USA Large Cap Blend;-;5,7388;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+D-X MSCI USA Screened UCITS ETF XH Acc;LU2870272650;Azionari USA Large Cap Blend;-;5,7167;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+D-X MSCI World Screened UCITS ETF X Acc;LU2870272908;Azionari Internazionali Large Cap Blend;-;5,8315;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+EdR SICAV Financial Bonds NC-EUR EUR;FR0013233707;Obbligazionari Subordinati EUR;****;135,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF Absolute Green Bonds Z Cap EUR;LU1693963883;Obbligazionari Globali EUR - Hedged;***;98,92;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+EF Absolute Prudent Z Cap EUR;LU0335993746;Alternativi Global Macro EUR;***;141,21;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+EF Active Allocation Z Cap EUR;LU0735549858;Bilanciati Flessibili EUR - Globali;***;1.002,07;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+EF Bond Aggregate EUR Z EUR;LU1529954825;Obbligazionari Diversificati EUR;**;103,53;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF Bond Aggregate RMB Z EUR;LU1529955392;Obbligazionari RMB - Onshore;****;138,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+EF Bond Corporate EUR Z EUR;LU0719365891;Obbligazionari Corporate EUR;****;142,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF Bond Emerging Markets Z EUR;LU0335990726;Obbligazionari Paesi Emergenti;***;487,35;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+EF Bond Emerging Markets ZH EUR;LU0335991294;Obbligazionari Paesi Emergenti EUR;***;402,45;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+EF Bond GBP LTE Z EUR;LU0335988746;Obbligazionari Governativi GBP;***;154,82;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF Bond High Yield Z EUR;LU0335991534;Obbligazionari High Yield Globali - EUR Hedged;****;318,59;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+EF Bond Inflation Linked Z EUR;LU0335993407;Obbligazionari Inflation-Linked EUR;***;165,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF Bond JPY LTE Z EUR;LU0335989983;Obbligazionari JPY;****;71,66;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Giappone;CAPITALIZZAZIONE
+EF Bond JPY LTE ZH EUR;LU0335990304;Obbligazionari Altro;-;197,5;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+EF Conservative Allocation Z Cap EUR;LU1090960912;Bilanciati Prudenti EUR - Globali;****;133,51;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+EF Euro Emerging Markets Bonds Z EUR;LU2215043055;Obbligazionari Paesi Emergenti EUR;**;94,17;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+EF Flexible Equity Strategy Z EUR;LU0497418391;Bilanciati Flessibili EUR - Globali;***;241,56;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+EF Flexible Multistrategy Z Cap EUR;LU1341632757;Alternativi Global Macro EUR;***;113,23;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+EF Green Euro Credit Z EUR;LU2215042594;Obbligazionari Corporate EUR;**;96,34;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF II Emerging Bond Total Return Z Cap EUR;LU0365358570;Obbligazionari Paesi Emergenti EUR;***;148,09;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+EF II Euro Bond Z Cap EUR;LU0278427041;Obbligazionari Governativi EUR;****;180,44;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+EF II Q-Flexible Z Cap EUR;LU0365359545;Bilanciati Flessibili EUR - Globali;****;218,13;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+EF Italian Equity Opportunities Z EUR;LU0725143274;Azionari Italia;***;270,32;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+EF SLJ Local Emerging Markets Debt Z EUR;LU1529956952;Obbligazionari Paesi Emergenti Valuta Locale;***;110,24;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+EF Strategic Allocation Z Cap EUR;LU1396958792;Bilanciati Flessibili EUR - Globali;****;766,45;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+EF Top European Research Z EUR;LU1393924268;Azionari Europa Large Cap Blend;****;218,11;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Eleva Absolute Return Europe I Cap EUR;LU1331972494;Alternativi Long/Short Azionario Europa;****;1.480,91;16/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+ESI M&G European Credit Invest. QI EUR;LU2188668326;Obbligazionari Corporate EUR;*****;102,2915;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity China Consumer Y Cap $;LU0594300500;Azionari Cina;**;17,6;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Fidelity China Consumer Y Cap EUR;LU0605514057;Azionari Cina;**;15,05;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Fidelity Euro Cash Y EUR;LU0346390353;Monetari EUR;-;10,966;18/03/2026;EUR;FONDO;MONETARIO;Europa;CAPITALIZZAZIONE
+Fidelity Euro Corporate Bond Y Cap EUR;LU0370787359;Obbligazionari Corporate EUR;**;34,95;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity Euro Short Term Bond Y Cap EUR;LU0346393704;Obbligazionari Diversificati Breve Termine EUR;**;28,0638;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity Europe Equity ESG Y EUR;LU0346388290;Azionari Europa Large Cap Blend;***;25,54;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity European High Yield Y EUR;LU0346390270;Obbligazionari High Yield EUR;****;28,07;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity European Multi Asset Income Y Cap EUR;LU0346389934;Bilanciati Moderati EUR;***;21,52;18/03/2026;EUR;FONDO;BILANCIATO;Europa;CAPITALIZZAZIONE
+Fidelity FAST Europe Y PF EUR;LU0348529875;Azionari Europa Large Cap Growth;**;304,5;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity FAST Global Y PF Cap EUR;LU0966156712;Azionari Internazionali Flex Cap;****;370,19;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Future Connectivity Y Cap EUR;LU1881514779;Azionari Settore Comunicazioni;*;22,88;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Gl. Multi Asset Growth&Income Y $;LU0346392300;Bilanciati Moderati USD;***;15,76;18/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fidelity Global Consumer Brands Y EUR;LU0346388613;Azionari Settore Beni e Servizi di Consumo;****;57,28;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Global Demographics Y Cap $;LU0528228231;Azionari Internazionali Large Cap Growth;***;35,77;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Global Dividend Y Cap $;LU0605515963;Azionari Globali Reddito;****;39,23;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Global Dividend Y Cap EUR Hdg;LU0605515880;Azionari Altro;-;39,35;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Fidelity Global Multi Asset Income Y Cap EUR;LU0979392502;Bilanciati Moderati USD;***;19,1;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fidelity Global Multi Asset Income Y Cap EUR Hdg;LU1097728445;Bilanciati Moderati EUR - Globali;***;13,06;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fidelity Global Short Duration Income Y Cap EUR;LU0766124803;Obbligazionari Flessibili Globali;*****;13,38;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Global Technology Y Cap EUR Hdg;LU1482751903;Azionari Altro;-;50,58;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Fidelity Global Technology Y EUR;LU0346389348;Azionari Settore Tecnologia;****;199,6;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Greater China Y $;LU0346391161;Azionari Grande Cina;***;32,54;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Fidelity Italy Y EUR;LU0318940342;Azionari Italia;***;22,85;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Fidelity Latin America Y $;LU0346391674;Azionari America Latina;***;14,64;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Fidelity Water & Waste Y Cap EUR;LU1892830081;Azionari Settore Acqua;**;15,66;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity Water & Waste Y Cap EUR Hdg;LU1892830321;Azionari Settore Acqua;-;13,33;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity World RY Cap EUR;LU2158760806;Azionari Internazionali Large Cap Blend;-;21,03;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fidelity World Y Cap EUR Hdg;LU1723463326;Azionari Altro;-;19,88;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+First Eagle Amundi International IE EUR;LU0565136040;Bilanciati Aggressivi USD;*****;3.479,19;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+First Eagle Amundi International IHE EUR;LU0433182507;Bilanciati Aggressivi EUR - Globali;*****;2.659,99;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+First Eagle Amundi International IU $;LU0433182176;Bilanciati Aggressivi USD;*****;3.620,97;17/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Flossbach von Storch Global Quality I Cap EUR;LU2423020796;Azionari Internazionali Large Cap Growth;***;124,98;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Flossbach von Storch Mult. Opps II IT Cap EUR;LU1038809049;Bilanciati Flessibili EUR - Globali;****;196;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia 4Children T;LU2342239683;Bilanciati Aggressivi EUR - Globali;*;8,489;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia Active Allocation T;LU2251305236;Bilanciati Flessibili EUR - Globali;**;11,315;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia China Bond T;LU2342239170;Obbligazionari Cina;***;10,894;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Fonditalia Clean Energy Solutions T Cap EUR;LU2626792258;Azionari Settore Energia Alternativa;-;13,594;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia Credit Absolute Return T;LU1278883456;Obbligazionari Flessibili EUR;***;11,064;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Fonditalia Dynamic Allocation Multi-Asset T;LU0388709478;Bilanciati Flessibili EUR - Globali;**;9,078;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia Emerging Markets Local Currency Bond T;LU0937586419;Obbligazionari Paesi Emergenti Valuta Locale;****;12,421;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Fonditalia Eq. China T;LU0553727057;Azionari Cina;***;12,992;17/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Fonditalia Eq. Italy T;LU0388707183;Azionari Italia;****;48,661;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Fonditalia Equity GEM Innovators T Cap EUR;LU2626792506;Azionari Paesi Emergenti;-;14,257;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Fonditalia Equity Latin America T Cap EUR;LU0553727305;Azionari America Latina;***;8,268;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Fonditalia Fidelity Equity Low Volatility T;LU2274958631;Azionari Internazionali Large Cap Blend;**;13,272;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia Flex. Emerging Mkts T;LU0388706961;Alternativi Long/Short Azionario Altro;-;3,144;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+Fonditalia Flexible Equity Strategy T Cap EUR;LU1481510243;Bilanciati Flessibili EUR - Globali;**;11,292;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia Flexible Italy T;LU0553727644;Alternativi Long/Short Azionario Altro;-;19,788;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+Fonditalia Flexible Short Duration T;LU2120070300;Obbligazionari Flessibili Globali - EUR Hedged;****;11,691;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia Global Bond T;LU0553728535;Obbligazionari Altro;-;10,205;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Fonditalia Income Mix T;LU1811051868;Bilanciati Prudenti EUR - Globali;****;13,279;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Fonditalia Millennials Equity T;LU1811052247;Azionari Internazionali Large Cap Growth;****;24,195;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia Opport. Diversified Income T;LU1750082254;Obbligazionari Flessibili Globali - EUR Hedged;***;11,354;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia Quality Innovation Sust. T Cap EUR;LU2342239840;Azionari Internazionali Large Cap Growth;****;12,035;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Fonditalia SLJ Flexible China T;LU2342239410;Bilanciati Grande Cina;**;9,766;17/03/2026;EUR;FONDO;BILANCIATO;Asia Pacifico;CAPITALIZZAZIONE
+Franklin Biotechnology Discovery I $;LU0195948822;Azionari Settore Biotecnologia;*****;94,44;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Franklin EM Debt Opportunities Hard Curr. I Cap $;LU1926204220;Obbligazionari Paesi Emergenti;***;12,91;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Franklin EM Debt Opportunities Hard Curr. I Dis EUR Hdg;LU1926204493;Obbligazionari Paesi Emergenti EUR;***;7,51;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Franklin Euro High Yield I EUR;LU0195952261;Obbligazionari High Yield EUR;****;26,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Franklin Euro Short Duration Bond EB EUR;LU2386637925;Obbligazionari Diversificati Breve Termine EUR;****;10,84;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Franklin European Total Return P2 EUR;LU2216205182;Obbligazionari Diversificati EUR;****;9,96;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Franklin Global Real Estate I $;LU0229949309;Immobiliare Indiretto - Globale;***;17,35;17/03/2026;USD;FONDO;IMMOBILIARE;Globale;CAPITALIZZAZIONE
+Franklin Income I $;LU0195951883;Bilanciati Moderati USD;****;34,14;17/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Franklin India S Cap $;LU0971935258;Azionari India;****;33,16;17/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Franklin Innovation I $;LU2063272608;Azionari USA Large Cap Growth;**;23,74;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Franklin Strategic Income I $;LU0300738357;Obbligazionari Flessibili USD;***;19,77;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Franklin Technology I EUR;LU0366762994;Azionari Settore Tecnologia;****;102;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Franklin U.S. Opportunities I EUR;LU0260870075;Azionari USA Large Cap Growth;***;84,66;18/03/2026;EUR;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+FTGF Brand. Global Inc Optim Pr EUR Hdg;IE00B7VSG479;Obbligazionari Flessibili Globali - EUR Hedged;***;121,64;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+FTGF Clear. Gl. Infr. Income U EUR;IE000228C5P2;Azionari Settore Infrastrutture;***;132,97;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+FTGF Clear. US Eq. Sust. Leaders S $;IE00BZ1BLN67;Azionari USA Large Cap Blend;*;238,86;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+FTGF Clear. US Eq. Sust. Leaders S EUR Hdg;IE00BL71K799;Azionari Altro;-;161,76;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+FTGF ClearBridge Infr. Value U EUR;IE00BKX8G809;Azionari Settore Infrastrutture;-;13,62;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+FTGF ClearBridge US Value U $;IE00012I4449;Azionari USA Large Cap Value;-;138,24;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+GIS Euro Bond 1-3 Years BX Cap EUR;LU0396183112;Obbligazionari Governativi Breve Termine EUR;*****;146,641;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+GS Em. Mkts Equity Ptf I Cap EUR;LU1357028627;Azionari Paesi Emergenti;***;24,66;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+GS Europe CORE Equity Ptf I Cap EUR;LU0234682044;Azionari Europa Large Cap Blend;*****;37,38;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+GS Global CORE Equity Ptf I Close Cap EUR;LU0280841296;Azionari Internazionali Large Cap Blend;*****;48,74;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+GS Global Credit Ptf (Hdg) I Cap EUR Hdg;LU0234688595;Obbligazionari Corporate Globali - EUR Hedged;****;16,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+GS Global Fixed Income Ptf (Hdg) I Cap EUR Hdg;LU0234681319;Obbligazionari Globali EUR - Hedged;****;14,95;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+GS Global Small Cap CORE Eq. Ptf I Snap Cap EUR;LU0328436547;Azionari Internazionali Small/Mid Cap;*****;51,82;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+GS III Europe Sustainable Equity I Cap EUR;LU0991964247;Azionari Europa Large Cap Growth;*****;13.016,04;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+GS III Eurozone Equity Income I Cap EUR;LU0191250090;Azionari Area Euro Large Cap;*****;1.272,44;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+GS India Equity Ptf I Cap $;LU0333811072;Azionari India;****;42,08;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+GS Japan Equity Ptf I Snap Cap EUR Hdg;LU0906985758;Azionari Altro;-;44,12;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+GS Japan Equity Ptf I Snap Cap JPY;LU0328437438;Non Classificati;*****;34.613,84;18/03/2026;JPY;FONDO;NON CLASSIFICATO;Altro;CAPITALIZZAZIONE
+GS US CORE Equity Ptf I Snap Cap $;LU0234571999;Azionari USA Large Cap Blend;***;34,55;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+GS US CORE Equity Ptf I Snap Cap EUR Hdg;LU1759635375;Azionari Altro;-;20,29;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+HSBC GIF Chinese Equity XC EUR;LU2685190501;Azionari Cina;-;13,977;16/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+HSBC GIF Euro High Yield Bond X EUR;LU0404498767;Obbligazionari High Yield EUR;****;58,498;16/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+HSBC GIF Global Emerg. Markets Eq. X $;LU0404504754;Azionari Paesi Emergenti;****;19,893;16/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Interfund Bond Global Emerging Markets;LU0109669498;Obbligazionari Paesi Emergenti EUR;***;15,664;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Interfund Equity Global Emerging Markets;LU0109669738;Azionari Paesi Emergenti;***;17,775;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Interfund Equity South East Asia;LU0109671478;Azionari Settore Tecnologia;****;275,397;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Interfund Euro Bond Long Term;LU0074297978;Obbligazionari Lungo Termine EUR;***;10,888;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Interfund Euro Bond Medium Term;LU0074297200;Obbligazionari Governativi EUR;***;10,574;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Interfund Euro Bond Short Term 1-3;LU0074297549;Obbligazionari Governativi Breve Termine EUR;**;7,177;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Interfund Euro Bond Short Term 3-5;LU0250744751;Obbligazionari Governativi EUR;***;12,992;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Interfund Multi Thematic A Cap EUR;LU2360594993;Azionari Internazionali Large Cap Blend;****;14,798;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Asia Asset Allocation S Cap $;LU1934329134;Bilanciati Asia;**;11,42;18/03/2026;USD;FONDO;BILANCIATO;Asia Pacifico;CAPITALIZZAZIONE
+Invesco Asia Asset Allocation S Cap EUR Hgd;LU2367677106;Bilanciati Altro;-;9,32;18/03/2026;EUR;FONDO;BILANCIATO;Altro;CAPITALIZZAZIONE
+Invesco Asia Consumer Demand S Cap $;LU1934328839;Azionari Settore Beni e Servizi di Consumo;***;13,74;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Asian Equity S Cap $;LU1775950634;Azionari Asia ex Giappone;****;24,53;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Invesco Balanced-Risk Allocation S Acc EUR;LU1297941194;Bilanciati Flessibili EUR - Globali;***;15,1;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Invesco Cons. Discr. S&P US Sel. S. UCITS ETF Acc;IE00B449XP68;Azionari Settore Beni e Servizi di Consumo;-;703,6607;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Developing Initiatives Bond S Cap $;LU1934329217;Obbligazionari Asia;**;11,2619;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Invesco Developing Initiatives Bond S Cap EUR Hgd;LU2367677528;Obbligazionari Altro;-;8,5918;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Invesco Emerging Markets Eq. S Cap $;LU2553179461;Azionari Paesi Emergenti;*****;19,25;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Invesco Emerging Markets Local Debt S Cap EUR;LU2014294636;Obbligazionari Paesi Emergenti Valuta Locale;****;11,5987;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Invesco Environ. Climate Opps Bond S Cap $;LU2367678096;Obbligazionari Corporate Globali - USD Hedged;****;11,0568;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Euro Bond S Cap EUR;LU2367677791;Obbligazionari Diversificati EUR;****;9,2427;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Invesco Euro Short Term Bond S Cap EUR;LU1297941517;Obbligazionari Diversificati Breve Termine EUR;****;10,918;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Invesco Euro Ultra-Short Term Debt S Cap EUR;LU2065167475;Obbligazionari Brevissimo Termine EUR;***;10,8752;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Invesco Gl. Investment Grade Corp. Bond SH Cap EUR;LU1701679299;Obbligazionari Corporate Globali - EUR Hedged;***;10,4483;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Global Consumer Trends S Cap $;LU1887442066;Azionari Settore Beni e Servizi di Consumo;**;16,72;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Global Equity Income S Cap $;LU2367678179;Azionari Globali Reddito;****;16,38;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Global Income S Cap EUR;LU2181881173;Bilanciati Moderati EUR - Globali;*****;14,8657;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Invesco Global Total Return Bond S Cap EUR;LU2040206711;Obbligazionari Flessibili Globali - EUR Hedged;****;11,4859;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Greater China Equity S Cap $;LU1549405709;Azionari Grande Cina;***;18,58;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Invesco Greater China Equity S Cap EUR Hgd;LU2367678336;Azionari Altro;-;10,58;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Invesco Health Care S&P US Sel. S. UCITS ETF Acc;IE00B3WMTH43;Azionari Settore Salute;-;635,6578;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco India Bond S Cap $;LU1762221825;Obbligazionari Altro;-;10,8655;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Invesco MSCI World UCITS ETF Acc;IE00B60SX394;Azionari Internazionali Large Cap Blend;-;120,5717;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Invesco Pan European High Income S Cap EUR;LU1981114652;Bilanciati Prudenti EUR;*****;13,29;18/03/2026;EUR;FONDO;BILANCIATO;Europa;CAPITALIZZAZIONE
+Invesco Physical Gold ETC;IE00B579F325;Materie Prime - Metalli Preziosi;-;410,5434;18/03/2026;EUR;ETC;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+Invesco Physical Gold ETC;IE00B579F325;Materie Prime - Metalli Preziosi;-;410,5434;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+Invesco Sust. Pan European Systematic Eq. S Cap EUR;LU1701702026;Azionari Europa Large Cap Blend;****;16,6;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Invesco US HY Fallen Angels UCITS ETF Dist;IE00BD0Q9673;Obbligazionari High Yield USD;-;18,3075;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;DISTRIBUZIONE
+iShares  EUR Corp Bond 1-5yr UCITS ETF EUR (Dist);IE00B4L60045;Obbligazionari Corporate Breve Termine EUR;***;106,6313;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares  EUR Govt Bond 0-1yr UCITS ETF EUR (Dist);IE00B3FH7618;Obbligazionari Brevissimo Termine EUR;**;98,7337;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares  EUR Govt Bond 1-3yr UCITS ETF EUR (Acc);IE00B3VTMJ91;Obbligazionari Governativi Breve Termine EUR;****;115,8026;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+iShares  EUR Govt Bond 1-3yr UCITS ETF EUR (Dist);IE00B14X4Q57;Obbligazionari Governativi Breve Termine EUR;****;141,8213;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares  EUR Govt Bond 3-7yr UCITS ETF EUR (Acc);IE00B3VTML14;Obbligazionari Governativi EUR;****;133,699;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+iShares  EUR Govt Bond 7-10yr UCITS ETF EUR (Acc);IE00B3VTN290;Obbligazionari Governativi EUR;***;152,539;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+iShares  EUR High Yield Corp Bond UCITS ETF;IE00B66F4759;Obbligazionari High Yield EUR;***;92,3634;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+iShares  EUR Inflation Linked Govt Bond UCITS ETF EUR (Acc);IE00B0M62X26;Obbligazionari Inflation-Linked EUR;***;235,6758;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+iShares $ Short Duration High Yield Corp Bond UCITS ETF USD (Dist);IE00BCRY6003;Obbligazionari High Yield USD;-;76,1679;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;DISTRIBUZIONE
+iShares $ Treasury Bond 1-3yr UCITS ETF USD (Acc) B;IE00B3VWN179;Obbligazionari Governativi Breve Termine USD;-;108,5648;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares $ Treasury Bond 1-3yr UCITS ETF USD (Dist);IE00B14X4S71;Obbligazionari Governativi Breve Termine USD;-;112,4655;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;DISTRIBUZIONE
+iShares $ Treasury Bond 20+yr UCITS ETF USD (Dist);IE00BSKRJZ44;Obbligazionari Governativi USD;**;3,2411;18/03/2026;USD;ETF;OBBLIGAZIONARIO;Nord America;DISTRIBUZIONE
+iShares $ Treasury Bond 3-7yr UCITS ETF USD (Acc);IE00B3VWN393;Obbligazionari Governativi USD;-;124,7696;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares € Ultrashort Bond UCITS ETF EUR (Dist);IE00BCRY6557;Obbligazionari Brevissimo Termine EUR;****;101,2853;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares Ageing Population UCITS ETF USD (Acc);IE00BYZK4669;Azionari Settore Salute;-;8,0859;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Automation & Robotics UCITS ETF USD (Acc);IE00BYZK4552;Azionari Settore Tecnologia;-;13,8694;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Core  EUR Corp Bond UCITS ETF EUR (Dist);IE00B3F81R35;Obbligazionari Corporate EUR;***;119,032;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares Core  EUR Govt Bond UCITS ETF EUR (Dist);IE00B4WXJJ64;Obbligazionari Governativi EUR;***;109,1973;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares Core EURO STOXX 50 UCITS ETF EUR;IE00B53L3W79;Azionari Area Euro Large Cap;*****;221,0785;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+iShares Core MSCI EM IMI UCITS ETF USD (Acc);IE00BKM4GZ66;Azionari Paesi Emergenti;-;41,8655;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+iShares Core MSCI Europe UCITS ETF EUR (Acc);IE00B4K48X80;Azionari Europa Large Cap Blend;****;95,9488;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+iShares Core MSCI Japan IMI UCITS ETF USD (Acc);IE00B4L5YX21;Azionari Giappone Large Cap;-;63,3277;18/03/2026;EUR;ETF;AZIONARIO;Giappone;CAPITALIZZAZIONE
+iShares Core MSCI Pacific ex-Japan UCITS ETF USD (Acc);IE00B52MJY50;Azionari Pacifico ex Giappone;-;203,2629;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+iShares Core MSCI World UCITS ETF USD (Acc);IE00B4L5Y983;Azionari Internazionali Large Cap Blend;-;112,1349;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Core S&P 500 UCITS ETF USD (Acc);IE00B5BMR087;Azionari USA Large Cap Blend;-;625,357;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares Developed Markets Property Yield UCITS ETF USD (Dist);IE00B1FZS350;Immobiliare Indiretto - Globale;-;21,7894;18/03/2026;EUR;ETF;IMMOBILIARE;Globale;DISTRIBUZIONE
+iShares Diversified Commodity Swap UCITS ETF (DE);DE000A0H0728;Materie Prime - Generiche;-;33,4823;18/03/2026;EUR;ETF;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+iShares Dow Jones Global Leaders Screened UCITS ETF USD (Acc);IE00B57X3V84;Azionari Internazionali Large Cap Blend;-;76,59;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Edge MSCI Europe Momentum Factor UCITS ETF EUR (Acc);IE00BQN1K786;Azionari Europa Large Cap Blend;*****;14,7441;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+iShares Edge MSCI World Minimum Volatility UCITS ETF USD (Acc);IE00B8FHGS14;Azionari Internazionali Large Cap Blend;-;65,0232;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Euro Dividend UCITS ETF EUR (Dist);IE00B0M62S72;Azionari Area Euro Large Cap;***;23,959;18/03/2026;EUR;ETF;AZIONARIO;Europa;DISTRIBUZIONE
+iShares EURO STOXX Small UCITS ETF EUR (Dist);IE00B02KXM00;Azionari Area Euro Mid Cap;****;48,6411;18/03/2026;EUR;ETF;AZIONARIO;Europa;DISTRIBUZIONE
+iShares European Property Yield UCITS ETF EUR (Dist);IE00B0M63284;Immobiliare indiretto - Europa;***;31,57;18/03/2026;EUR;ETF;IMMOBILIARE;Europa;DISTRIBUZIONE
+iShares Gl. Infrastructure UCITS ETF USD (Dist);IE00B1FZS467;Azionari Settore Infrastrutture;-;34,0513;18/03/2026;EUR;ETF;AZIONARIO;Globale;DISTRIBUZIONE
+iShares Global Clean Energy Transition UCITS ETF USD (Dist);IE00B1XNHC34;Azionari Settore Energia Alternativa;-;9,3144;18/03/2026;EUR;ETF;AZIONARIO;Globale;DISTRIBUZIONE
+iShares Global Corp Bond EUR Hedged UCITS ETF (Dist);IE00B9M6SJ31;Obbligazionari Corporate Globali - EUR Hedged;***;85,65;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;DISTRIBUZIONE
+iShares Global Corp Bond UCITS ETF USD (Dist);IE00B7J7TB45;Obbligazionari Corporate Globali;-;78,8994;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;DISTRIBUZIONE
+iShares Global High Yield Corp Bond UCITS ETF USD (Dist);IE00B74DQ490;Obbligazionari High Yield Globali;-;78,7471;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;DISTRIBUZIONE
+iShares Global Water UCITS ETF USD (Dist);IE00B1TXK627;Azionari Settore Acqua;-;66,0757;18/03/2026;EUR;ETF;AZIONARIO;Globale;DISTRIBUZIONE
+iShares Italy Govt Bond UCITS ETF EUR (Dist);IE00B7LW6Y90;Obbligazionari Governativi EUR;*****;151,2962;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;DISTRIBUZIONE
+iShares J.P. Morgan $ EM Bond EUR Hedged UCITS ETF (Dist);IE00B9M6RS56;Obbligazionari Paesi Emergenti EUR;***;68,3082;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti;DISTRIBUZIONE
+iShares J.P. Morgan $ EM Bond UCITS ETF USD (Dist);IE00B2NPKV68;Obbligazionari Paesi Emergenti;-;79,9095;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti;DISTRIBUZIONE
+iShares J.P. Morgan EM Local Govt Bond UCITS ETF USD (Dist);IE00B5M4WH52;Obbligazionari Paesi Emergenti Valuta Locale;-;39,8859;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti;DISTRIBUZIONE
+iShares MSCI China Tech UCITS ETF USD (Acc);IE000NFR7C63;Azionari Cina;-;4,29;18/03/2026;EUR;ETF;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+iShares MSCI EM CTB Enhanced ESG UCITS ETF;IE00BHZPJ239;Azionari Paesi Emergenti;-;7,1514;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+iShares MSCI EM UCITS ETF USD (Acc);IE00B4L5YC18;Azionari Paesi Emergenti;-;48,8043;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+iShares MSCI EM UCITS ETF USD (Dist);IE00B0M63177;Azionari Paesi Emergenti;-;50,7648;18/03/2026;EUR;ETF;AZIONARIO;Paesi Emergenti;DISTRIBUZIONE
+iShares MSCI EMU ESG Enhanced CTB UCITS ETF EUR (Acc);IE00BHZPJ015;Azionari Area Euro Large Cap;****;9,4407;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+iShares MSCI Europe CTB Enhanced ESG UCITS ETF;IE00BHZPJ783;Azionari Europa Large Cap Blend;***;8,9166;18/03/2026;EUR;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+iShares MSCI Japan CTB Enhanced ESG UCITS ETF;IE00BHZPJ452;Azionari Giappone Large Cap;-;7,77;18/03/2026;EUR;ETF;AZIONARIO;Giappone;CAPITALIZZAZIONE
+iShares MSCI Japan EUR Hedged UCITS ETF (Acc);IE00B42Z5J44;Azionari Altro;-;127,1024;18/03/2026;EUR;ETF;AZIONARIO;Altro;CAPITALIZZAZIONE
+iShares MSCI USA CTB Enhanced ESG UCITS ETF;IE00BHZPJ908;Azionari USA Large Cap Blend;-;10,3461;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares MSCI USA Screened UCITS ETF EUR Hedged (Acc);IE000G2LIHG9;Azionari Altro;-;7,4974;18/03/2026;EUR;ETF;AZIONARIO;Altro;CAPITALIZZAZIONE
+iShares MSCI USA SRI UCITS ETF USD (Acc);IE00BYVJRR92;Azionari USA Large Cap Blend;-;15,356;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares MSCI World CTB Enhanced ESG UCITS ETF;IE00BHZPJ569;Azionari Internazionali Large Cap Blend;-;9,4927;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares MSCI World EUR Hedged UCITS ETF (Acc);IE00B441G979;Azionari Altro;-;106,2755;18/03/2026;EUR;ETF;AZIONARIO;Altro;CAPITALIZZAZIONE
+iShares Nasdaq 100 UCITS ETF USD (Acc);IE00B53SZB19;Azionari USA Large Cap Growth;-;1.238,34;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+iShares S&P 500 EUR Hedged UCITS ETF (Acc);IE00B3ZW0K18;Azionari Altro;-;138,6417;18/03/2026;EUR;ETF;AZIONARIO;Altro;CAPITALIZZAZIONE
+iShares S&P 500 Health Care Sector UCITS ETF USD (Acc);IE00B43HR379;Azionari Settore Salute;-;10,29;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares S&P 500 Information Technology Sector UCITS ETF USD (Acc);IE00B3WJKG14;Azionari Settore Tecnologia;-;34,26;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares Smart City Infrastructure UCITS ETF USD (Acc);IE00BKTLJC87;Azionari Settore Infrastrutture;-;8,3499;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares STOXX Europe 600 Banks UCITS ETF (DE);DE000A0F5UJ7;Azionari Settore Servizi Finanziari;****;33,495;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+iShares STOXX Europe 600 UCITS ETF (DE) EUR (Dist);DE0002635307;Azionari Europa Large Cap Blend;****;59,5457;18/03/2026;EUR;ETF;AZIONARIO;Europa;DISTRIBUZIONE
+iShares US Property Yield UCITS ETF USD (Dist);IE00B1FZSF77;Immobiliare Indiretto - Nord America;-;27,0592;18/03/2026;EUR;ETF;IMMOBILIARE;Nord America;DISTRIBUZIONE
+Janus Hend. Balanced I Cap EUR Hdg;IE00B2B36V48;Bilanciati Moderati EUR - Globali;*****;29,5;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Janus Hend. Balanced I2 Cap $;IE0009515622;Bilanciati Moderati USD;*****;62,64;18/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Janus Hend. Global Life Sciences U Cap EUR;IE00BRJG7840;Azionari Settore Salute;*****;32,81;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Janus Hend. Global Life Sciences U Cap EUR Hdg;IE00BFRSYK98;Azionari Altro;-;30,38;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Janus Hend. Hor. Biotechnology IU2 EUR;LU2441282626;Azionari Settore Biotecnologia;*****;28,56;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Janus Hend. Hor. Biotechnology IU2 EUR Hdg;LU2342243362;Azionari Altro;-;32,42;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Janus Hend. Hor. Gl. Property Eqs I2 Cap $;LU0209137628;Immobiliare Indiretto - Globale;****;34,15;18/03/2026;USD;FONDO;IMMOBILIARE;Globale;CAPITALIZZAZIONE
+Janus Hend. Hor. Gl. Property Eqs I2 Cap EUR Hdg;LU0642270333;Immobiliari Indiretto - Altro;-;18,51;18/03/2026;EUR;FONDO;IMMOBILIARE;Altro;CAPITALIZZAZIONE
+Janus Hend. Hor. Global Smaller Co. IU2 EUR;LU1984712676;Azionari Internazionali Small/Mid Cap;*****;51,52;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Janus Hend. Hor. Pan Europ. Abs. Return I2 EUR;LU0264598268;Alternativi Long/Short Azionario Europa;***;24,41;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+Janus Henderson Pan European G EUR;LU1136954127;Azionari Europa Large Cap Blend;****;10,2293;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+JPM Aggregate Bond I Acc EUR Hdg;LU0958694670;Obbligazionari Globali EUR - Hedged;****;85,37;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM America Equity I2 Acc $;LU1727351345;Azionari USA Large Cap Blend;****;285,39;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+JPM America Equity I2 Acc EUR Hdg;LU1727351857;Azionari Altro;-;238,68;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM ASEAN Equity I2 Acc $;LU1727352079;Azionari ASEAN;****;141,19;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+JPM ASEAN Equity I2 Acc EUR;LU1931928318;Azionari ASEAN;****;140,93;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+JPM Asia Growth I2 Acc $;LU1814670375;Azionari Asia ex Giappone;**;169,67;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+JPM China A-Share Opportunities I2 EUR Hdg;LU2081627569;Azionari Altro;-;130,72;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Emerging Markets Corporate Bond I2 Acc $;LU1931928409;Obbligazionari Corporate Paesi Emergenti;****;133,11;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+JPM Emerging Markets Debt I2 Acc EUR Hdg;LU1814670532;Obbligazionari Paesi Emergenti EUR;***;108,75;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+JPM Emerging Markets Debt I2 Dis $;LU1989874174;Obbligazionari Paesi Emergenti;***;88,37;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+JPM Emerging Markets Sustainable Equity I2 Cap EUR;LU2184876295;Azionari Paesi Emergenti;***;156,53;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+JPM EU Government Bond I2 Acc EUR;LU1727352749;Obbligazionari Governativi EUR;***;99,163;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+JPM EUR Ultra-Short Income Active UCITS ETF Acc;IE00BD9MMF62;Obbligazionari Brevissimo Termine EUR;***;109,2129;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+JPM Europe Dynamic Technologies I2 Cap EUR;LU1931928581;Azionari Settore Tecnologia;**;207,09;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Europe Eq. Absolute Alpha I2 (perf) Acc EUR;LU1814671423;Alternativi Market Neutral EUR;*****;180,4;18/03/2026;EUR;FONDO;ALTERNATIVO;Europa;CAPITALIZZAZIONE
+JPM Europe Strategic Dividend I2 Acc EUR;LU1727361062;Azionari Europa Reddito;*****;199,73;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+JPM Europe Sustainable Equity I2 Cap EUR;LU2094610214;Azionari Europa Large Cap Blend;****;178,1;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+JPM Europe Sustainable Small Cap Equity I2 Cap EUR;LU2076840318;Azionari Europa Small Cap;****;150,43;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+JPM Global Balanced I2 Acc EUR;LU1727361229;Bilanciati Moderati EUR - Globali;***;136,81;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+JPM Global Bond Opportunities I2 Acc $;LU1727353630;Obbligazionari Flessibili Globali - USD Hedged;***;134,38;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Bond Opportunities I2 Acc EUR Hdg;LU1727353556;Obbligazionari Flessibili Globali - EUR Hedged;***;113,05;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Corporate Bond I2 Acc EUR Hdg;LU1727354448;Obbligazionari Corporate Globali - EUR Hedged;***;105,42;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Dividend I Acc EUR;LU0329203813;Azionari Globali Reddito;***;195,53;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Dividend I Acc EUR Hdg;LU0973650160;Azionari Altro;-;190,12;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Global Focus I2 Acc EUR Hdg;LU1956949157;Azionari Altro;-;222,77;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Global Focus I2 Cap EUR;LU1814672314;Azionari Internazionali Large Cap Blend;****;186,29;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Government Bond I2 Acc EUR;LU1727355171;Obbligazionari Governativi Globali EUR Hedged;****;96,55;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global Healthcare I2 Acc $;LU1814672405;Azionari Settore Salute;***;174,21;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Global High Yield Bond I2 Acc EUR Hdg;LU1727361658;Obbligazionari Altro;-;125,23;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Global Income I2 Acc EUR;LU1814672587;Bilanciati Moderati EUR - Globali;***;130,7;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+JPM Global Macro C Acc EUR Hdg;LU0917670746;Alternativi Global Macro EUR;**;98,8;18/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+JPM Global Macro Opportunities C Acc EUR;LU0095623541;Alternativi Global Macro EUR;**;172,26;18/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+JPM Global Strategic Bond I2 (perf) Acc EUR Hdg;LU1727356492;Obbligazionari Flessibili Globali - EUR Hedged;****;112,31;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+JPM Income I2 Cap EUR Hdg;LU2094610057;Obbligazionari Altro;-;106,57;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Multi-Manager Alternative I2 Acc EUR Hdg;LU1931928748;Alternativi Multistrategy EUR;*;116,89;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+JPM Thematics - Genetic Therapies I2 Cap EUR Hdg;LU2127216625;Azionari Altro;-;99,65;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM Total Emerging Markets Income I2 EUR Hdg;LU2094610487;Bilanciati Altro;-;131,32;18/03/2026;EUR;FONDO;BILANCIATO;Altro;CAPITALIZZAZIONE
+JPM US Select Equity Plus I2 Acc $;LU1727359249;Azionari USA Large Cap Blend;*****;292,42;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+JPM US Select Equity Plus I2 Acc EUR Hdg;LU1727359595;Azionari Altro;-;244,34;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+JPM US Technology I2 Acc $;LU1814674104;Azionari Settore Tecnologia;***;352,26;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM US Technology I2 Acc EUR;LU1931929043;Azionari Settore Tecnologia;***;357,91;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+JPM US Value I2 Acc $;LU1727360171;Azionari USA Large Cap Value;****;204,9;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+JPM US Value I2 Acc EUR Hdg;LU1727360254;Azionari Altro;-;171,38;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Jupiter Dynamic Bond ESG I Cap EUR;LU2403912442;Obbligazionari Flessibili Globali - EUR Hedged;***;95,31;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Jupiter European Growth I Cap EUR;LU0260086037;Azionari Europa Large Cap Blend;***;74,58;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Jupiter Gold & Silver I Cap EUR;IE00BYVJRF70;Azionari Settore Metalli Preziosi;***;52,6713;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Jupiter Strategic Abs. Ret. Bond I Cap EUR Hdg;IE00BLP58Q81;Obbligazionari Flessibili Globali - EUR Hedged;***;11,9338;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+KBI Global Sustainable Infrastructure C EUR;IE0004WX41H7;Azionari Settore Infrastrutture;*;10,848;16/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+KIS - Bond Plus P - EUR;LU0680824983;Obbligazionari Flessibili EUR;****;181,13;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+L&G Battery Value-Chain UCITS ETF;IE00BF0M2Z96;Azionari Altro;-;27,386;18/03/2026;EUR;ETF;AZIONARIO;Altro;CAPITALIZZAZIONE
+L&G Clean Water UCITS ETF;IE00BK5BC891;Azionari Settore Acqua;-;17,9514;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Lazard Global Equity Franchise C Cap EUR;IE00BJ1H1875;Azionari Internazionali Flex Cap;**;138,1374;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+LO Funds All Roads N EUR;LU0718509861;Bilanciati Flessibili EUR - Globali;***;16,5487;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+LO Funds Convertible Bond N EUR;LU0209988657;Obbligazionari Convertibili Globali - EUR Hedged;***;23,3261;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+LO Funds Social Systems Change N EUR Hdg;LU0209992170;Azionari Altro;-;20,3472;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+LO Funds World Brands N EUR;LU1809976365;Azionari Settore Beni e Servizi di Consumo;****;342,1473;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Dynamic Allocation JI EUR;LU1941717735;Bilanciati Flessibili EUR - Globali;*****;14,7419;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Emerging Markets Bond C Cap EUR;LU1670631958;Obbligazionari Paesi Emergenti;*****;14,5698;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+M&G (Lux) Emerging Markets Bond CH Cap EUR;LU1670632170;Obbligazionari Paesi Emergenti EUR;*****;12,0574;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+M&G (Lux) Global Dividend CI Cap EUR;LU1797813448;Azionari Globali Reddito;****;20,6141;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Global Listed Infrastructure CI Cap EUR;LU1665238009;Azionari Settore Infrastrutture;**;19,3499;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Global Listed Infrastructure JIH EUR;LU2576361781;Azionari Altro;-;12,2186;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+M&G (Lux) Global Macro Bond C Cap EUR;LU1670720462;Obbligazionari Flessibili Globali;**;14,8372;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Global Macro Bond CH Cap EUR;LU1670720629;Obbligazionari Flessibili Globali - EUR Hedged;*;10,1681;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Global Maxima CI EUR;LU2065169414;Azionari Internazionali Flex Cap;****;20,3798;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Global Sustain Paris Aligned C Cap EUR;LU1670715546;Azionari Internazionali Large Cap Blend;***;64,289;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Income Allocation JI EUR;LU2088737338;Bilanciati Moderati EUR - Globali;***;11,8804;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Optimal Income JI EUR;LU1881796145;Bilanciati Prudenti EUR - Globali;**;11,4193;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+M&G (Lux) Sustainable Macro Flexible Credit UI EUR;LU2415445670;Obbligazionari Flessibili Globali - EUR Hedged;***;11,7568;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Man Asia (ex Japan) Equity IF Cap EUR;IE00BMWBB563;Azionari Asia ex Giappone;*****;152,37;16/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Man TargetRisk I EUR Hdg;IE00BRJT7K50;Bilanciati Moderati EUR - Globali;***;173,54;16/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+MFS Blended Research EM Equity Cap EUR;LU1713319355;Azionari Paesi Emergenti;****;174,9;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+MFS Meridian Contrarian Value I1 EUR;LU1985812830;Azionari Internazionali Large Cap Value;*****;252,18;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+MFS Meridian Global Opportunistic Bond I1 Cap $;LU1340703666;Obbligazionari Flessibili Globali - USD Hedged;**;128,06;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MFS Meridian Global Opportunistic Bond IH1 EUR;LU1340703740;Obbligazionari Flessibili Globali - EUR Hedged;**;105,46;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MFS Meridian Prudent Capital I1 EUR;LU1442550114;Bilanciati Moderati USD;***;170,75;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+MFS Meridian Prudent Capital IH1 EUR;LU1442550205;Bilanciati Moderati EUR - Globali;***;144,75;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Mirova Europe Sustenaible Equity I Cap EUR;LU0552643099;Azionari Europa Flex Cap;***;566,69;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Mirova Global Green Bond I Cap EUR;LU1472740502;Obbligazionari Globali EUR - Hedged;**;766,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Mirova Global Sustainable Eq. I Cap EUR;LU0914729453;Azionari Internazionali Large Cap Growth;****;35.969,07;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Asia Opportunity Z $;LU1378878604;Azionari Asia ex Giappone;*;57,87;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+MSIF Emerg. Markets Corp. Debt Z Cap $;LU0603408385;Obbligazionari Corporate Paesi Emergenti;****;49,49;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+MSIF Euro Corporate Bond Duration Hdg Z EUR;LU1832968926;Obbligazionari Altro;-;37,6;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+MSIF Euro Corporate Bond Z EUR;LU0360483100;Obbligazionari Corporate EUR;*****;48,52;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+MSIF Euro Strategic Bond Z EUR;LU0360476740;Obbligazionari Diversificati EUR;****;44,4;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+MSIF Europe Opportunity Z $;LU1387591727;Azionari Europa Large Cap Growth;**;55,73;18/03/2026;USD;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+MSIF Global Balanced Income Z Cap EUR;LU1078119408;Bilanciati Flessibili EUR - Globali;***;37;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+MSIF Global Balanced Risk Control FoF Z EUR;LU0706093803;Bilanciati Flessibili EUR - Globali;***;50,22;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+MSIF Global Brands Z (USD) EUR;LU0360482987;Azionari Internazionali Large Cap Blend;**;89,28;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Global Brands ZH EUR;LU0360483019;Azionari Altro;-;98,95;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+MSIF Global Conver. Bond ZH EUR;LU0360484504;Obbligazionari Convertibili Globali - EUR Hedged;****;58,89;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Global Fixed Income Opportunities Z $;LU0694239061;Obbligazionari Flessibili Globali - USD Hedged;****;46,73;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Global Fixed Income Opportunities ZH Cap EUR;LU0712124089;Obbligazionari Flessibili Globali - EUR Hedged;****;32,32;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Global Opportunity Z EUR;LU0552385535;Azionari Internazionali Large Cap Growth;****;148,97;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Global Opportunity ZH EUR;LU1511517010;Azionari Altro;-;68,82;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+MSIF Global Quality Z $;LU0955011258;Azionari Internazionali Large Cap Blend;**;66,2;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+MSIF Short Maturity Euro Bond Z EUR;LU0360478795;Obbligazionari Diversificati Breve Termine EUR;****;33,28;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+MSIF US Advantage Z $;LU0360484686;Azionari USA Large Cap Growth;*;165,89;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+MSIF US Advantage ZH EUR;LU0360484769;Azionari Altro;-;151,03;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+MSIF Us Growth Z $;LU0360477805;Azionari USA Large Cap Growth;*;179,44;18/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+MSIF Us Growth ZH EUR;LU0360477987;Azionari Altro;-;136,78;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+MUZ EnhancedYield Short Term A Cap EUR;IE0033758917;Obbligazionari Flessibili Globali - EUR Hedged;****;183,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MUZ Global Short Duration Inv.Grade H Cap EUR Hdg;IE00BJCXFM61;Obbligazionari Corporate Globali - EUR Hedged;****;109,98;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+MUZ Global Tactical Credit A Cap EUR Hdg;IE00BHLSJ159;Obbligazionari Flessibili Globali - EUR Hedged;***;113,42;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Neu.Berman Corporate Hybrid Bond I Cap EUR;IE00BZ090894;Obbligazionari Subordinati EUR;***;13,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Neu.Berman Em. Market Debt Blend I Cap EUR;IE00BK4YYZ03;Obbligazionari Paesi Emergenti EUR;****;12,5;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Neu.Berman Em. Market Debt HC I Cap EUR;IE00B986G486;Obbligazionari Paesi Emergenti EUR;****;14,51;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Neu.Berman Global Eq. Megatrends I Cap $;IE00BFMHRK20;Azionari Internazionali Small/Mid Cap;****;22,16;17/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Neu.Berman High Yield Bond I Cap $;IE00B12VW565;Obbligazionari High Yield USD;***;32,18;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Neu.Berman Next Gen. Connectivity I Cap EUR Hdg;IE00BMPRXW24;Azionari Altro;-;19,07;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Neu.Berman Next Generation Mobility I Cap EUR;IE00BKPHW879;Azionari Settore Tecnologia;***;21,68;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Neu.Berman Short Dur. Em. Mkt Debt I Cap EUR;IE00BDZRX185;Obbligazionari Paesi Emergenti EUR;****;12,09;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Neu.Berman Short Dur. HY Engagement I Cap EUR;IE00B7FN4F54;Obbligazionari Altro;-;14,31;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Neu.Berman Short Duration Euro Bond I Cap EUR;IE00BFZMJT78;Obbligazionari Diversificati Breve Termine EUR;*****;118,03;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Neu.Berman Strategic Income I Cap $;IE00B8HX1V50;Obbligazionari Flessibili USD;****;15,37;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Neu.Berman Strategic Income I Cap EUR;IE00B9154717;Obbligazionari Altro;-;12,54;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Neu.Berman US Long Short Equity I Cap EUR;IE00BJTD3X67;Alternativi Long/Short Azionario Altro;-;13,32;17/03/2026;EUR;FONDO;ALTERNATIVO;Globale;CAPITALIZZAZIONE
+Neu.Berman US Small Cap I $;IE00B66ZT477;Azionari USA Small Cap;**;32,81;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Nordea 1 European Covered Bond BI EUR;LU0539144625;Obbligazionari Corporate EUR;***;14,6062;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Nordea 1 European Financial Debt BI EUR;LU0772943501;Obbligazionari Subordinati EUR;****;226,6134;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Nordea 1 Global Climate and Environment BI Cap EUR;LU0348927095;Azionari Settore Ecologia;****;41,5106;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Nordea 1 Global Stable Equity BI EUR;LU0097890064;Azionari Internazionali Large Cap Value;**;39,2692;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Nordea 1 Stable Return BD EUR;LU1915151887;Bilanciati Moderati EUR - Globali;**;18,8675;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Nordea 1 Stable Return HBI $;LU1055445297;Bilanciati Moderati USD;**;33,3739;18/03/2026;USD;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Nuveen U.S. Core Impact Bond P Cap $;IE00BZ0GCM81;Obbligazionari Diversificati USD;***;24,54;16/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Ossiam Shiller Barc. Cape US Sector Value TR;LU1079841273;Azionari USA Large Cap Blend;***;1.410,80;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Ossiam Shiller Barc. Cape US Sector Value TR;LU1079841273;Azionari USA Large Cap Blend;***;1.410,80;18/03/2026;EUR;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Pictet-Biotech-HI EUR;LU0328682074;Azionari Altro;-;820,46;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Pictet-Biotech-I $;LU0112497283;Azionari Settore Biotecnologia;****;1.573,81;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Digital-I EUR;LU0340554673;Azionari Settore Tecnologia;***;698,18;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Emerging Local Currency Debt-I EUR;LU0280437160;Obbligazionari Paesi Emergenti Valuta Locale;***;189,82;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Pictet-Emerging Markets Index-IS $;LU0328685416;Azionari Paesi Emergenti;***;480,48;17/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Pictet-EUR Corporate Bonds-I;LU0128472205;Obbligazionari Corporate EUR;***;225;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Pictet-EUR High Yield-I;LU0133806785;Obbligazionari High Yield EUR;****;339,72;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Pictet-EUR Short Term High Yield I EUR;LU0726357444;Obbligazionari High Yield EUR;***;151,58;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Pictet-Global Emerging Debt-HI EUR;LU0170991672;Obbligazionari Paesi Emergenti EUR;***;298,83;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Pictet-Global Emerging Debt-I $;LU0128469243;Obbligazionari Paesi Emergenti;***;530,78;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Pictet-Global Environmental Opportunities-I EUR;LU0503631631;Azionari Settore Ecologia;****;392,95;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Global Megatrend Selection-HI EUR;LU0474969937;Azionari Altro;-;256,65;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Pictet-Global Megatrend Selection-I EUR;LU0386875149;Azionari Internazionali Flex Cap;***;420,46;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Indian Equities-I EUR;LU0255978933;Azionari India;****;820,73;18/03/2026;EUR;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+Pictet-Japanese Equity Opportunities-HI EUR;LU0650148231;Azionari Altro;-;215,17;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Pictet-Multi Asset Global Opportunities I EUR;LU0941348897;Bilanciati Prudenti EUR - Globali;*****;157,08;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Pictet-Premium Brands-I EUR;LU0217138485;Azionari Settore Beni e Servizi di Consumo;****;322,63;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Quest Europe Sustainable Equities I EUR;LU0144509550;Azionari Europa Large Cap Blend;****;502,18;18/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+Pictet-Robotics-HI EUR;LU1279334723;Azionari Altro;-;342,6;18/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+Pictet-Robotics-I EUR;LU1279334053;Azionari Settore Tecnologia;***;427,13;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-Short-Term Money Market $-I;LU0128497707;Monetari a Breve Termine USD;-;174,0928;18/03/2026;USD;FONDO;MONETARIO;Nord America;CAPITALIZZAZIONE
+Pictet-Short-Term Money Market CHF-I;LU0128499158;Monetari CHF;-;121,067;18/03/2026;CHF;FONDO;MONETARIO;Europa;CAPITALIZZAZIONE
+Pictet-Short-Term Money Market JPY-I;LU0309035367;Monetari Altro;-;100.466,38;18/03/2026;JPY;FONDO;MONETARIO;Altro;CAPITALIZZAZIONE
+Pictet-Sovereign Short-Term Money Market EUR-I;LU0366536638;Monetari a Breve Termine EUR;-;108,3632;18/03/2026;EUR;FONDO;MONETARIO;Europa;CAPITALIZZAZIONE
+Pictet-Timber-I EUR;LU0340558823;Azionari Settore Risorse Naturali;**;213,57;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Pictet-USD Short Mid-Term Bonds-I;LU0175073468;Obbligazionari Diversificati Breve Termine USD;***;160,98;18/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+Pictet-Water-I EUR;LU0104884605;Azionari Settore Acqua;***;612,15;18/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Capital Securities I Cap EUR Hdg;IE00B6VHBN16;Obbligazionari Altro;-;17,06;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+PIMCO Commodity Real Return I Cap $;IE00B1BXJ858;Materie Prime - Generiche;-;13,32;17/03/2026;USD;FONDO;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+PIMCO Credit Opportunities Bond I Cap EUR Hdg;IE00B6W1GF96;Obbligazionari Altro;-;13,76;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+PIMCO Diversified Income I Cap EUR Hdg;IE00B1JC0H05;Obbligazionari Flessibili Globali - EUR Hedged;****;18,49;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Emerging Markets Bond ESG I Cap EUR Hdg;IE00BDSTPS26;Obbligazionari Paesi Emergenti EUR;****;12,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+PIMCO Emerging Markets Bond I Cap EUR Hdg;IE0032568770;Obbligazionari Paesi Emergenti EUR;*****;46,91;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+PIMCO Euro Bond I Cap EUR;IE0004931386;Obbligazionari Diversificati EUR;***;24,54;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+PIMCO Euro Income Bond I Cap EUR;IE00B3V8Y234;Obbligazionari Flessibili EUR;****;16,86;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+PIMCO Euro Short Term I Cap EUR;IE00B0XJBQ64;Obbligazionari Brevissimo Termine EUR;****;13,27;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+PIMCO European High Yield Bond I Cap EUR;IE00BK9YL094;Obbligazionari High Yield EUR;****;12,55;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+PIMCO European Short-Term Opportunities I Cap EUR;IE00B3R3XF82;Obbligazionari Diversificati Breve Termine EUR;*****;12,63;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+PIMCO Global Advantage I Cap EUR Hdg;IE00B58Z4F45;Obbligazionari Globali;*****;14,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Bond ESG I Cap $;IE00BYXVTY44;Obbligazionari Globali USD - Hedged;***;12,53;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Bond ESG I Cap EUR Hdg;IE00BYXVX196;Obbligazionari Globali EUR - Hedged;***;10,43;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Bond I Cap $;IE0002461055;Obbligazionari Globali USD - Hedged;*****;37,83;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Bond I Cap EUR Hdg;IE0032875985;Obbligazionari Globali EUR - Hedged;*****;28,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global High Yield Bond I Cap EUR Hdg;IE00B2R34Y72;Obbligazionari High Yield Globali - EUR Hedged;****;27,34;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Inv. Grade Credit ESG I Cap EUR Hdg;IE00BFZ89B79;Obbligazionari Corporate Globali - EUR Hedged;***;10,83;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Inv. Grade Credit I Cap EUR;IE00B873BF95;Obbligazionari Corporate Globali;***;14,49;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Inv. Grade Credit I Cap EUR Hdg;IE0032876397;Obbligazionari Corporate Globali - EUR Hedged;***;19,3;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Real Return I Cap $;IE0033591748;Obbligazionari Inflation-Linked Globali - USD Hedged;*****;24,54;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Global Real Return I Cap EUR Hdg;IE0033666466;Obbligazionari Inflation-Linked Globali - EUR Hedged;****;19,29;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Income I Cap $;IE00B87KCF77;Obbligazionari Flessibili Globali - USD Hedged;*****;20,01;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO Income I Cap EUR Hdg;IE00B80G9288;Obbligazionari Flessibili Globali - EUR Hedged;*****;16,16;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+PIMCO StocksPLUS I Cap $;IE0002459539;Azionari USA Large Cap Blend;****;85,21;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+PIMCO StocksPLUS I Cap EUR Hdg;IE00B7W3YB45;Azionari Altro;-;45,27;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+PIMCO Strategic Income I Cap EUR Hdg;IE00BG800W59;Bilanciati Prudenti EUR - Globali;*****;16,72;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+PIMCO Total Return Bond I Cap $;IE0002460867;Obbligazionari Diversificati USD;****;34,6;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+PIMCO Total Return Bond I Cap EUR Hdg;IE0033989843;Obbligazionari Altro;-;21,72;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+Raiffeisen Bilanciato Sostenibile I Cap EUR;AT0000A1VG68;Bilanciati Moderati EUR - Globali;***;120,06;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Responsible Horizons Euro Corporate Bond W EUR;IE00BKWGFQ61;Obbligazionari Corporate EUR;****;1,0151;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Robeco Euro SDG Credits IH Cap EUR;LU0503372780;Obbligazionari Corporate EUR;***;146,8;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Robeco Financial Institutions Bonds IH Cap EUR;LU0622664224;Obbligazionari Subordinati EUR;***;200,28;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Robeco Global Credits I Cap $;LU1479026897;Obbligazionari Corporate Globali;***;125,64;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Robeco Global Credits IH Cap EUR;LU1071420456;Obbligazionari Corporate Globali - EUR Hedged;****;122,48;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Robeco Global Stars Equities IL Cap EUR;LU1408525894;Azionari Internazionali Large Cap Blend;***;308,66;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Robeco Smart Energy I Cap EUR;LU2145462722;Azionari Settore Energia Alternativa;*****;97,17;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Robeco Smart Materials I Cap EUR;LU2145464777;Azionari Settore Beni Industriali;**;562,65;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Robeco Sustainable Water I Cap EUR;LU2146192377;Azionari Settore Acqua;***;633,7;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+SISF Asian Conv. Bond EUR Hedg. C Cap. EUR;LU0352097272;Obbligazionari Convertibili - Altro;-;215,6611;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+SISF Asian Equity Yield C Cap $;LU0188438542;Azionari Asia-Pacifico ex Giappone Reddito;****;61,6317;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+SISF Asian Local Currency Bond C Cap EUR Hdg;LU0953476222;Obbligazionari Altro;-;99,4246;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Altro;CAPITALIZZAZIONE
+SISF Asian Opportunities C Cap $;LU0106259988;Azionari Asia ex Giappone;****;41,4135;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+SISF China Local Currency Bond C Cap EUR;LU0845699338;Obbligazionari RMB - Onshore;***;154,0976;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+SISF China Opportunities C Cap. $;LU0244355391;Azionari Cina;***;483,9468;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+SISF EURO Credit Conviction C Cap EUR;LU0995119822;Obbligazionari Corporate EUR;*****;151,2202;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+SISF Frontier Mkts Equity C Acc $;LU0562314715;Azionari Internazionali - Frontier Markets;*****;349,2754;18/03/2026;USD;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+SISF Global Alternative Energy C $;LU2016063229;Azionari Settore Energia Alternativa;**;182,1261;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+SISF Global Cities C Cap $;LU0224508670;Immobiliare Indiretto - Globale;****;239,7879;18/03/2026;USD;FONDO;IMMOBILIARE;Globale;CAPITALIZZAZIONE
+SISF Global Cities C Cap EUR Hdg;LU0224509561;Immobiliare Indiretto - Globale;-;173,6846;18/03/2026;EUR;FONDO;IMMOBILIARE;Globale;CAPITALIZZAZIONE
+SISF Global Equity C Cap $;LU0215106450;Azionari Internazionali Large Cap Blend;*****;70,2258;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+SISF Global Innovation C Cap $;LU1910165999;Azionari Internazionali Large Cap Growth;***;272,2699;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+SISF Global Multi-Asset Balanced C Cap EUR;LU0776414327;Bilanciati Prudenti EUR - Globali;*****;193,699;18/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+SISF Strategic Credit C Cap EUR Hdg;LU1046235906;Obbligazionari Flessibili Globali - EUR Hedged;*****;139,9944;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+State Street SPDR Bloomberg 1-3 Y Euro Gov. Bond UCITS ETF;IE00B6YX5F63;Obbligazionari Governativi Breve Termine EUR;***;52,0858;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+State Street SPDR Bloomberg 1-3 Y U.S. Treas. Bond UCITS ETF Dis;IE00BC7GZJ81;Obbligazionari Governativi Breve Termine USD;-;41,8423;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+State Street SPDR S&P Global Dividend Aristocrats UCITS ETF;IE00B9CQXS71;Azionari Globali Reddito;-;32,7324;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+State Street SPDR S&P U.S. Dividend Aristocrats UCITS ETF;IE00B6YX5D40;Azionari USA Reddito;-;71,3827;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+T.Rowe Asian Ex-Japan Equity I1 Cap $;LU2594029212;Azionari Asia ex Giappone;-;13,49;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+T.Rowe Euro Corporate Bond I1 EUR;LU2615257982;Obbligazionari Corporate EUR;-;11,63;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+T.Rowe Global Focused Growth Eq. Q1 Cap $;LU2252236455;Azionari Internazionali Large Cap Growth;***;15,58;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+T.Rowe US Equity Q1 EUR;LU2008325073;Azionari USA Large Cap Blend;****;22,28;18/03/2026;EUR;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Templeton Frontier Markets I EUR;LU0390137205;Azionari Internazionali - Frontier Markets;***;43,06;18/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Tikehau Short Duration I Cap EUR;LU1585265819;Obbligazionari Corporate Breve Termine EUR;*****;144,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+UBS (Lux) AI and Robotics Equity I-A1 Cap EUR Hdg;LU1575199994;Azionari Altro;-;1.877,35;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+UBS (Lux) Bd Sicav China Fixed Income I-A1 Cap EUR;LU2257620158;Obbligazionari RMB - Onshore;***;120,46;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+UBS (Lux) Bd Sicav Convert Global Q Cap EUR;LU0358423738;Obbligazionari Convertibili Globali - EUR Hedged;*****;271,26;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+UBS (Lux) Bd Sicav Global Dynamic Q Cap $;LU1240774783;Obbligazionari Flessibili Globali - USD Hedged;****;142,69;17/03/2026;USD;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+UBS (Lux) Bd Sicav Global Dynamic Q Cap EUR Hdg;LU1240774601;Obbligazionari Flessibili Globali - EUR Hedged;****;116,89;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+UBS (Lux) Bond F. Euro High Yield I-A3 Cap EUR;LU2094083099;Obbligazionari High Yield EUR;-;126,69;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+UBS (Lux) Eq. Fd China Opportunity Q Cap $;LU0403296170;Azionari Cina;***;202,92;18/03/2026;USD;FONDO;AZIONARIO;Asia Pacifico;CAPITALIZZAZIONE
+UBS (Lux) KSS China Alloc Opport Q Cap $;LU2118508683;Bilanciati Grande Cina;**;86,05;18/03/2026;USD;FONDO;BILANCIATO;Asia Pacifico;CAPITALIZZAZIONE
+UBS (Lux) Security Equity I-A1 Cap EUR Hdg;LU1575200081;Azionari Altro;-;2.106,84;17/03/2026;EUR;FONDO;AZIONARIO;Altro;CAPITALIZZAZIONE
+UBS BBG USD EM Sovereign UCITS ETF hEUR acc;LU1324516308;Obbligazionari Paesi Emergenti EUR;***;12,8977;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+UBS Factor MSCI USA Quality Screened UCITS ETF USD dis;IE00BX7RRJ27;Azionari USA Large Cap Blend;-;51,9709;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Vanguard Emerging Markets Bond Inst. Plus EUR Hdg;IE00BKLWXV65;Obbligazionari Paesi Emergenti EUR;****;109,9189;18/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Vanguard EUR Corporate Bond UCITS ETF (EUR) Dis;IE00BZ163G84;Obbligazionari Corporate EUR;***;48,124;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Vanguard FTSE 250 UCITS ETF (GBP) Acc;IE00BFMXVQ44;Azionari UK Mid Cap;****;40,965;18/03/2026;GBP;ETF;AZIONARIO;Europa;CAPITALIZZAZIONE
+Vanguard FTSE All-World UCITS ETF (USD) Dis;IE00B3RBWM25;Azionari Internazionali Large Cap Blend;-;143,32;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Vont.II Active Beta I Cap EUR;LU1936094652;Bilanciati Flessibili EUR - Globali;*;108,51;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Vontobel Euro Corporate Bond I EUR;LU0278087860;Obbligazionari Corporate EUR;****;177,57;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Vontobel Global Environmental Change I EUR;LU0384405949;Azionari Settore Ecologia;****;758,38;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Vontobel Global Equity I $;LU0278093595;Azionari Internazionali Large Cap Growth;***;382,4;17/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Vontobel mtx Emerging Markets Leaders I Cap EUR;LU1626216888;Azionari Paesi Emergenti;***;178,08;17/03/2026;EUR;FONDO;AZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+Vontobel Multi Asset Solution I Cap EUR;LU1564308895;Bilanciati Prudenti EUR - Globali;***;128,17;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+Vontobel US Equity G $;LU1428951294;Azionari USA Large Cap Blend;**;305,01;17/03/2026;USD;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+Wellingtion MF (Lux) III Global Quality Growth S Cap $;LU0629158030;Azionari Internazionali Large Cap Growth;*****;59,3656;17/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Wellington Global Stewards S Cap $;IE00BH3Q8N22;Azionari Internazionali Large Cap Blend;***;23,3926;18/03/2026;USD;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Willer Flexible Financial Bond I Cap EUR;LU2255813987;Obbligazionari Subordinati EUR;***;11,478;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+Willerequity Switzerland I CHF;LU1155043398;Azionari Svizzera;**;171,667;17/03/2026;CHF;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+WisdomTree Physical Gold;JE00B1VS3770;Materie Prime - Metalli Preziosi;-;396,0341;18/03/2026;EUR;ETC;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+WisdomTree Physical Gold;JE00B1VS3770;Materie Prime - Metalli Preziosi;-;396,0341;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+WisdomTree Physical Gold - EUR Daily Hedged;JE00B8DFY052;Materie Prime - Metalli Preziosi;-;25,8627;18/03/2026;EUR;ETC;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+WisdomTree Physical Gold - EUR Daily Hedged;JE00B8DFY052;Materie Prime - Metalli Preziosi;-;25,8627;18/03/2026;EUR;FONDO;MATERIE PRIME;Globale;CAPITALIZZAZIONE
+WPS Asteria MAN Flexible Allocation  I Cap EUR;LU2512191250;Azionari Settore Ecologia;-;10,92;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+WPS Blackrock Balanced ESG I Cap EUR;LU2401054973;Bilanciati Flessibili EUR - Globali;***;12,016;17/03/2026;EUR;FONDO;BILANCIATO;Globale;CAPITALIZZAZIONE
+WPS Eurizon Multi-Asset Circular Ec. I Cap EUR;LU2512194353;Bilanciati Altro;****;12,538;17/03/2026;EUR;FONDO;BILANCIATO;Altro;CAPITALIZZAZIONE
+WPS FAMI Euro Short Term I Cap EUR;LU2512191508;Obbligazionari Diversificati USD;-;10,314;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
+WPS Fidelity Flexible Short Duration I Cap EUR;LU2449771463;Obbligazionari Flessibili Globali - EUR Hedged;***;11,478;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+WPS Franklin Emerging Corporate Bond I Cap EUR;LU2512192142;Obbligazionari Paesi Emergenti;-;10,842;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+WPS Franklin Emerging Corporate Bond IH Cap EUR;LU2512192225;Obbligazionari Paesi Emergenti EUR;-;10,983;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Paesi Emergenti;CAPITALIZZAZIONE
+WPS Invesco Euro Corporate Bond I Cap EUR;LU2693284528;Obbligazionari Corporate EUR;-;10,995;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+WPS JH Strategic Bond I Cap EUR;LU2401052688;Obbligazionari Flessibili Globali;**;9,348;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+WPS JPM Europe Equity I Cap EUR;LU2512193033;Azionari Europa Large Cap Blend;-;14,529;17/03/2026;EUR;FONDO;AZIONARIO;Europa;CAPITALIZZAZIONE
+WPS JPM Global Aggregate Bond I Cap EUR;LU2968552864;-;-;10,095;17/03/2026;EUR;FONDO;NON CLASSIFICATO;Altro;CAPITALIZZAZIONE
+WPS Lombard Odier Natural Capital I Cap EUR;LU2401053223;Azionari Settore Ecologia;*;9,699;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+WPS Pictet Health Innovation Trends I Cap EUR;LU2401052175;Azionari Settore Salute;****;11,524;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+WPS PIMCO European Income Bond I Cap EUR;LU2957475366;Obbligazionari Flessibili EUR;-;10,357;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+WPS Schroder Global Climate Change I Cap EUR;LU2401051797;Azionari Settore Ecologia;****;15,191;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+WPS T. Rowe Price Equity US Research I Cap EUR;LU2512194940;Azionari USA Large Cap Blend;-;13,483;17/03/2026;EUR;FONDO;AZIONARIO;Nord America;CAPITALIZZAZIONE
+WPS Vontobel Eq. Global Impact I Cap EUR;LU2512193389;Azionari Internazionali Large Cap Blend;-;10,483;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+WPS Wellington Equity Global Research I Cap EUR;LU2512193629;Azionari Internazionali Large Cap Blend;-;11,493;17/03/2026;EUR;FONDO;AZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers II Gl. Aggr. Bond Swap UCITS ETF 5C;LU0942970798;Obbligazionari Globali EUR - Hedged;**;20,8894;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers II Gl. Inf.-Linked Bond UCITS ETF 1C;LU0290357929;Obbligazionari Inflation-Linked Globali - EUR Hedged;***;221,1736;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers II Gl. Inf.-Linked Bond UCITS ETF 5C;LU0908508814;Obbligazionari Inflation-Linked Globali;**;22,6515;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers II Global Govern. Bond UCITS ETF 5C;LU0908508731;Obbligazionari Governativi Globali;***;219,7567;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers II Japan Govern. Bond UCITS ETF 1C;LU0952581584;Obbligazionari JPY;-;6,1086;18/03/2026;EUR;ETF;OBBLIGAZIONARIO;Giappone;CAPITALIZZAZIONE
+Xtrackers MSCI World UCITS ETF 1C;IE00BJ0KDQ92;Azionari Internazionali Large Cap Blend;-;122,5347;18/03/2026;EUR;ETF;AZIONARIO;Globale;CAPITALIZZAZIONE
+Xtrackers S&P 500 Equal Weight UCITS ETF 1C;IE00BLNMYC90;Azionari USA Large Cap Blend;-;93,9514;18/03/2026;EUR;ETF;AZIONARIO;Nord America;CAPITALIZZAZIONE
+YIS 1-3 Year EMU Government Bond Z Cap EUR;LU0335987268;Obbligazionari Governativi Breve Termine EUR;***;158,468;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+YIS 1-3 Year Italian Government Bond Z Cap EUR;LU2976321591;Obbligazionari Governativi Breve Termine EUR;-;10,082;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+YIS 3-5 Year Italian Government Bond Z Cap EUR;LU2976318704;Obbligazionari Governativi EUR;-;10,079;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+YIS 5+ Year EMU Government Bond Z Cap EUR;LU0335987854;Obbligazionari Lungo Termine EUR;*****;240,283;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+YIS 5+ Year Italian Government Bond Z Cap EUR;LU2976318969;Obbligazionari Governativi EUR;-;10,145;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Europa;CAPITALIZZAZIONE
+YIS US Government Bond  Z Cap EUR;LU0335989553;Obbligazionari Governativi USD;***;207,77;17/03/2026;EUR;FONDO;OBBLIGAZIONARIO;Nord America;CAPITALIZZAZIONE
