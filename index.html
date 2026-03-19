@@ -252,9 +252,7 @@ select.filter-input{cursor:pointer}
   <div><h1>Il Mio Foglio</h1><div class="subtitle">Portfolio Builder - Fideuram S.p.A.</div></div>
   <div class="header-right">
     <button class="btn btn-model" id="btnModelPortfolio" style="display:none">&#9881; Portafoglio Modello</button>
-    <label class="upload-json-btn" id="perfLabel" title="Carica performance_data.json per visualizzare andamenti">&#128200; Performance<input type="file" id="perfInput" accept=".json" style="display:none"></label>
     <span id="uploadInfo" class="upload-info"></span>
-    <label class="upload-btn" id="uploadLabel">Carica CSV<input type="file" id="csvInput" accept=".csv" style="display:none"></label>
   </div>
 </div>
 
@@ -266,9 +264,9 @@ select.filter-input{cursor:pointer}
 <div class="main" id="mainArea">
   <div class="welcome" id="welcomeScreen" style="grid-column:1/-1">
     <h2>Il Mio Foglio - Portfolio Builder</h2>
-    <p>Carica il file <strong>UNIFICATO.csv</strong> per costruire il tuo portafoglio personalizzato.</p>
+    <p>Caricamento dati dal server...</p>
     <div class="rules"><strong>Regole contrattuali (Sezione III):</strong><br>&bull; Investimento minimo: <strong>&euro;5.000</strong><br>&bull; Max <strong>50 strumenti</strong><br>&bull; Peso per strumento: <strong>1% - 30%</strong><br>&bull; Min investimento per strumento: <strong>&euro;150</strong><br>&bull; OICR Alternativi: max <strong>15%</strong></div>
-    <div class="drop-zone" id="dropZone"><div style="font-size:2rem;opacity:.4">&#128194;</div><p style="color:var(--text-secondary);font-size:.85rem">Trascina il CSV qui oppure clicca</p></div>
+    <div id="loadingIndicator" style="color:var(--accent);font-size:.9rem;font-weight:600">&#9881; Connessione a Supabase...</div>
   </div>
 
   <div class="panel" id="catalogPanel" style="display:none">
@@ -369,10 +367,19 @@ select.filter-input{cursor:pointer}
 // ========== RULES ==========
 const RULES={MIN_INVEST:5000,MAX_INSTRUMENTS:50,MIN_WEIGHT:1,MAX_WEIGHT:30,MIN_AMOUNT_PER_INSTR:150,MAX_ALTERNATIVE_PCT:15};
 
+// ========== SUPABASE ==========
+const SUPABASE_URL='https://yuzmqsawjihoheuziszp.supabase.co';
+const SUPABASE_KEY='sb_publishable_-XNxHxZkG3smj1dQ3Xkfag_KPqXmU5F';
+
+async function supaFetch(table,params=''){
+  const r=await fetch(`${SUPABASE_URL}/rest/v1/${table}?${params}`,{headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY}});
+  if(!r.ok)throw new Error(`Supabase ${table}: ${r.status}`);return r.json();
+}
+
 // ========== STATE ==========
 const State={instruments:[],portfolio:[],investAmount:5000,filters:{search:'',tipo:'ALL',rating:'ALL',valuta:'ALL',categoria:'ALL',macro:'ALL',geo:'ALL',politica:'ALL'},csvLoaded:false,dragIndex:null};
 
-// Performance data (loaded from JSON)
+// Performance data
 const PerfData = {};
 
 const MACROS=['AZIONARIO','OBBLIGAZIONARIO','BILANCIATO','ALTERNATIVO','MONETARIO','IMMOBILIARE','MATERIE PRIME'];
@@ -421,12 +428,45 @@ function loadCSV(text){
   initModelDefaults();
   toast(State.instruments.length+' strumenti caricati','success');
 }
-document.getElementById('csvInput').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>loadCSV(ev.target.result);r.readAsText(f,'utf-8');});
-const dz=document.getElementById('dropZone');
-dz.addEventListener('click',()=>document.getElementById('csvInput').click());
-dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag-active')});
-dz.addEventListener('dragleave',()=>dz.classList.remove('drag-active'));
-dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag-active');const f=e.dataTransfer.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>loadCSV(ev.target.result);r.readAsText(f,'utf-8');});
+// ========== SUPABASE AUTO-LOAD ==========
+async function loadFromSupabase(){
+  const ind=document.getElementById('loadingIndicator');
+  try{
+    ind.textContent='Caricamento strumenti...';
+    const [strumenti,perf]=await Promise.all([
+      supaFetch('strumenti','select=*&order=nome&limit=1000'),
+      supaFetch('performance','select=*&limit=1000')
+    ]);
+    // Map strumenti to app format
+    State.instruments=strumenti.map(s=>({
+      nome:s.nome||'',isin:s.isin||'',categoria:s.categoria_morningstar||'',
+      rating:parseRating(s.rating_overall),quotazione:parseItalianNumber(s.quotazione),
+      dataAgg:s.data_agg||'',valuta:s.valuta||'',tipo:s.tipo||'FONDO',
+      macro:s.macro_classe||'NON CLASSIFICATO',geo:s.zona_geografica||'Altro',
+      politica:s.politica||'N/D'
+    }));
+    // Load performance
+    let ok=0;perf.forEach(p=>{
+      if(p.error){PerfData[p.isin]={error:p.error};}
+      else{PerfData[p.isin]={price:p.price,date:p.date,perf_1m:p.perf_1m,perf_3m:p.perf_3m,perf_6m:p.perf_6m,perf_1y:p.perf_1y,perf_ytd:p.perf_ytd,min_1y:p.min_1y,max_1y:p.max_1y,sparkline:p.sparkline,source:p.source,ticker:p.ticker};ok++;}
+    });
+    State.csvLoaded=true;
+    populateFilterOptions();renderCatalog();restoreState();
+    document.getElementById('welcomeScreen').style.display='none';
+    document.getElementById('catalogPanel').style.display='';
+    document.getElementById('portfolioPanel').style.display='';
+    document.getElementById('investBar').style.display='';
+    document.getElementById('btnModelPortfolio').style.display='';
+    document.getElementById('uploadInfo').textContent=State.instruments.length+' strumenti · '+ok+' performance';
+    initModelDefaults();
+    toast(State.instruments.length+' strumenti caricati da Supabase','success');
+  }catch(err){
+    ind.textContent='Errore: '+err.message;
+    ind.style.color='var(--danger)';
+    toast('Errore caricamento: '+err.message,'error');
+  }
+}
+loadFromSupabase();
 
 document.getElementById('investAmount').addEventListener('input',e=>{
   const raw=e.target.value.replace(/[^\d]/g,'');const num=parseInt(raw)||0;State.investAmount=num;
@@ -600,21 +640,7 @@ function restoreState(){try{
 
 function toast(m,t='success'){const c=document.getElementById('toastContainer'),el=document.createElement('div');el.className='toast '+t;el.textContent=m;c.appendChild(el);setTimeout(()=>{el.style.animation='fadeOut .3s ease forwards';setTimeout(()=>el.remove(),300)},3000);}
 
-// ========== PERFORMANCE DATA ==========
-document.getElementById('perfInput').addEventListener('change',e=>{
-  const f=e.target.files[0];if(!f)return;
-  const r=new FileReader();r.onload=ev=>{
-    try{
-      const data=JSON.parse(ev.target.result);
-      let ok=0;Object.entries(data).forEach(([isin,d])=>{PerfData[isin]=d;if(!d.error)ok++;});
-      document.getElementById('perfLabel').classList.add('loaded');
-      document.getElementById('perfLabel').innerHTML='&#10003; '+ok+' performance<input type="file" id="perfInput" accept=".json" style="display:none">';
-      document.getElementById('perfInput').addEventListener('change',arguments.callee);
-      toast(ok+' strumenti con dati performance','success');
-      if(State.csvLoaded){renderCatalog();renderPortfolioTable();}
-    }catch(err){toast('Errore nel JSON: '+err.message,'error');}
-  };r.readAsText(f,'utf-8');
-});
+// ========== PERFORMANCE DATA (loaded from Supabase) ==========
 
 function renderSparkline(isin,w=60,h=20){
   const d=PerfData[isin];

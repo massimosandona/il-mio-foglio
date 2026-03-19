@@ -21,3 +21,6 @@ UNIFICATO.csv
 
 # PDF documentazione contrattuale
 *.pdf
+
+# Script con chiavi segrete
+upload_supabase.py
