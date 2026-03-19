@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+
+# Claude Code
+.claude/
+
+# File sorgente (non necessari, i dati sono in UNIFICATO_v2.csv)
+newETF.csv
+newFONDI.csv
+UNIFICATO.csv
+
+# PDF documentazione contrattuale
+*.pdf

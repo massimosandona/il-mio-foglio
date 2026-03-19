@@ -1,0 +1,193 @@
+================================================================
+IL MIO FOGLIO - PORTFOLIO BUILDER
+Stato del progetto al 19/03/2026
+================================================================
+
+DESCRIZIONE
+-----------
+Tool professionale per costruire portafogli personalizzati con il
+prodotto "Il Mio Foglio" di Fideuram S.p.A. Applicazione web
+single-page (HTML/CSS/JS) con tema scuro, catalogo strumenti,
+portafoglio con drag&drop, analytics, wizard portafoglio modello,
+dati performance da Yahoo Finance e Morningstar.
+
+
+FILE DEL PROGETTO
+-----------------
+C:/Progetti/IL MIO FOGLIO/
+
+  index.html              - App principale (HTML/CSS/JS tutto in un file)
+  UNIFICATO_v2.csv        - Dataset unificato (765 righe, 11 colonne)
+  performance_data.json   - Dati performance scaricati (641 OK su 644)
+  aggiorna_dati.py        - Script Python per aggiornare i dati performance
+  server.py               - Server locale (localhost:8080)
+  mapping.py              - Script che ha mappato categorie Morningstar -> macro/geo
+  newETF.csv              - File sorgente ETF/ETC (121 strumenti)
+  newFONDI.csv            - File sorgente Fondi (644 strumenti)
+  3 file PDF              - Documentazione contrattuale Fideuram
+
+  NOTA: UNIFICATO.csv (vecchio, 8 colonne, senza Macro/Geo/Politica)
+        esiste ancora ma NON è quello corretto. Usare UNIFICATO_v2.csv.
+
+
+STRUTTURA CSV (UNIFICATO_v2.csv)
+--------------------------------
+Delimitatore: ; (punto e virgola)
+Encoding: UTF-8 con BOM (utf-8-sig)
+Colonne (11):
+  0: Nome
+  1: Isin
+  2: Categoria Morningstar
+  3: Rating Overall (stelle con *)
+  4: Quotazione (formato italiano con virgola)
+  5: Data agg.
+  6: Valuta
+  7: Tipo (ETF / ETC / FONDO)
+  8: Macro Classe (AZIONARIO, OBBLIGAZIONARIO, BILANCIATO, ALTERNATIVO,
+                   MONETARIO, IMMOBILIARE, MATERIE PRIME, NON CLASSIFICATO)
+  9: Zona Geografica (Globale, Europa, Nord America, Asia Pacifico,
+                      Paesi Emergenti, Giappone, Altro)
+  10: Politica (CAPITALIZZAZIONE / DISTRIBUZIONE)
+
+Statistiche:
+  765 righe totali, 644 ISIN unici
+  121 duplicati (stesso ISIN presente sia come ETF che come FONDO)
+  Tipo: ~121 ETF, ~13 ETC, ~644 FONDI (con sovrapposizioni)
+  Macro: AZIONARIO(351), OBBLIGAZIONARIO(301), BILANCIATO(62),
+         ALTERNATIVO(18), IMMOBILIARE(13), MATERIE PRIME(13),
+         MONETARIO(5), NON CLASSIFICATO(2)
+  Geo: Globale(317), Europa(196), Altro(71), Nord America(68),
+       Paesi Emergenti(63), Asia Pacifico(42), Giappone(8)
+  Politica: CAPITALIZZAZIONE(694), DISTRIBUZIONE(71)
+
+
+AGGIORNA_DATI.PY
+-----------------
+Script Python che scarica dati performance per tutti gli ISIN.
+Richiede: pip install yfinance
+
+Strategia di ricerca a cascata (3 livelli di fallback):
+  1. Yahoo Finance per ISIN diretto (~95% copertura)
+  2. Yahoo Finance per ticker di borsa alternativo (per ETF/ETC non trovati)
+     Mappatura manuale in ALT_TICKERS per 8 ETF/ETC specifici:
+       IE00B3VTML14 -> CSBGE7.MI
+       IE00B4K48X80 -> SMEA.MI
+       IE00B53L3W79 -> CSSX5E.MI
+       IE00BHZPJ239 -> SAEM.L
+       IE00BHZPJ908 -> SUSC.MI
+       IE00BX7RRJ27 -> UBSQ.MI (non trovato)
+       JE00B1VS3770 -> PHAU.MI
+       LU0290357929 -> XGIN.MI
+  3. Morningstar Screener API (per fondi istituzionali LU non su Yahoo)
+     Endpoint: lt.morningstar.com/api/rest.svc/klr5zyak8x/security/screener
+     Universi provati: FOESP$$ALL, FOALL$$ALL, ETALL$$ALL
+
+Dati scaricati per ogni ISIN:
+  price, date, perf_1m (21gg), perf_3m (63gg), perf_6m (126gg),
+  perf_1y, perf_ytd, min_1y, max_1y, sparkline (30 punti)
+  Per Morningstar: no sparkline, no min/max, no YTD
+
+Controllo data: se rieseguito lo stesso giorno, salta gli ISIN già aggiornati.
+Risultato attuale: 641 OK, 3 errori (fondi non disponibili pubblicamente)
+
+3 ISIN senza dati (classi riservate, non disponibili su nessuna fonte):
+  LU2158760806 - Fidelity World RY Cap EUR (classe RY riservata)
+  LU2512193389 - WPS Vontobel Eq. Global Impact I (classe WPS privata)
+  LU2968552864 - WPS JPM Global Aggregate Bond I (classe WPS privata)
+
+
+PERFORMANCE_DATA.JSON
+---------------------
+Dizionario JSON: chiave = ISIN, valore = oggetto con:
+  price, date, perf_1m, perf_3m, perf_6m, perf_1y, perf_ytd,
+  min_1y, max_1y, sparkline (array 30 float), source (opzionale),
+  ticker (opzionale, se scaricato via ticker alternativo)
+  Oppure: {error: "messaggio"} per gli ISIN non trovati
+
+
+INDEX.HTML - FUNZIONALITÀ
+--------------------------
+1. CARICAMENTO
+   - Upload CSV via click o drag&drop
+   - Upload performance_data.json separato (bottone "Performance")
+   - Il CSV viene parsato lato client (JS), no server necessario
+
+2. CATALOGO STRUMENTI (pannello sinistro)
+   - Filtri: Cerca nome/ISIN, Tipo, Macro Classe, Zona Geo, Rating,
+             Politica (Cap/Dist), Valuta, Categoria Morningstar
+   - Badge colorati: tipo, macro, geo, politica (CAP verde / DIST giallo)
+   - Stelle Morningstar
+   - Sparkline SVG e pill performance (1M, 3M, 6M, 1A, YTD)
+   - Click "+" per aggiungere al portafoglio
+
+3. PORTAFOGLIO (pannello destro)
+   - Tabella con drag&drop per riordinare
+   - Input peso % per strumento
+   - Calcolo importo in EUR
+   - Colonne: Strumento, Tipo, Macro, Geo, Andamento, 1M, 1A, Peso%, Importo
+   - Barra superiore: peso totale, rimanente, contatore strumenti
+   - Azioni: Equalizza, Esporta CSV, Stampa PDF, Svuota
+   - Validazione in tempo reale (regole contrattuali)
+
+4. ANALYTICS
+   - Donut chart: Macro Classi, Zone Geografiche, ETF vs Fondi
+   - Bar chart: Valute, Categorie top 8
+
+5. PORTAFOGLIO MODELLO (wizard 4 step)
+   Step 1: Allocazione % Macro Classi (slider + input, totale 100%)
+   Step 2: Allocazione % Zone Geografiche (slider + input, totale 100%)
+   Step 3: Preferenze
+     - Tipo strumento (Indifferente/Preferisci ETF/Preferisci Fondi/Solo ETF/Solo Fondi)
+     - Rating minimo Morningstar (Nessuno/3+/4+/5)
+     - Max strumenti per cella macro/geo (1/2/3)
+     - Valuta (Indifferente/Preferisci EUR)
+     - Politica distribuzione (Indifferente/Solo Cap/Solo Dist/Preferisci Cap/Preferisci Dist)
+   Step 4: Anteprima con matrice allocazione e lista strumenti selezionati
+   - Auto-balance per normalizzare a 100%
+   - Algoritmo: matrice incrociata macro×geo, selezione per rating, rispetto vincoli
+
+6. REGOLE CONTRATTUALI (da PDF Fideuram Sezione III)
+   - Investimento minimo: €5.000
+   - Max 50 strumenti
+   - Peso per strumento: 1% - 30%
+   - Min investimento per strumento: €150
+   - OICR Alternativi: max 15%
+
+7. PERSISTENZA
+   - Portfolio e importo salvati in localStorage
+   - Ripristino automatico al ricaricamento (se stesso CSV)
+
+
+SERVER.PY
+---------
+Server HTTP locale su localhost:8080 con SimpleHTTPRequestHandler.
+Necessario per evitare errore CORS/security origin quando si apre
+index.html direttamente da file://.
+Apre automaticamente il browser.
+Avvio: python server.py
+
+
+MAPPING.PY
+----------
+Script usato una volta per aggiungere le colonne Macro Classe e Zona
+Geografica al CSV. Contiene il dizionario MAPPING con 133 categorie
+Morningstar mappate a macro classe + zona geografica.
+Non serve rieseguirlo (le colonne sono già nel CSV).
+
+
+AMBIENTE TECNICO
+----------------
+- Windows 11
+- Python: C:/Python313/python (NON python3)
+- Encoding CSV: utf-8-sig (UTF-8 con BOM)
+- Il file UNIFICATO.csv potrebbe essere aperto in Excel (PermissionError)
+  -> per questo è stato creato UNIFICATO_v2.csv
+
+PROBLEMI NOTI / ATTENZIONE
+---------------------------
+- UNIFICATO.csv (vecchio) vs UNIFICATO_v2.csv (corretto): usare sempre v2
+- 121 ISIN duplicati nel CSV (ETF presente anche come FONDO): voluto, non rimuovere
+- 3 fondi senza dati performance (classi WPS/RY riservate): non risolvibile
+- Il listener perfInput usa arguments.callee dopo innerHTML replacement
+  (potrebbe non funzionare in strict mode)
+- Porta 8080 potrebbe restare occupata se server.py non viene chiuso con Ctrl+C

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Il Mio Foglio - Portfolio Builder</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-primary:#0f1117;--bg-secondary:#1a1d27;--bg-card:#232733;
+  --accent:#4f8cff;--accent-hover:#6ba0ff;--accent-dim:rgba(79,140,255,.12);
+  --success:#34d399;--warning:#fbbf24;--danger:#f87171;
+  --text-primary:#e4e7ec;--text-secondary:#9ca3af;--text-muted:#6b7280;
+  --border:#2e3344;--radius:8px;
+  --font:'Segoe UI',system-ui,-apple-system,sans-serif;
+}
+html{font-size:13px}
+body{font-family:var(--font);background:var(--bg-primary);color:var(--text-primary);min-height:100vh;overflow-x:hidden}
+input,select,button,textarea{font-family:inherit;font-size:inherit}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg-secondary)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}
+
+.header{background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
+.header h1{font-size:1.25rem;font-weight:700;color:var(--accent);white-space:nowrap}
+.header .subtitle{color:var(--text-secondary);font-size:.8rem}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.upload-btn{background:var(--accent);color:#fff;border:none;padding:7px 14px;border-radius:var(--radius);cursor:pointer;font-weight:600;font-size:.85rem;transition:background .2s}
+.upload-btn:hover{background:var(--accent-hover)}
+.upload-info{color:var(--success);font-size:.8rem;font-weight:600}
+
+.invest-bar{background:var(--bg-card);border-bottom:1px solid var(--border);padding:8px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.invest-bar label{font-size:.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.invest-input{background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-primary);padding:6px 12px;border-radius:var(--radius);font-size:1rem;font-weight:700;width:160px;text-align:right;outline:none}
+.invest-input:focus{border-color:var(--accent)}
+.invest-summary{display:flex;gap:20px;margin-left:auto;font-size:.8rem}
+.invest-stat{display:flex;flex-direction:column;align-items:center}
+.invest-stat .val{font-weight:700;font-size:1rem}
+.invest-stat .lbl{color:var(--text-muted);font-size:.7rem;text-transform:uppercase}
+
+.main{display:grid;grid-template-columns:1fr 1fr;gap:0;height:calc(100vh - 90px)}
+.panel{display:flex;flex-direction:column;overflow:hidden;border-right:1px solid var(--border)}
+.panel:last-child{border-right:none}
+.panel-header{padding:10px 14px;background:var(--bg-secondary);border-bottom:1px solid var(--border);flex-shrink:0}
+.panel-header h2{font-size:.95rem;font-weight:600;display:flex;align-items:center;gap:8px}
+.panel-body{flex:1;overflow-y:auto;padding:10px}
+
+.filters{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px;padding:10px 14px;background:var(--bg-card);border-bottom:1px solid var(--border)}
+.filter-group{display:flex;flex-direction:column;gap:2px}
+.filter-group.wide{grid-column:span 2}
+.filter-group label{font-size:.65rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.filter-input{background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-primary);padding:5px 8px;border-radius:var(--radius);font-size:.8rem;outline:none;transition:border-color .2s}
+.filter-input:focus{border-color:var(--accent)}
+.filter-input::placeholder{color:var(--text-muted)}
+select.filter-input{cursor:pointer}
+.filter-actions{display:flex;align-items:flex-end}
+.btn-reset{background:transparent;border:1px solid var(--border);color:var(--text-secondary);padding:5px 10px;border-radius:var(--radius);cursor:pointer;font-size:.75rem;transition:all .2s;white-space:nowrap}
+.btn-reset:hover{border-color:var(--danger);color:var(--danger)}
+.catalog-count{font-size:.7rem;color:var(--text-muted);padding:4px 14px}
+
+.instrument-list{display:flex;flex-direction:column;gap:3px}
+.inst-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:3px;cursor:pointer;transition:all .15s}
+.inst-card:hover{border-color:var(--accent);background:var(--accent-dim)}
+.inst-card.in-portfolio{opacity:.45;pointer-events:none}
+.inst-name{font-weight:600;font-size:.8rem;line-height:1.3;grid-column:1}
+.inst-meta{display:flex;gap:6px;align-items:center;font-size:.7rem;color:var(--text-secondary);grid-column:1;flex-wrap:wrap}
+.inst-meta2{display:flex;gap:6px;align-items:center;font-size:.68rem;color:var(--text-muted);grid-column:1}
+.inst-add{grid-column:2;grid-row:1/4;display:flex;align-items:center}
+.badge{display:inline-block;padding:1px 5px;border-radius:4px;font-size:.65rem;font-weight:700;text-transform:uppercase}
+.badge-etf{background:rgba(79,140,255,.2);color:var(--accent)}
+.badge-fondo{background:rgba(52,211,153,.15);color:var(--success)}
+.badge-etc{background:rgba(251,191,36,.15);color:var(--warning)}
+.badge-macro{background:rgba(167,139,250,.15);color:#a78bfa;font-size:.6rem}
+.badge-geo{background:rgba(56,189,248,.12);color:#38bdf8;font-size:.6rem}
+.badge-cap{background:rgba(52,211,153,.12);color:#34d399;font-size:.6rem}.badge-dist{background:rgba(251,191,36,.15);color:#fbbf24;font-size:.6rem}
+.stars{color:var(--warning);letter-spacing:-1px}
+.btn-add{background:var(--accent);color:#fff;border:none;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:transform .15s}
+.btn-add:hover{transform:scale(1.15)}
+
+.portfolio-bar{padding:10px 14px;background:var(--bg-card);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-shrink:0;flex-wrap:wrap}
+.weight-display{font-size:1.3rem;font-weight:700;font-variant-numeric:tabular-nums}
+.weight-ok{color:var(--success)}
+.weight-warn{color:var(--warning)}
+.weight-over{color:var(--danger)}
+.weight-info{font-size:.75rem;color:var(--text-secondary)}
+.portfolio-actions{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.btn{padding:5px 12px;border-radius:var(--radius);border:1px solid var(--border);background:var(--bg-secondary);color:var(--text-primary);cursor:pointer;font-size:.75rem;font-weight:600;transition:all .2s;white-space:nowrap}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-danger{border-color:var(--danger);color:var(--danger)}
+.btn-danger:hover{background:rgba(248,113,113,.1)}
+.btn-model{background:linear-gradient(135deg,#a78bfa,#4f8cff);border:none;color:#fff;font-weight:700}
+.btn-model:hover{opacity:.9;color:#fff}
+
+.validation-alerts{padding:6px 14px;background:var(--bg-secondary);border-bottom:1px solid var(--border)}
+.alert{padding:4px 10px;border-radius:4px;font-size:.75rem;margin-bottom:3px;display:flex;align-items:center;gap:6px}
+.alert-error{background:rgba(248,113,113,.1);color:var(--danger);border-left:3px solid var(--danger)}
+.alert-warn{background:rgba(251,191,36,.1);color:var(--warning);border-left:3px solid var(--warning)}
+.alert-ok{background:rgba(52,211,153,.1);color:var(--success);border-left:3px solid var(--success)}
+
+.portfolio-table{width:100%;border-collapse:collapse;font-size:.8rem}
+.portfolio-table th{text-align:left;font-size:.65rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;padding:6px 8px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg-primary);z-index:2}
+.portfolio-table td{padding:5px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+.portfolio-table tr{transition:background .15s}
+.portfolio-table tr:hover{background:var(--accent-dim)}
+.portfolio-table tr.dragging{opacity:.4}
+.portfolio-table tr.drag-over td{border-top:2px solid var(--accent)}
+.ptf-name{font-weight:600;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ptf-sub{color:var(--text-muted);font-size:.7rem}
+.weight-input{width:64px;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-primary);padding:3px 6px;border-radius:var(--radius);text-align:right;font-variant-numeric:tabular-nums;font-size:.8rem}
+.weight-input:focus{border-color:var(--accent);outline:none}
+.weight-input.input-error{border-color:var(--danger);background:rgba(248,113,113,.08)}
+.amount-cell{font-size:.75rem;color:var(--text-secondary);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.amount-cell.amount-error{color:var(--danger)}
+.btn-remove{background:transparent;border:none;color:var(--text-muted);cursor:pointer;font-size:.9rem;padding:3px;transition:color .15s}
+.btn-remove:hover{color:var(--danger)}
+.drag-handle{cursor:grab;color:var(--text-muted);padding:0 3px;font-size:.85rem;user-select:none}
+.drag-handle:active{cursor:grabbing}
+
+.analytics{display:flex;flex-direction:column;gap:10px;padding:14px}
+.analytics-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.analytics-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:12px}
+.analytics-card h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);margin-bottom:8px;font-weight:600}
+.bar-chart{display:flex;flex-direction:column;gap:4px}
+.bar-row{display:flex;align-items:center;gap:6px}
+.bar-label{width:120px;font-size:.7rem;color:var(--text-secondary);text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0}
+.bar-track{flex:1;height:16px;background:var(--bg-secondary);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;transition:width .4s ease;min-width:1px}
+.bar-value{font-size:.7rem;color:var(--text-primary);width:45px;text-align:right;font-variant-numeric:tabular-nums;flex-shrink:0}
+.donut-container{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.donut{width:100px;height:100px;border-radius:50%;flex-shrink:0;position:relative}
+.donut-center{position:absolute;inset:18px;background:var(--bg-card);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--text-muted);text-align:center;line-height:1.2}
+.donut-legend{display:flex;flex-direction:column;gap:4px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.75rem}
+.legend-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 20px;color:var(--text-muted);text-align:center;gap:10px}
+.empty-state .icon{font-size:2.5rem;opacity:.3}
+.empty-state p{font-size:.85rem}
+
+.toast-container{position:fixed;bottom:16px;right:16px;z-index:1000;display:flex;flex-direction:column;gap:6px}
+.toast{background:var(--bg-card);border:1px solid var(--border);padding:8px 14px;border-radius:var(--radius);font-size:.8rem;box-shadow:0 4px 20px rgba(0,0,0,.4);animation:slideIn .3s ease;max-width:300px}
+.toast.success{border-left:3px solid var(--success)}
+.toast.warning{border-left:3px solid var(--warning)}
+.toast.error{border-left:3px solid var(--danger)}
+@keyframes slideIn{from{transform:translateX(100px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+
+.welcome{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:40px;text-align:center;gap:16px}
+.welcome h2{font-size:1.4rem;color:var(--accent)}
+.welcome p{color:var(--text-secondary);max-width:420px;line-height:1.5}
+.welcome .rules{text-align:left;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;font-size:.8rem;line-height:1.6;color:var(--text-secondary);max-width:420px;width:100%}
+.welcome .rules strong{color:var(--text-primary)}
+.drop-zone{border:2px dashed var(--border);border-radius:12px;padding:36px;width:100%;max-width:420px;cursor:pointer;transition:all .3s}
+.drop-zone:hover,.drop-zone.drag-active{border-color:var(--accent);background:var(--accent-dim)}
+
+/* ===== MODEL PORTFOLIO MODAL ===== */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:500;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.modal{background:var(--bg-primary);border:1px solid var(--border);border-radius:12px;width:95vw;max-width:900px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.modal-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.modal-header h2{font-size:1.1rem;font-weight:700;color:var(--accent);flex:1}
+.modal-close{background:none;border:none;color:var(--text-muted);font-size:1.3rem;cursor:pointer;padding:4px}
+.modal-close:hover{color:var(--text-primary)}
+.modal-body{flex:1;overflow-y:auto;padding:20px}
+.modal-footer{padding:14px 20px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end}
+
+/* Steps */
+.wizard-steps{display:flex;gap:0;margin-bottom:20px}
+.wizard-step{flex:1;text-align:center;padding:10px;border-bottom:3px solid var(--border);color:var(--text-muted);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s}
+.wizard-step.active{border-bottom-color:var(--accent);color:var(--accent)}
+.wizard-step.done{border-bottom-color:var(--success);color:var(--success)}
+.step-content{display:none}
+.step-content.active{display:block}
+
+/* Allocation sliders */
+.alloc-grid{display:flex;flex-direction:column;gap:10px}
+.alloc-row{display:grid;grid-template-columns:140px 1fr 70px 50px;gap:10px;align-items:center}
+.alloc-label{font-size:.85rem;font-weight:600;display:flex;align-items:center;gap:6px}
+.alloc-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.alloc-slider{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:var(--bg-secondary);outline:none;cursor:pointer}
+.alloc-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg-primary)}
+.alloc-slider::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg-primary)}
+.alloc-pct{font-size:1rem;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.alloc-input{width:60px;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-primary);padding:3px 6px;border-radius:var(--radius);text-align:right;font-size:.85rem;font-weight:700}
+.alloc-input:focus{border-color:var(--accent);outline:none}
+.alloc-total{display:flex;justify-content:flex-end;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--border);margin-top:10px;font-size:.9rem;font-weight:700}
+.alloc-total.ok{color:var(--success)}
+.alloc-total.bad{color:var(--danger)}
+.alloc-remaining{font-size:.8rem;color:var(--text-muted)}
+.btn-auto-balance{font-size:.75rem;padding:4px 10px}
+
+/* Preview table */
+.preview-section{margin-top:16px}
+.preview-section h3{font-size:.85rem;color:var(--text-secondary);margin-bottom:8px}
+.preview-table{width:100%;border-collapse:collapse;font-size:.8rem}
+.preview-table th{text-align:left;font-size:.65rem;color:var(--text-muted);text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(--border)}
+.preview-table td{padding:5px 8px;border-bottom:1px solid var(--border)}
+.preview-table tr:hover{background:var(--accent-dim)}
+.preview-info{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;margin-bottom:16px;font-size:.8rem;color:var(--text-secondary);line-height:1.5}
+.matrix-table{width:100%;border-collapse:collapse;font-size:.75rem;margin:10px 0}
+.matrix-table th,.matrix-table td{padding:4px 6px;border:1px solid var(--border);text-align:center}
+.matrix-table th{background:var(--bg-secondary);color:var(--text-muted);font-size:.65rem;text-transform:uppercase}
+.matrix-table td.has-data{background:var(--accent-dim)}
+.matrix-table td.no-data{color:var(--text-muted);opacity:.4}
+.matrix-total{font-weight:700;background:var(--bg-secondary)!important}
+
+/* Preference toggles */
+.pref-row{display:flex;align-items:center;gap:12px;padding:8px 0;font-size:.85rem}
+.pref-row label{color:var(--text-secondary)}
+.pref-select{background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-primary);padding:4px 8px;border-radius:var(--radius);font-size:.8rem}
+
+@media print{
+  body{background:#fff;color:#000;font-size:10px}
+  .header,.panel:first-child,.portfolio-actions,.btn-remove,.drag-handle,.toast-container,.invest-bar,.validation-alerts,.modal-overlay{display:none!important}
+  .main{display:block;height:auto}.panel{border:none}.panel-body{overflow:visible;padding:0}
+  .portfolio-table th,.portfolio-table td{border-color:#ccc;padding:3px 6px}
+  .badge{border:1px solid #999;background:transparent;color:#000}
+  .analytics-card{border-color:#ccc;break-inside:avoid}.bar-track{background:#eee}
+  .weight-input{border:none;background:transparent;color:#000;text-align:right}
+  @page{size:A4 landscape;margin:1.5cm}
+  .print-header{display:block!important;text-align:center;margin-bottom:16px;font-size:14px;font-weight:bold}
+}
+.print-header{display:none}
+
+/* Performance / Sparkline */
+.perf-cell{font-size:.7rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.perf-pos{color:var(--success)}
+.perf-neg{color:var(--danger)}
+.perf-na{color:var(--text-muted)}
+.sparkline{display:inline-block;vertical-align:middle}
+.sparkline polyline{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.perf-pills{display:flex;gap:4px;flex-wrap:wrap}
+.perf-pill{padding:1px 4px;border-radius:3px;font-size:.6rem;font-weight:700}
+.perf-pill.pos{background:rgba(52,211,153,.15);color:var(--success)}
+.perf-pill.neg{background:rgba(248,113,113,.12);color:var(--danger)}
+.perf-pill.na{background:var(--bg-secondary);color:var(--text-muted)}
+.perf-header{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.perf-labels{display:flex;gap:4px;font-size:.55rem;color:var(--text-muted);text-transform:uppercase}
+.perf-labels span{width:38px;text-align:center}
+.upload-json-btn{background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:6px 12px;border-radius:var(--radius);cursor:pointer;font-size:.78rem;font-weight:600;transition:all .2s}
+.upload-json-btn:hover{border-color:var(--success);color:var(--success)}
+.upload-json-btn.loaded{border-color:var(--success);color:var(--success)}
+
+@media(max-width:900px){.main{grid-template-columns:1fr;height:auto}.panel{border-right:none;border-bottom:1px solid var(--border);max-height:50vh}.analytics-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div><h1>Il Mio Foglio</h1><div class="subtitle">Portfolio Builder - Fideuram S.p.A.</div></div>
+  <div class="header-right">
+    <button class="btn btn-model" id="btnModelPortfolio" style="display:none">&#9881; Portafoglio Modello</button>
+    <label class="upload-json-btn" id="perfLabel" title="Carica performance_data.json per visualizzare andamenti">&#128200; Performance<input type="file" id="perfInput" accept=".json" style="display:none"></label>
+    <span id="uploadInfo" class="upload-info"></span>
+    <label class="upload-btn" id="uploadLabel">Carica CSV<input type="file" id="csvInput" accept=".csv" style="display:none"></label>
+  </div>
+</div>
+
+<div class="invest-bar" id="investBar" style="display:none">
+  <div><label>Importo investimento</label><br><div style="display:flex;align-items:center;gap:4px"><span style="color:var(--text-muted);font-weight:700">&euro;</span><input type="text" class="invest-input" id="investAmount" value="5.000" placeholder="5.000"></div></div>
+  <div class="invest-summary" id="investSummary"></div>
+</div>
+
+<div class="main" id="mainArea">
+  <div class="welcome" id="welcomeScreen" style="grid-column:1/-1">
+    <h2>Il Mio Foglio - Portfolio Builder</h2>
+    <p>Carica il file <strong>UNIFICATO.csv</strong> per costruire il tuo portafoglio personalizzato.</p>
+    <div class="rules"><strong>Regole contrattuali (Sezione III):</strong><br>&bull; Investimento minimo: <strong>&euro;5.000</strong><br>&bull; Max <strong>50 strumenti</strong><br>&bull; Peso per strumento: <strong>1% - 30%</strong><br>&bull; Min investimento per strumento: <strong>&euro;150</strong><br>&bull; OICR Alternativi: max <strong>15%</strong></div>
+    <div class="drop-zone" id="dropZone"><div style="font-size:2rem;opacity:.4">&#128194;</div><p style="color:var(--text-secondary);font-size:.85rem">Trascina il CSV qui oppure clicca</p></div>
+  </div>
+
+  <div class="panel" id="catalogPanel" style="display:none">
+    <div class="panel-header"><h2>&#128218; Catalogo Strumenti</h2></div>
+    <div class="filters">
+      <div class="filter-group wide"><label>Cerca nome / ISIN</label><input type="text" class="filter-input" id="fSearch" placeholder="Amundi, LU0908..."></div>
+      <div class="filter-group"><label>Tipo</label><select class="filter-input" id="fTipo"><option value="ALL">Tutti</option><option value="ETF">ETF</option><option value="FONDO">Fondo</option><option value="ETC">ETC</option></select></div>
+      <div class="filter-group"><label>Macro Classe</label><select class="filter-input" id="fMacro"><option value="ALL">Tutte</option></select></div>
+      <div class="filter-group"><label>Zona Geo</label><select class="filter-input" id="fGeo"><option value="ALL">Tutte</option></select></div>
+      <div class="filter-group"><label>Rating</label><select class="filter-input" id="fRating"><option value="ALL">Tutti</option><option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option><option value="4">&#9733;&#9733;&#9733;&#9733;+</option><option value="3">&#9733;&#9733;&#9733;+</option><option value="2">&#9733;&#9733;+</option><option value="1">&#9733;+</option><option value="0">N.C.</option></select></div>
+      <div class="filter-group"><label>Politica</label><select class="filter-input" id="fPolitica"><option value="ALL">Tutte</option><option value="CAPITALIZZAZIONE">Cap</option><option value="DISTRIBUZIONE">Dist</option></select></div>
+      <div class="filter-group"><label>Valuta</label><select class="filter-input" id="fValuta"><option value="ALL">Tutte</option></select></div>
+      <div class="filter-group wide"><label>Categoria</label><select class="filter-input" id="fCategoria"><option value="ALL">Tutte</option></select></div>
+      <div class="filter-actions"><button class="btn-reset" id="btnResetFilters">Reset</button></div>
+    </div>
+    <div class="catalog-count" id="catalogCount"></div>
+    <div class="panel-body"><div class="instrument-list" id="instrumentList"></div></div>
+  </div>
+
+  <div class="panel" id="portfolioPanel" style="display:none">
+    <div class="panel-header"><h2>&#128188; Portafoglio</h2></div>
+    <div class="portfolio-bar">
+      <div><div class="weight-display" id="totalWeight">0,00%</div><div class="weight-info"><span id="remainingWeight">Rimanente: 100,00%</span> &middot; <span id="instrCount">0 strumenti</span></div></div>
+      <div class="portfolio-actions">
+        <button class="btn" id="btnEqualize">= Equalizza</button>
+        <button class="btn" id="btnExportCsv">&#128190; CSV</button>
+        <button class="btn" id="btnPrint">&#128424; PDF</button>
+        <button class="btn btn-danger" id="btnClearPortfolio">&#128465; Svuota</button>
+      </div>
+    </div>
+    <div id="validationArea" class="validation-alerts" style="display:none"></div>
+    <div class="panel-body" id="portfolioBody">
+      <div class="print-header" id="printHeader">Il Mio Foglio - Portafoglio Personalizzato</div>
+      <div id="portfolioContent"></div>
+      <div id="analyticsArea"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODEL PORTFOLIO MODAL -->
+<div class="modal-overlay" id="modelModal" style="display:none">
+<div class="modal">
+  <div class="modal-header">
+    <h2>&#9881; Portafoglio Modello</h2>
+    <button class="modal-close" onclick="closeModel()">&times;</button>
+  </div>
+  <div class="modal-body" id="modelBody">
+    <div class="wizard-steps">
+      <div class="wizard-step active" data-step="1" onclick="goStep(1)">1. Macro Classi</div>
+      <div class="wizard-step" data-step="2" onclick="goStep(2)">2. Zone Geografiche</div>
+      <div class="wizard-step" data-step="3" onclick="goStep(3)">3. Preferenze</div>
+      <div class="wizard-step" data-step="4" onclick="goStep(4)">4. Anteprima</div>
+    </div>
+
+    <div class="step-content active" id="step1">
+      <p style="color:var(--text-secondary);font-size:.85rem;margin-bottom:14px">Definisci la ripartizione per macro classe di investimento. Il totale deve essere 100%.</p>
+      <div class="alloc-grid" id="macroAllocGrid"></div>
+      <div class="alloc-total" id="macroTotal"></div>
+    </div>
+
+    <div class="step-content" id="step2">
+      <p style="color:var(--text-secondary);font-size:.85rem;margin-bottom:14px">Definisci la distribuzione geografica. Il totale deve essere 100%.</p>
+      <div class="alloc-grid" id="geoAllocGrid"></div>
+      <div class="alloc-total" id="geoTotal"></div>
+    </div>
+
+    <div class="step-content" id="step3">
+      <p style="color:var(--text-secondary);font-size:.85rem;margin-bottom:14px">Configura le preferenze per la selezione automatica degli strumenti.</p>
+      <div class="pref-row"><label>Preferenza tipo strumento:</label><select class="pref-select" id="prefTipo"><option value="ANY">Indifferente</option><option value="ETF_FIRST">Preferisci ETF</option><option value="FONDO_FIRST">Preferisci Fondi</option><option value="ETF_ONLY">Solo ETF</option><option value="FONDO_ONLY">Solo Fondi</option></select></div>
+      <div class="pref-row"><label>Rating minimo Morningstar:</label><select class="pref-select" id="prefMinRating"><option value="0">Nessun filtro</option><option value="3">&#9733;&#9733;&#9733; (3+)</option><option value="4">&#9733;&#9733;&#9733;&#9733; (4+)</option><option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5)</option></select></div>
+      <div class="pref-row"><label>Max strumenti per cella macro/geo:</label><select class="pref-select" id="prefMaxPerCell"><option value="1">1 (concentrato)</option><option value="2">2 (bilanciato)</option><option value="3">3 (diversificato)</option></select></div>
+      <div class="pref-row"><label>Preferenza valuta:</label><select class="pref-select" id="prefValuta"><option value="ANY">Indifferente</option><option value="EUR">Preferisci EUR</option></select></div>
+      <div class="pref-row"><label>Politica distribuzione:</label><select class="pref-select" id="prefPolitica"><option value="ANY">Indifferente</option><option value="CAP_ONLY">Solo Capitalizzazione</option><option value="DIST_ONLY">Solo Distribuzione</option><option value="CAP_FIRST">Preferisci Capitalizzazione</option><option value="DIST_FIRST">Preferisci Distribuzione</option></select></div>
+      <div class="preview-info" style="margin-top:16px">
+        <strong>Come funziona l'algoritmo:</strong><br>
+        1. Per ogni combinazione macro classe + zona geografica, calcola il peso target<br>
+        2. Cerca gli strumenti disponibili per quella combinazione<br>
+        3. Li ordina per rating Morningstar (migliore prima), applicando le tue preferenze<br>
+        4. Seleziona i migliori e distribuisce i pesi rispettando i vincoli (1%-30%, max 50 strumenti, min &euro;150)
+      </div>
+    </div>
+
+    <div class="step-content" id="step4">
+      <div id="previewContent"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" id="btnPrevStep" onclick="prevStep()">&#8592; Indietro</button>
+    <button class="btn btn-primary" id="btnNextStep" onclick="nextStep()">Avanti &#8594;</button>
+    <button class="btn btn-primary" id="btnApplyModel" style="display:none" onclick="applyModel()">&#10003; Applica al Portafoglio</button>
+  </div>
+</div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+// ========== RULES ==========
+const RULES={MIN_INVEST:5000,MAX_INSTRUMENTS:50,MIN_WEIGHT:1,MAX_WEIGHT:30,MIN_AMOUNT_PER_INSTR:150,MAX_ALTERNATIVE_PCT:15};
+
+// ========== STATE ==========
+const State={instruments:[],portfolio:[],investAmount:5000,filters:{search:'',tipo:'ALL',rating:'ALL',valuta:'ALL',categoria:'ALL',macro:'ALL',geo:'ALL',politica:'ALL'},csvLoaded:false,dragIndex:null};
+
+// Performance data (loaded from JSON)
+const PerfData = {};
+
+const MACROS=['AZIONARIO','OBBLIGAZIONARIO','BILANCIATO','ALTERNATIVO','MONETARIO','IMMOBILIARE','MATERIE PRIME'];
+const GEOS=['Globale','Europa','Nord America','Asia Pacifico','Paesi Emergenti','Giappone'];
+const MACRO_COLORS={'AZIONARIO':'#4f8cff','OBBLIGAZIONARIO':'#34d399','BILANCIATO':'#a78bfa','ALTERNATIVO':'#f472b6','MONETARIO':'#38bdf8','IMMOBILIARE':'#fb923c','MATERIE PRIME':'#fbbf24','NON CLASSIFICATO':'#6b7280'};
+const GEO_COLORS={'Globale':'#4f8cff','Europa':'#34d399','Nord America':'#f87171','Asia Pacifico':'#fbbf24','Paesi Emergenti':'#a78bfa','Giappone':'#f472b6','Altro':'#6b7280'};
+const COLORS=['#4f8cff','#34d399','#fbbf24','#f87171','#a78bfa','#f472b6','#38bdf8','#fb923c','#6ee7b7','#c084fc','#fcd34d','#e879f9','#2dd4bf','#818cf8','#fdba74','#86efac'];
+
+// Model state
+const Model={macroAlloc:{},geoAlloc:{},step:1,generated:[]};
+
+// ========== UTILS ==========
+function parseItalianNumber(s){if(!s||s==='-')return null;return parseFloat(s.replace(/\./g,'').replace(',','.'));}
+function fmtNum(n,d=2){if(n==null||isNaN(n))return'-';return n.toLocaleString('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d});}
+function fmtEur(n){if(n==null||isNaN(n))return'-';return'\u20AC '+n.toLocaleString('it-IT',{minimumFractionDigits:0,maximumFractionDigits:0});}
+function parseRating(s){if(!s||s.trim()==='-'||s.trim()==='')return 0;return(s.match(/\*/g)||[]).length;}
+function renderStars(n){if(!n)return'<span style="color:var(--text-muted)">N.C.</span>';return'<span class="stars">'+'&#9733;'.repeat(n)+'&#9734;'.repeat(5-n)+'</span>';}
+function badgeClass(t){return t==='ETF'?'badge-etf':t==='ETC'?'badge-etc':'badge-fondo';}
+function uid(i){return i.isin+'|'+i.tipo;}
+function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+function escAttr(s){return s.replace(/'/g,"\\'").replace(/"/g,'&quot;');}
+function colorFor(s){let h=0;for(let i=0;i<s.length;i++)h=s.charCodeAt(i)+((h<<5)-h);return COLORS[Math.abs(h)%COLORS.length];}
+
+// ========== CSV ==========
+function parseCSV(text){
+  let t=text.replace(/^\uFEFF/,'');const lines=t.split(/\r?\n/).filter(l=>l.trim());if(lines.length<2)return[];
+  const hdr=lines[0].split(';').map(h=>h.trim().toLowerCase());
+  const iM=hdr.findIndex(h=>h.includes('macro'));const iG=hdr.findIndex(h=>h.includes('zona')||h.includes('geo'));const iP=hdr.findIndex(h=>h.includes('politica'));
+  const instr=[];
+  for(let i=1;i<lines.length;i++){const c=lines[i].split(';');if(c.length<7)continue;
+    instr.push({nome:c[0]?.trim()||'',isin:c[1]?.trim()||'',categoria:c[2]?.trim()||'',rating:parseRating(c[3]),quotazione:parseItalianNumber(c[4]),dataAgg:c[5]?.trim()||'',valuta:c[6]?.trim()||'',tipo:c[7]?.trim()||'FONDO',macro:iM>=0?(c[iM]?.trim()||'NON CLASSIFICATO'):'NON CLASSIFICATO',geo:iG>=0?(c[iG]?.trim()||'Altro'):'Altro',politica:iP>=0?(c[iP]?.trim()||'N/D'):'N/D'});}
+  return instr;
+}
+
+// ========== LOAD ==========
+function loadCSV(text){
+  State.instruments=parseCSV(text);State.csvLoaded=true;
+  populateFilterOptions();renderCatalog();restoreState();
+  document.getElementById('welcomeScreen').style.display='none';
+  document.getElementById('catalogPanel').style.display='';
+  document.getElementById('portfolioPanel').style.display='';
+  document.getElementById('investBar').style.display='';
+  document.getElementById('btnModelPortfolio').style.display='';
+  document.getElementById('uploadInfo').textContent=State.instruments.length+' strumenti';
+  document.getElementById('uploadLabel').innerHTML='&#10003; Caricato';
+  initModelDefaults();
+  toast(State.instruments.length+' strumenti caricati','success');
+}
+document.getElementById('csvInput').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>loadCSV(ev.target.result);r.readAsText(f,'utf-8');});
+const dz=document.getElementById('dropZone');
+dz.addEventListener('click',()=>document.getElementById('csvInput').click());
+dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag-active')});
+dz.addEventListener('dragleave',()=>dz.classList.remove('drag-active'));
+dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag-active');const f=e.dataTransfer.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>loadCSV(ev.target.result);r.readAsText(f,'utf-8');});
+
+document.getElementById('investAmount').addEventListener('input',e=>{
+  const raw=e.target.value.replace(/[^\d]/g,'');const num=parseInt(raw)||0;State.investAmount=num;
+  if(raw)e.target.value=num.toLocaleString('it-IT');saveState();renderPortfolioBar();renderPortfolioTable();renderAnalytics();renderValidation();
+});
+
+// ========== FILTERS ==========
+function populateFilterOptions(){
+  const vals=k=>[...new Set(State.instruments.map(i=>i[k]))].filter(Boolean).sort();
+  const fill=(id,arr)=>{document.getElementById(id).innerHTML='<option value="ALL">Tutt'+(id.includes('Valuta')?'e':'i')+'</option>'+arr.map(v=>`<option value="${escHtml(v)}">${escHtml(v)}</option>`).join('');};
+  fill('fValuta',vals('valuta'));fill('fCategoria',vals('categoria'));fill('fMacro',vals('macro'));fill('fGeo',vals('geo'));
+}
+function getFiltered(){
+  const f=State.filters,term=f.search.toLowerCase(),pids=new Set(State.portfolio.map(p=>p.id));
+  return State.instruments.map(i=>({...i,_id:uid(i),inPortfolio:pids.has(uid(i))})).filter(i=>{
+    if(term&&!i.nome.toLowerCase().includes(term)&&!i.isin.toLowerCase().includes(term))return false;
+    if(f.tipo!=='ALL'&&i.tipo!==f.tipo)return false;if(f.macro!=='ALL'&&i.macro!==f.macro)return false;
+    if(f.geo!=='ALL'&&i.geo!==f.geo)return false;
+    if(f.rating!=='ALL'){const r=parseInt(f.rating);if(r===0){if(i.rating!==0)return false}else{if(i.rating<r)return false}}
+    if(f.politica!=='ALL'&&i.politica!==f.politica)return false;
+    if(f.valuta!=='ALL'&&i.valuta!==f.valuta)return false;if(f.categoria!=='ALL'&&i.categoria!==f.categoria)return false;return true;
+  });
+}
+let filterTimeout;function onFilterChange(){clearTimeout(filterTimeout);filterTimeout=setTimeout(renderCatalog,150);}
+['fSearch','fTipo','fRating','fValuta','fCategoria','fMacro','fGeo','fPolitica'].forEach(id=>{
+  const el=document.getElementById(id);const k=id==='fSearch'?'search':id==='fTipo'?'tipo':id==='fRating'?'rating':id==='fValuta'?'valuta':id==='fCategoria'?'categoria':id==='fMacro'?'macro':id==='fGeo'?'geo':'politica';
+  el.addEventListener(el.tagName==='SELECT'?'change':'input',e=>{State.filters[k]=e.target.value;onFilterChange();});
+});
+document.getElementById('btnResetFilters').addEventListener('click',()=>{
+  State.filters={search:'',tipo:'ALL',rating:'ALL',valuta:'ALL',categoria:'ALL',macro:'ALL',geo:'ALL',politica:'ALL'};
+  ['fSearch','fTipo','fRating','fValuta','fCategoria','fMacro','fGeo','fPolitica'].forEach(id=>{const el=document.getElementById(id);el.tagName==='SELECT'?el.value='ALL':el.value='';});renderCatalog();
+});
+
+// ========== CATALOG ==========
+function renderCatalog(){
+  const filtered=getFiltered();document.getElementById('catalogCount').textContent=filtered.length+' di '+State.instruments.length;
+  document.getElementById('instrumentList').innerHTML=filtered.map(i=>{
+    const hasPerf=PerfData[i.isin]&&!PerfData[i.isin].error;
+    return`<div class="inst-card${i.inPortfolio?' in-portfolio':''}"><div class="inst-name">${escHtml(i.nome)}</div>
+    <div class="inst-add"><button class="btn-add" onclick="addToPortfolio('${escAttr(i._id)}')" title="Aggiungi">+</button></div>
+    <div class="inst-meta"><span class="badge ${badgeClass(i.tipo)}">${i.tipo}</span><span class="badge badge-macro">${escHtml(i.macro)}</span><span class="badge badge-geo">${escHtml(i.geo)}</span><span class="badge ${i.politica==='DISTRIBUZIONE'?'badge-dist':'badge-cap'}">${i.politica==='DISTRIBUZIONE'?'DIST':'CAP'}</span>${renderStars(i.rating)}${hasPerf?renderSparkline(i.isin,50,16):''}</div>
+    <div class="inst-meta2"><span>${i.valuta}</span><span>${i.isin}</span><span>${i.quotazione!=null?fmtNum(i.quotazione,4):'-'} ${i.valuta}</span></div>
+    ${hasPerf?renderPerfPills(i.isin):''}</div>`;
+  }).join('')||'<div class="empty-state"><p>Nessuno strumento trovato</p></div>';
+}
+
+// ========== PORTFOLIO ==========
+function addToPortfolio(id){
+  if(State.portfolio.find(p=>p.id===id)){toast("Gia' presente",'warning');return;}
+  if(State.portfolio.length>=RULES.MAX_INSTRUMENTS){toast('Max '+RULES.MAX_INSTRUMENTS+' strumenti','error');return;}
+  const inst=State.instruments.find(i=>uid(i)===id);if(!inst)return;
+  State.portfolio.push({id,isin:inst.isin,nome:inst.nome,tipo:inst.tipo,categoria:inst.categoria,rating:inst.rating,quotazione:inst.quotazione,valuta:inst.valuta,macro:inst.macro,geo:inst.geo,politica:inst.politica,weight:0});
+  saveState();renderAll();toast(inst.nome.substring(0,35)+'...','success');
+}
+function removeFromPortfolio(id){State.portfolio=State.portfolio.filter(p=>p.id!==id);saveState();renderAll();}
+function updateWeight(id,val){
+  const p=State.portfolio.find(p=>p.id===id);if(p)p.weight=Math.max(0,Math.min(100,parseFloat(val)||0));
+  saveState();renderPortfolioBar();renderAnalytics();renderValidation();
+  const amt=State.investAmount*(p.weight/100);const el=document.getElementById('amt-'+CSS.escape(id));
+  if(el){el.textContent=fmtEur(amt);el.className='amount-cell'+(amt<RULES.MIN_AMOUNT_PER_INSTR&&p.weight>0?' amount-error':'');}
+}
+function equalizeWeights(){
+  const n=State.portfolio.length;if(!n)return;
+  let w=Math.min(RULES.MAX_WEIGHT,Math.max(RULES.MIN_WEIGHT,Math.round(10000/n)/100));
+  State.portfolio.forEach((p,i)=>{p.weight=i<n-1?w:Math.round((100-(w*(n-1)))*100)/100;});saveState();renderAll();
+}
+function clearPortfolio(){if(State.portfolio.length&&!confirm('Svuotare il portafoglio?'))return;State.portfolio=[];saveState();renderAll();}
+function renderAll(){renderPortfolioTable();renderPortfolioBar();renderAnalytics();renderValidation();renderCatalog();}
+
+// ========== VALIDATION ==========
+function renderValidation(){
+  const area=document.getElementById('validationArea');if(!State.portfolio.length){area.style.display='none';return;}
+  const alerts=[],total=State.portfolio.reduce((s,p)=>s+p.weight,0),n=State.portfolio.length,amt=State.investAmount;
+  if(Math.abs(total-100)>0.01)alerts.push({type:'error',msg:`Peso totale: ${fmtNum(total)}% (deve essere 100%)`});
+  else alerts.push({type:'ok',msg:'Peso totale: 100,00%'});
+  if(amt<RULES.MIN_INVEST)alerts.push({type:'error',msg:`Importo minimo: ${fmtEur(RULES.MIN_INVEST)} (attuale: ${fmtEur(amt)})`});
+  if(n>RULES.MAX_INSTRUMENTS)alerts.push({type:'error',msg:`Max ${RULES.MAX_INSTRUMENTS} strumenti (attuale: ${n})`});
+  const bw=State.portfolio.filter(p=>p.weight>0&&(p.weight<RULES.MIN_WEIGHT||p.weight>RULES.MAX_WEIGHT));
+  if(bw.length)alerts.push({type:'error',msg:`${bw.length} strument${bw.length>1?'i':'o'} con peso fuori ${RULES.MIN_WEIGHT}%-${RULES.MAX_WEIGHT}%`});
+  const ba=State.portfolio.filter(p=>p.weight>0&&(amt*p.weight/100)<RULES.MIN_AMOUNT_PER_INSTR);
+  if(ba.length)alerts.push({type:'warn',msg:`${ba.length} strument${ba.length>1?'i':'o'} sotto ${fmtEur(RULES.MIN_AMOUNT_PER_INSTR)} min`});
+  const altPct=State.portfolio.filter(p=>p.macro==='ALTERNATIVO').reduce((s,p)=>s+p.weight,0);
+  if(altPct>RULES.MAX_ALTERNATIVE_PCT)alerts.push({type:'error',msg:`Alternativi: ${fmtNum(altPct)}% (max ${RULES.MAX_ALTERNATIVE_PCT}%)`});
+  else if(altPct>0)alerts.push({type:'ok',msg:`Alternativi: ${fmtNum(altPct)}% (max ${RULES.MAX_ALTERNATIVE_PCT}%)`});
+  area.style.display='';area.innerHTML=alerts.map(a=>`<div class="alert alert-${a.type}">${a.type==='ok'?'&#10003;':a.type==='error'?'&#10007;':'&#9888;'} ${a.msg}</div>`).join('');
+}
+
+// ========== PORTFOLIO BAR ==========
+function renderPortfolioBar(){
+  const total=State.portfolio.reduce((s,p)=>s+p.weight,0),el=document.getElementById('totalWeight'),amt=State.investAmount;
+  el.textContent=fmtNum(total)+'%';el.className='weight-display '+(Math.abs(total-100)<0.01?'weight-ok':total>100?'weight-over':'weight-warn');
+  document.getElementById('remainingWeight').textContent='Rimanente: '+fmtNum(100-total)+'%';
+  document.getElementById('instrCount').textContent=State.portfolio.length+'/'+RULES.MAX_INSTRUMENTS;
+  document.getElementById('investSummary').innerHTML=`<div class="invest-stat"><span class="val">${fmtEur(amt)}</span><span class="lbl">Investimento</span></div><div class="invest-stat"><span class="val">${fmtEur(amt*(total/100))}</span><span class="lbl">Allocato</span></div><div class="invest-stat"><span class="val">${fmtEur(amt*((100-total)/100))}</span><span class="lbl">Rimanente</span></div>`;
+}
+
+// ========== PORTFOLIO TABLE ==========
+function renderPortfolioTable(){
+  const content=document.getElementById('portfolioContent'),amt=State.investAmount;
+  if(!State.portfolio.length){content.innerHTML='<div class="empty-state"><div class="icon">&#128188;</div><p>Aggiungi strumenti dal catalogo o usa il Portafoglio Modello</p></div>';return;}
+  const hasAnyPerf=State.portfolio.some(p=>PerfData[p.isin]&&!PerfData[p.isin].error);
+  let html=`<table class="portfolio-table"><thead><tr><th style="width:24px"></th><th>Strumento</th><th>Tipo</th><th>Macro</th><th>Geo</th>${hasAnyPerf?'<th>Andamento</th><th>1M</th><th>1A</th>':''}<th style="text-align:right">Peso %</th><th style="text-align:right">Importo</th><th style="width:30px"></th></tr></thead><tbody>`;
+  State.portfolio.forEach((p,i)=>{
+    const ia=amt*(p.weight/100),we=p.weight>0&&(p.weight<RULES.MIN_WEIGHT||p.weight>RULES.MAX_WEIGHT),ae=p.weight>0&&ia<RULES.MIN_AMOUNT_PER_INSTR;
+    const hp=PerfData[p.isin]&&!PerfData[p.isin].error;
+    html+=`<tr draggable="true" data-idx="${i}" ondragstart="onDragStart(event,${i})" ondragover="onDragOver(event,${i})" ondrop="onDrop(event,${i})" ondragend="onDragEnd(event)">
+      <td><span class="drag-handle">&#9776;</span></td>
+      <td><div class="ptf-name" title="${escHtml(p.nome)}">${escHtml(p.nome)}</div><div class="ptf-sub">${p.isin} &middot; ${renderStars(p.rating)}</div></td>
+      <td><span class="badge ${badgeClass(p.tipo)}">${p.tipo}</span></td>
+      <td><span class="badge badge-macro">${escHtml(p.macro)}</span></td>
+      <td><span class="badge badge-geo">${escHtml(p.geo)}</span></td>
+      ${hasAnyPerf?`<td>${hp?renderSparkline(p.isin,55,18):''}</td><td>${renderPerfCell(p.isin,'1m')}</td><td>${renderPerfCell(p.isin,'1y')}</td>`:''}
+      <td style="text-align:right"><input type="number" class="weight-input${we?' input-error':''}" value="${p.weight}" min="0" max="100" step="0.01" onchange="updateWeight('${escAttr(p.id)}',this.value)" oninput="updateWeight('${escAttr(p.id)}',this.value)"></td>
+      <td id="amt-${CSS.escape(p.id)}" class="amount-cell${ae?' amount-error':''}">${fmtEur(ia)}</td>
+      <td><button class="btn-remove" onclick="removeFromPortfolio('${escAttr(p.id)}')" title="Rimuovi">&#10005;</button></td></tr>`;
+  });
+  content.innerHTML=html+'</tbody></table>';
+}
+
+// ========== DRAG ==========
+function onDragStart(e,i){State.dragIndex=i;e.currentTarget.classList.add('dragging');e.dataTransfer.effectAllowed='move';}
+function onDragOver(e,i){e.preventDefault();e.dataTransfer.dropEffect='move';document.querySelectorAll('.portfolio-table tr').forEach(r=>r.classList.remove('drag-over'));if(i!==State.dragIndex)e.currentTarget.classList.add('drag-over');}
+function onDrop(e,i){e.preventDefault();if(State.dragIndex===null||State.dragIndex===i)return;const item=State.portfolio.splice(State.dragIndex,1)[0];State.portfolio.splice(i,0,item);State.dragIndex=null;saveState();renderPortfolioTable();}
+function onDragEnd(e){e.currentTarget.classList.remove('dragging');document.querySelectorAll('.portfolio-table tr').forEach(r=>r.classList.remove('drag-over'));State.dragIndex=null;}
+
+// ========== ANALYTICS ==========
+function renderAnalytics(){
+  const area=document.getElementById('analyticsArea');if(!State.portfolio.length||State.portfolio.every(p=>p.weight===0)){area.innerHTML='';return;}
+  const total=State.portfolio.reduce((s,p)=>s+p.weight,0),amt=State.investAmount;if(!total){area.innerHTML='';return;}
+  function bm(k){const m={};State.portfolio.forEach(p=>{if(p.weight)m[p[k]]=(m[p[k]]||0)+p.weight;});return Object.entries(m).sort((a,b)=>b[1]-a[1]);}
+  const macD=bm('macro'),geoD=bm('geo'),typD=bm('tipo'),catD=bm('categoria');
+  const topC=catD.slice(0,8);if(catD.length>8)topC.push(['Altro',catD.slice(8).reduce((s,c)=>s+c[1],0)]);
+
+  function donut(data,colors,label){
+    let c=[],cum=0;data.forEach(([k,w])=>{const p=(w/total)*100;c.push(`${colors[k]||'#888'} ${cum}% ${cum+p}%`);cum+=p;});
+    return`<div class="donut-container"><div class="donut" style="background:conic-gradient(${c.join(',')})"><div class="donut-center">${label}</div></div>
+    <div class="donut-legend">${data.map(([k,w])=>`<div class="legend-item"><div class="legend-dot" style="background:${colors[k]||'#888'}"></div><span><strong>${k}</strong> ${fmtNum(w)}% (${fmtEur(amt*w/100)})</span></div>`).join('')}</div></div>`;
+  }
+  let h='<div class="analytics"><div class="analytics-row">';
+  h+=`<div class="analytics-card"><h3>Macro Classi</h3>${donut(macD,MACRO_COLORS,fmtNum(total)+'%')}</div>`;
+  h+=`<div class="analytics-card"><h3>Zone Geografiche</h3>${donut(geoD,GEO_COLORS,State.portfolio.length+' str.')}</div></div>`;
+  h+='<div class="analytics-row">';
+  h+=`<div class="analytics-card"><h3>ETF vs Fondi</h3>${donut(typD,{ETF:'#4f8cff',FONDO:'#34d399',ETC:'#fbbf24'},State.portfolio.length)}</div>`;
+  const curD=bm('valuta');
+  h+=`<div class="analytics-card"><h3>Valute</h3><div class="bar-chart">${curD.map(([k,w])=>`<div class="bar-row"><div class="bar-label">${k}</div><div class="bar-track"><div class="bar-fill" style="width:${(w/total)*100}%;background:${colorFor(k)}"></div></div><div class="bar-value">${fmtNum(w)}%</div></div>`).join('')}</div></div></div>`;
+  h+=`<div class="analytics-card"><h3>Categorie (top 8)</h3><div class="bar-chart">${topC.map(([k,w])=>`<div class="bar-row"><div class="bar-label" title="${escHtml(k)}">${escHtml(k)}</div><div class="bar-track"><div class="bar-fill" style="width:${(w/total)*100}%;background:${colorFor(k)}"></div></div><div class="bar-value">${fmtNum(w)}%</div></div>`).join('')}</div></div></div>`;
+  area.innerHTML=h;
+}
+
+// ========== EXPORT ==========
+function exportCSV(){
+  if(!State.portfolio.length){toast('Vuoto','warning');return;}
+  const t=State.portfolio.reduce((s,p)=>s+p.weight,0),a=State.investAmount;
+  let c='\uFEFF'+'Nome;ISIN;Tipo;Macro Classe;Zona Geo;Categoria;Valuta;Peso %;Importo EUR\n';
+  State.portfolio.forEach(p=>{c+=`${p.nome};${p.isin};${p.tipo};${p.macro};${p.geo};${p.categoria};${p.valuta};${fmtNum(p.weight)};${fmtNum(a*p.weight/100,0)}\n`;});
+  c+=`\n;;;;;TOTALE;;${fmtNum(t)};${fmtNum(a*t/100,0)}\nInvestimento: ${fmtEur(a)}\nStrumenti: ${State.portfolio.length}\nData: ${new Date().toLocaleDateString('it-IT')}\n`;
+  const b=new Blob([c],{type:'text/csv;charset=utf-8'}),u=URL.createObjectURL(b),el=document.createElement('a');el.href=u;el.download=`Il_Mio_Foglio_${new Date().toISOString().slice(0,10)}.csv`;el.click();URL.revokeObjectURL(u);toast('CSV esportato','success');
+}
+function printPDF(){if(!State.portfolio.length){toast('Vuoto','warning');return;}document.getElementById('printHeader').textContent=`Il Mio Foglio - ${fmtEur(State.investAmount)} - ${new Date().toLocaleDateString('it-IT')}`;window.print();}
+document.getElementById('btnEqualize').addEventListener('click',equalizeWeights);
+document.getElementById('btnExportCsv').addEventListener('click',exportCSV);
+document.getElementById('btnPrint').addEventListener('click',printPDF);
+document.getElementById('btnClearPortfolio').addEventListener('click',clearPortfolio);
+
+// ========== PERSISTENCE ==========
+function saveState(){try{localStorage.setItem('imf_portfolio',JSON.stringify(State.portfolio));localStorage.setItem('imf_amount',State.investAmount);}catch(e){}}
+function restoreState(){try{
+  const d=localStorage.getItem('imf_portfolio');if(d){const p=JSON.parse(d);const v=new Set(State.instruments.map(uid));State.portfolio=p.filter(x=>v.has(x.id));if(State.portfolio.length)toast('Ripristinato ('+State.portfolio.length+')','success');}
+  const a=localStorage.getItem('imf_amount');if(a){State.investAmount=parseInt(a)||5000;document.getElementById('investAmount').value=State.investAmount.toLocaleString('it-IT');}
+}catch(e){}renderAll();}
+
+function toast(m,t='success'){const c=document.getElementById('toastContainer'),el=document.createElement('div');el.className='toast '+t;el.textContent=m;c.appendChild(el);setTimeout(()=>{el.style.animation='fadeOut .3s ease forwards';setTimeout(()=>el.remove(),300)},3000);}
+
+// ========== PERFORMANCE DATA ==========
+document.getElementById('perfInput').addEventListener('change',e=>{
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();r.onload=ev=>{
+    try{
+      const data=JSON.parse(ev.target.result);
+      let ok=0;Object.entries(data).forEach(([isin,d])=>{PerfData[isin]=d;if(!d.error)ok++;});
+      document.getElementById('perfLabel').classList.add('loaded');
+      document.getElementById('perfLabel').innerHTML='&#10003; '+ok+' performance<input type="file" id="perfInput" accept=".json" style="display:none">';
+      document.getElementById('perfInput').addEventListener('change',arguments.callee);
+      toast(ok+' strumenti con dati performance','success');
+      if(State.csvLoaded){renderCatalog();renderPortfolioTable();}
+    }catch(err){toast('Errore nel JSON: '+err.message,'error');}
+  };r.readAsText(f,'utf-8');
+});
+
+function renderSparkline(isin,w=60,h=20){
+  const d=PerfData[isin];
+  if(!d||!d.sparkline||d.sparkline.length<2)return'';
+  const pts=d.sparkline;
+  const mn=Math.min(...pts),mx=Math.max(...pts);
+  const range=mx-mn||1;
+  const coords=pts.map((v,i)=>{
+    const x=(i/(pts.length-1))*w;
+    const y=h-((v-mn)/range)*h;
+    return`${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+  const color=pts[pts.length-1]>=pts[0]?'var(--success)':'var(--danger)';
+  return`<svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline points="${coords}" style="stroke:${color}"/></svg>`;
+}
+
+function renderPerfPills(isin){
+  const d=PerfData[isin];
+  if(!d||d.error)return'';
+  const pills=[
+    {label:'1M',val:d.perf_1m},{label:'3M',val:d.perf_3m},
+    {label:'6M',val:d.perf_6m},{label:'1A',val:d.perf_1y},{label:'YTD',val:d.perf_ytd}
+  ];
+  return'<div class="perf-pills">'+pills.map(p=>{
+    if(p.val==null)return`<span class="perf-pill na">${p.label} -</span>`;
+    const cls=p.val>=0?'pos':'neg';
+    return`<span class="perf-pill ${cls}">${p.label} ${p.val>=0?'+':''}${fmtNum(p.val)}%</span>`;
+  }).join('')+'</div>';
+}
+
+function renderPerfCell(isin,period){
+  const d=PerfData[isin];if(!d||d.error)return'<span class="perf-na">-</span>';
+  const v=d['perf_'+period];if(v==null)return'<span class="perf-na">-</span>';
+  return`<span class="perf-cell ${v>=0?'perf-pos':'perf-neg'}">${v>=0?'+':''}${fmtNum(v)}%</span>`;
+}
+
+// ========================================
+// ========== MODEL PORTFOLIO =============
+// ========================================
+
+document.getElementById('btnModelPortfolio').addEventListener('click',()=>{
+  document.getElementById('modelModal').style.display='';
+  goStep(1);
+});
+function closeModel(){document.getElementById('modelModal').style.display='none';}
+document.getElementById('modelModal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModel();});
+
+function initModelDefaults(){
+  // Count actual instruments per macro/geo to set smart defaults
+  const mc={};State.instruments.forEach(i=>{mc[i.macro]=(mc[i.macro]||0)+1;});
+  MACROS.forEach(m=>{Model.macroAlloc[m]=0;});
+  // Default: 50% Azionario, 35% Obbligazionario, 5% Bilanciato, 5% Alternativo, 5% Monetario
+  Model.macroAlloc['AZIONARIO']=50;Model.macroAlloc['OBBLIGAZIONARIO']=35;Model.macroAlloc['BILANCIATO']=5;Model.macroAlloc['ALTERNATIVO']=5;Model.macroAlloc['MONETARIO']=5;
+  GEOS.forEach(g=>{Model.geoAlloc[g]=0;});
+  Model.geoAlloc['Globale']=30;Model.geoAlloc['Europa']=30;Model.geoAlloc['Nord America']=20;Model.geoAlloc['Asia Pacifico']=10;Model.geoAlloc['Paesi Emergenti']=10;
+}
+
+function goStep(n){
+  Model.step=n;
+  document.querySelectorAll('.wizard-step').forEach((el,i)=>{el.className='wizard-step'+(i+1===n?' active':i+1<n?' done':'');});
+  document.querySelectorAll('.step-content').forEach((el,i)=>{el.className='step-content'+(i+1===n?' active':'');});
+  document.getElementById('btnPrevStep').style.display=n>1?'':'none';
+  document.getElementById('btnNextStep').style.display=n<4?'':'none';
+  document.getElementById('btnApplyModel').style.display=n===4?'':'none';
+  if(n===1)renderMacroAlloc();
+  if(n===2)renderGeoAlloc();
+  if(n===4)generateAndPreview();
+}
+function prevStep(){if(Model.step>1)goStep(Model.step-1);}
+function nextStep(){
+  if(Model.step===1){const t=Object.values(Model.macroAlloc).reduce((a,b)=>a+b,0);if(Math.abs(t-100)>0.5){toast('Macro classi: totale deve essere 100%','error');return;}}
+  if(Model.step===2){const t=Object.values(Model.geoAlloc).reduce((a,b)=>a+b,0);if(Math.abs(t-100)>0.5){toast('Zone geo: totale deve essere 100%','error');return;}}
+  if(Model.step<4)goStep(Model.step+1);
+}
+
+function renderAllocGrid(containerId, totalId, items, alloc, colors){
+  const grid=document.getElementById(containerId);
+  // Count available instruments per item
+  const counts={};items.forEach(k=>{counts[k]=State.instruments.filter(i=>containerId.includes('macro')?i.macro===k:i.geo===k).length;});
+  grid.innerHTML=items.map(k=>`
+    <div class="alloc-row">
+      <div class="alloc-label"><div class="alloc-dot" style="background:${colors[k]||'#888'}"></div>${k} <span style="color:var(--text-muted);font-size:.7rem">(${counts[k]||0})</span></div>
+      <input type="range" class="alloc-slider" min="0" max="100" step="1" value="${alloc[k]||0}" data-key="${k}"
+        oninput="onAllocSlider(this,'${containerId}','${totalId}')">
+      <input type="number" class="alloc-input" min="0" max="100" step="1" value="${alloc[k]||0}" data-key="${k}"
+        oninput="onAllocInput(this,'${containerId}','${totalId}')">
+      <div class="alloc-pct" id="pct-${containerId}-${k.replace(/\s/g,'_')}">${alloc[k]||0}%</div>
+    </div>
+  `).join('');
+  updateAllocTotal(containerId, totalId, alloc);
+}
+
+function onAllocSlider(el,cid,tid){
+  const key=el.dataset.key,val=parseInt(el.value)||0;
+  const alloc=cid.includes('macro')?Model.macroAlloc:Model.geoAlloc;
+  alloc[key]=val;
+  el.closest('.alloc-row').querySelector('.alloc-input').value=val;
+  document.getElementById('pct-'+cid+'-'+key.replace(/\s/g,'_')).textContent=val+'%';
+  updateAllocTotal(cid,tid,alloc);
+}
+function onAllocInput(el,cid,tid){
+  const key=el.dataset.key,val=Math.min(100,Math.max(0,parseInt(el.value)||0));
+  const alloc=cid.includes('macro')?Model.macroAlloc:Model.geoAlloc;
+  alloc[key]=val;
+  el.closest('.alloc-row').querySelector('.alloc-slider').value=val;
+  document.getElementById('pct-'+cid+'-'+key.replace(/\s/g,'_')).textContent=val+'%';
+  updateAllocTotal(cid,tid,alloc);
+}
+function updateAllocTotal(cid,tid,alloc){
+  const total=Object.values(alloc).reduce((a,b)=>a+b,0);
+  const el=document.getElementById(tid);
+  el.className='alloc-total '+(Math.abs(total-100)<0.5?'ok':'bad');
+  el.innerHTML=`<span class="alloc-remaining">Rimanente: ${100-total}%</span> <button class="btn btn-auto-balance" onclick="autoBalance('${cid}')">Auto-bilancia</button> <span>Totale: ${total}%</span>`;
+}
+function autoBalance(cid){
+  const alloc=cid.includes('macro')?Model.macroAlloc:Model.geoAlloc;
+  const total=Object.values(alloc).reduce((a,b)=>a+b,0);
+  if(total===0)return;
+  const factor=100/total;
+  const keys=Object.keys(alloc).filter(k=>alloc[k]>0);
+  let sum=0;
+  keys.forEach((k,i)=>{
+    if(i<keys.length-1){alloc[k]=Math.round(alloc[k]*factor);sum+=alloc[k];}
+    else{alloc[k]=100-sum;}
+  });
+  if(cid.includes('macro'))renderMacroAlloc();else renderGeoAlloc();
+}
+function renderMacroAlloc(){renderAllocGrid('macroAllocGrid','macroTotal',MACROS,Model.macroAlloc,MACRO_COLORS);}
+function renderGeoAlloc(){renderAllocGrid('geoAllocGrid','geoTotal',GEOS,Model.geoAlloc,GEO_COLORS);}
+
+// ========== GENERATE PORTFOLIO ==========
+function generateAndPreview(){
+  const prefTipo=document.getElementById('prefTipo').value;
+  const prefMinRating=parseInt(document.getElementById('prefMinRating').value)||0;
+  const prefMaxPerCell=parseInt(document.getElementById('prefMaxPerCell').value)||1;
+  const prefValuta=document.getElementById('prefValuta').value;
+  const prefPolitica=document.getElementById('prefPolitica').value;
+  const amt=State.investAmount;
+
+  // Build cross-allocation matrix
+  const cells=[];
+  MACROS.forEach(m=>{
+    if(!Model.macroAlloc[m])return;
+    GEOS.forEach(g=>{
+      if(!Model.geoAlloc[g])return;
+      const targetPct=(Model.macroAlloc[m]*Model.geoAlloc[g])/100;
+      if(targetPct<0.5)return; // skip negligible
+      cells.push({macro:m,geo:g,targetPct,instruments:[]});
+    });
+  });
+
+  // Also check "Altro" geo for instruments that don't match standard geos
+  MACROS.forEach(m=>{
+    if(!Model.macroAlloc[m])return;
+    const altroInstr=State.instruments.filter(i=>i.macro===m&&!GEOS.includes(i.geo));
+    if(altroInstr.length>0){
+      // Distribute "Altro" proportionally to geo allocation
+      // Skip for now, handle in main allocation
+    }
+  });
+
+  // Find and score instruments for each cell
+  cells.forEach(cell=>{
+    let candidates=State.instruments.filter(i=>i.macro===cell.macro && i.geo===cell.geo);
+
+    // Apply type preference
+    if(prefTipo==='ETF_ONLY')candidates=candidates.filter(i=>i.tipo==='ETF');
+    else if(prefTipo==='FONDO_ONLY')candidates=candidates.filter(i=>i.tipo==='FONDO');
+
+    // Apply politica preference
+    if(prefPolitica==='CAP_ONLY')candidates=candidates.filter(i=>i.politica==='CAPITALIZZAZIONE');
+    else if(prefPolitica==='DIST_ONLY')candidates=candidates.filter(i=>i.politica==='DISTRIBUZIONE');
+
+    // Apply min rating (but keep unrated as fallback)
+    if(prefMinRating>0){
+      const rated=candidates.filter(i=>i.rating>=prefMinRating);
+      if(rated.length>0)candidates=rated;
+    }
+
+    // Score and sort
+    candidates.sort((a,b)=>{
+      // Primary: rating (desc)
+      if(b.rating!==a.rating)return b.rating-a.rating;
+      // Secondary: type preference
+      if(prefTipo==='ETF_FIRST'){if(a.tipo==='ETF'&&b.tipo!=='ETF')return-1;if(b.tipo==='ETF'&&a.tipo!=='ETF')return 1;}
+      if(prefTipo==='FONDO_FIRST'){if(a.tipo==='FONDO'&&b.tipo!=='FONDO')return-1;if(b.tipo==='FONDO'&&a.tipo!=='FONDO')return 1;}
+      // Tertiary: politica preference
+      if(prefPolitica==='CAP_FIRST'){if(a.politica==='CAPITALIZZAZIONE'&&b.politica!=='CAPITALIZZAZIONE')return-1;if(b.politica==='CAPITALIZZAZIONE'&&a.politica!=='CAPITALIZZAZIONE')return 1;}
+      if(prefPolitica==='DIST_FIRST'){if(a.politica==='DISTRIBUZIONE'&&b.politica!=='DISTRIBUZIONE')return-1;if(b.politica==='DISTRIBUZIONE'&&a.politica!=='DISTRIBUZIONE')return 1;}
+      // Quaternary: EUR preference
+      if(prefValuta==='EUR'){if(a.valuta==='EUR'&&b.valuta!=='EUR')return-1;if(b.valuta==='EUR'&&a.valuta!=='EUR')return 1;}
+      return a.nome.localeCompare(b.nome);
+    });
+
+    cell.instruments=candidates.slice(0,prefMaxPerCell);
+  });
+
+  // Remove empty cells
+  const validCells=cells.filter(c=>c.instruments.length>0);
+
+  // Redistribute weights from empty cells
+  const totalValidTarget=validCells.reduce((s,c)=>s+c.targetPct,0);
+  if(totalValidTarget>0){
+    validCells.forEach(c=>{c.adjustedPct=(c.targetPct/totalValidTarget)*100;});
+  }
+
+  // Build portfolio
+  const generated=[];
+  const usedIds=new Set();
+
+  validCells.forEach(cell=>{
+    const n=cell.instruments.length;
+    const cellWeight=cell.adjustedPct;
+
+    cell.instruments.forEach((inst,i)=>{
+      const id=uid(inst);
+      if(usedIds.has(id))return; // avoid duplicates
+      usedIds.add(id);
+
+      let w=n>1?Math.round((cellWeight/n)*100)/100:Math.round(cellWeight*100)/100;
+      // Clamp to rules
+      w=Math.max(RULES.MIN_WEIGHT,Math.min(RULES.MAX_WEIGHT,w));
+      // Check min amount
+      if(amt*w/100<RULES.MIN_AMOUNT_PER_INSTR)w=Math.ceil((RULES.MIN_AMOUNT_PER_INSTR/amt)*10000)/100;
+      w=Math.min(RULES.MAX_WEIGHT,w);
+
+      generated.push({
+        id,isin:inst.isin,nome:inst.nome,tipo:inst.tipo,categoria:inst.categoria,
+        rating:inst.rating,quotazione:inst.quotazione,valuta:inst.valuta,
+        macro:inst.macro,geo:inst.geo,weight:w,
+        _cellMacro:cell.macro,_cellGeo:cell.geo
+      });
+    });
+  });
+
+  // Normalize to 100%
+  if(generated.length>0){
+    // Limit to 50
+    if(generated.length>RULES.MAX_INSTRUMENTS)generated.splice(RULES.MAX_INSTRUMENTS);
+    // Cap alternatives at 15%
+    const altItems=generated.filter(g=>g.macro==='ALTERNATIVO');
+    const nonAltItems=generated.filter(g=>g.macro!=='ALTERNATIVO');
+    let altTotal=altItems.reduce((s,g)=>s+g.weight,0);
+    if(altTotal>RULES.MAX_ALTERNATIVE_PCT&&altItems.length>0){
+      const factor=RULES.MAX_ALTERNATIVE_PCT/altTotal;
+      altItems.forEach(g=>{g.weight=Math.max(RULES.MIN_WEIGHT,Math.round(g.weight*factor*100)/100);});
+    }
+    // Normalize
+    const rawTotal=generated.reduce((s,g)=>s+g.weight,0);
+    if(rawTotal>0&&Math.abs(rawTotal-100)>0.1){
+      const factor=100/rawTotal;
+      let sum=0;
+      generated.forEach((g,i)=>{
+        if(i<generated.length-1){g.weight=Math.max(RULES.MIN_WEIGHT,Math.min(RULES.MAX_WEIGHT,Math.round(g.weight*factor*100)/100));sum+=g.weight;}
+        else{g.weight=Math.round((100-sum)*100)/100;}
+      });
+    }
+  }
+
+  Model.generated=generated;
+  renderPreview();
+}
+
+function renderPreview(){
+  const gen=Model.generated;const pc=document.getElementById('previewContent');
+  if(!gen.length){pc.innerHTML='<div class="preview-info" style="color:var(--danger)">Nessuno strumento trovato con i criteri selezionati. Prova ad allargare le preferenze.</div>';return;}
+
+  const total=gen.reduce((s,g)=>s+g.weight,0);const amt=State.investAmount;
+
+  // Matrix overview
+  let matHtml=`<div class="preview-info"><strong>Matrice di allocazione generata:</strong> ${gen.length} strumenti, peso totale ${fmtNum(total)}%</div>`;
+  matHtml+=`<table class="matrix-table"><thead><tr><th></th>`;
+  GEOS.forEach(g=>{if(Model.geoAlloc[g])matHtml+=`<th>${g}</th>`;});
+  matHtml+=`<th>Totale</th></tr></thead><tbody>`;
+  MACROS.forEach(m=>{
+    if(!Model.macroAlloc[m])return;
+    matHtml+=`<tr><th>${m}</th>`;
+    let mTotal=0;
+    GEOS.forEach(g=>{
+      if(!Model.geoAlloc[g])return;
+      const w=gen.filter(x=>x.macro===m&&x.geo===g).reduce((s,x)=>s+x.weight,0);
+      mTotal+=w;
+      const n=gen.filter(x=>x.macro===m&&x.geo===g).length;
+      matHtml+=`<td class="${w>0?'has-data':'no-data'}">${w>0?fmtNum(w)+'%<br><span style="font-size:.6rem;color:var(--text-muted)">('+n+')</span>':'-'}</td>`;
+    });
+    matHtml+=`<td class="matrix-total">${fmtNum(mTotal)}%</td></tr>`;
+  });
+  // Totals row
+  matHtml+=`<tr><th>Totale</th>`;
+  GEOS.forEach(g=>{
+    if(!Model.geoAlloc[g])return;
+    const w=gen.filter(x=>x.geo===g).reduce((s,x)=>s+x.weight,0);
+    matHtml+=`<td class="matrix-total">${fmtNum(w)}%</td>`;
+  });
+  matHtml+=`<td class="matrix-total" style="color:var(--accent)">${fmtNum(total)}%</td></tr></tbody></table>`;
+
+  // Instrument list
+  let tblHtml=`<div class="preview-section"><h3>Strumenti selezionati (${gen.length})</h3>
+  <table class="preview-table"><thead><tr><th>Strumento</th><th>ISIN</th><th>Tipo</th><th>Macro</th><th>Geo</th><th>Rating</th><th style="text-align:right">Peso</th><th style="text-align:right">Importo</th></tr></thead><tbody>`;
+  gen.forEach(g=>{
+    tblHtml+=`<tr><td style="font-weight:600;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${escHtml(g.nome)}">${escHtml(g.nome)}</td>
+    <td style="font-size:.7rem;color:var(--text-muted)">${g.isin}</td>
+    <td><span class="badge ${badgeClass(g.tipo)}">${g.tipo}</span></td>
+    <td><span class="badge badge-macro">${escHtml(g.macro)}</span></td>
+    <td><span class="badge badge-geo">${escHtml(g.geo)}</span></td>
+    <td>${renderStars(g.rating)}</td>
+    <td style="text-align:right;font-weight:700">${fmtNum(g.weight)}%</td>
+    <td style="text-align:right;color:var(--text-secondary)">${fmtEur(amt*g.weight/100)}</td></tr>`;
+  });
+  tblHtml+=`<tr style="font-weight:700;border-top:2px solid var(--accent)"><td colspan="6">TOTALE</td><td style="text-align:right">${fmtNum(total)}%</td><td style="text-align:right">${fmtEur(amt*total/100)}</td></tr></tbody></table></div>`;
+
+  pc.innerHTML=matHtml+tblHtml;
+}
+
+function applyModel(){
+  if(!Model.generated.length){toast('Nessuno strumento generato','warning');return;}
+  if(State.portfolio.length&&!confirm('Sostituire il portafoglio attuale con il modello generato?'))return;
+  State.portfolio=Model.generated.map(g=>({id:g.id,isin:g.isin,nome:g.nome,tipo:g.tipo,categoria:g.categoria,rating:g.rating,quotazione:g.quotazione,valuta:g.valuta,macro:g.macro,geo:g.geo,weight:g.weight}));
+  saveState();renderAll();closeModel();
+  toast('Portafoglio modello applicato ('+State.portfolio.length+' strumenti)','success');
+}
+</script>
+</body>
+</html>
