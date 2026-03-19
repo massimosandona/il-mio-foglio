@@ -14,6 +14,9 @@ Desktop.ini
 # Claude Code
 .claude/
 
+# Supabase local
+.supabase/
+
 # File sorgente (non necessari, i dati sono in UNIFICATO_v2.csv)
 newETF.csv
 newFONDI.csv
