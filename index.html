@@ -252,6 +252,7 @@ select.filter-input{cursor:pointer}
   <div><h1>Il Mio Foglio</h1><div class="subtitle">Portfolio Builder - Fideuram S.p.A.</div></div>
   <div class="header-right">
     <button class="btn btn-model" id="btnModelPortfolio" style="display:none">&#9881; Portafoglio Modello</button>
+    <label class="upload-btn" id="uploadLabel" style="display:none;background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary)">&#128194; Aggiorna Lista CSV<input type="file" id="csvInput" accept=".csv" style="display:none"></label>
     <span id="uploadInfo" class="upload-info"></span>
   </div>
 </div>
@@ -458,6 +459,7 @@ async function loadFromSupabase(){
     document.getElementById('investBar').style.display='';
     document.getElementById('btnModelPortfolio').style.display='';
     document.getElementById('uploadInfo').textContent=State.instruments.length+' strumenti · '+ok+' performance';
+    document.getElementById('uploadLabel').style.display='';
     initModelDefaults();
     toast(State.instruments.length+' strumenti caricati da Supabase','success');
   }catch(err){
@@ -467,6 +469,47 @@ async function loadFromSupabase(){
   }
 }
 loadFromSupabase();
+
+// ========== CSV UPLOAD → SUPABASE ==========
+document.getElementById('csvInput').addEventListener('change',async e=>{
+  const f=e.target.files[0];if(!f)return;
+  if(!confirm('Sostituire la lista strumenti su Supabase con il contenuto di '+f.name+'?'))return;
+  const text=await f.text();
+  const parsed=parseCSV(text);
+  if(!parsed.length){toast('CSV vuoto o non valido','error');return;}
+  // Dedup: se stesso ISIN è ETF/ETC e FONDO, tieni solo ETF/ETC
+  const isinTipi={};
+  parsed.forEach(i=>{if(!isinTipi[i.isin])isinTipi[i.isin]=new Set();isinTipi[i.isin].add(i.tipo);});
+  const dupIsin=new Set(Object.keys(isinTipi).filter(k=>isinTipi[k].size>1));
+  const clean=parsed.filter(i=>!(dupIsin.has(i.isin)&&i.tipo==='FONDO'));
+  const removed=parsed.length-clean.length;
+
+  const lbl=document.getElementById('uploadLabel');
+  lbl.innerHTML='&#9881; Caricamento...<input type="file" id="csvInput" accept=".csv" style="display:none">';
+  try{
+    // 1. Svuota tabella
+    await fetch(SUPABASE_URL+'/rest/v1/strumenti?id=gt.0',{method:'DELETE',headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY}});
+    // 2. Inserisci in batch da 500
+    for(let i=0;i<clean.length;i+=500){
+      const batch=clean.slice(i,i+500).map(s=>({
+        nome:s.nome,isin:s.isin,categoria_morningstar:s.categoria,
+        rating_overall:s.rating?'*'.repeat(s.rating):'-',
+        quotazione:s.quotazione!=null?s.quotazione.toLocaleString('it-IT',{minimumFractionDigits:2}):'',
+        data_agg:s.dataAgg,valuta:s.valuta,tipo:s.tipo,
+        macro_classe:s.macro,zona_geografica:s.geo,politica:s.politica
+      }));
+      await fetch(SUPABASE_URL+'/rest/v1/strumenti',{method:'POST',headers:{'apikey':SUPABASE_KEY,'Authorization':'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(batch)});
+    }
+    // 3. Ricarica
+    State.instruments=clean;State.csvLoaded=true;
+    populateFilterOptions();renderCatalog();renderAll();
+    document.getElementById('uploadInfo').textContent=clean.length+' strumenti'+(removed?' ('+removed+' doppioni rimossi)':'');
+    toast(clean.length+' strumenti aggiornati su Supabase','success');
+  }catch(err){toast('Errore upload: '+err.message,'error');}
+  lbl.innerHTML='&#128194; Aggiorna Lista CSV<input type="file" id="csvInput" accept=".csv" style="display:none">';
+  // Re-attach listener
+  document.getElementById('csvInput').addEventListener('change',arguments.callee);
+});
 
 document.getElementById('investAmount').addEventListener('input',e=>{
   const raw=e.target.value.replace(/[^\d]/g,'');const num=parseInt(raw)||0;State.investAmount=num;
