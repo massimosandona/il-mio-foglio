@@ -32,7 +32,7 @@ interface PerfResult {
   perf_ytd: number | null;
   min_1y: number | null;
   max_1y: number | null;
-  sparkline: number[];
+  sparkline: Record<string, number[]> | number[];
   source?: string;
   ticker?: string;
   error?: string;
@@ -63,6 +63,14 @@ function calcYtd(timestamps: number[], prices: number[]): number | null {
   return null;
 }
 
+function sliceYtd(timestamps: number[], prices: number[]): number[] {
+  const yearStart = new Date(new Date().getFullYear(), 0, 1).getTime() / 1000;
+  for (let i = 0; i < timestamps.length; i++) {
+    if (timestamps[i] >= yearStart) return prices.slice(i);
+  }
+  return [];
+}
+
 function buildSparkline(prices: number[], points = 30): number[] {
   if (prices.length <= points) return prices.map((p) => Math.round(p * 100) / 100);
   const step = Math.floor(prices.length / points);
@@ -73,13 +81,43 @@ function buildSparkline(prices: number[], points = 30): number[] {
   return result;
 }
 
+async function searchYahooTicker(isin: string): Promise<string | null> {
+  try {
+    const url = `https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(isin)}&quotesCount=5&newsCount=0`;
+    const resp = await fetch(url, {
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
+    });
+    if (!resp.ok) {
+      console.log(`[Yahoo Search] ${isin} -> HTTP ${resp.status}`);
+      return null;
+    }
+    const data = await resp.json();
+    const quotes = data?.quotes || [];
+    if (quotes.length === 0) {
+      console.log(`[Yahoo Search] ${isin} -> no results`);
+      return null;
+    }
+    // Prefer .MI (Milan) exchange, then any
+    const milan = quotes.find((q: { symbol: string }) => q.symbol?.endsWith(".MI"));
+    const ticker = milan?.symbol || quotes[0]?.symbol;
+    console.log(`[Yahoo Search] ${isin} -> ${ticker}`);
+    return ticker || null;
+  } catch (e) {
+    console.log(`[Yahoo Search] ${isin} -> error: ${e}`);
+    return null;
+  }
+}
+
 async function fetchYahoo(symbol: string): Promise<{ timestamps: number[]; prices: number[] } | null> {
   try {
     const url = `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=10y&interval=1d`;
     const resp = await fetch(url, {
       headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
     });
-    if (!resp.ok) return null;
+    if (!resp.ok) {
+      console.log(`[Yahoo Chart] ${symbol} -> HTTP ${resp.status}`);
+      return null;
+    }
     const data = await resp.json();
     const result = data?.chart?.result?.[0];
     if (!result) return null;
@@ -95,7 +133,8 @@ async function fetchYahoo(symbol: string): Promise<{ timestamps: number[]; price
     }
     if (clean.px.length < 5) return null;
     return { timestamps: clean.ts, prices: clean.px };
-  } catch {
+  } catch (e) {
+    console.log(`[Yahoo Chart] ${symbol} -> error: ${e}`);
     return null;
   }
 }
@@ -128,24 +167,33 @@ function buildResultFromYahoo(
     perf_ytd: calcYtd(timestamps, prices),
     min_1y: prices1y.length ? Math.round(Math.min(...prices1y) * 10000) / 10000 : null,
     max_1y: prices1y.length ? Math.round(Math.max(...prices1y) * 10000) / 10000 : null,
-    sparkline: buildSparkline(prices),
+    sparkline: {
+      "ytd": buildSparkline(sliceYtd(timestamps, prices)),
+      "1y": buildSparkline(prices.slice(-252)),
+      "3y": buildSparkline(prices.slice(-756)),
+      "5y": buildSparkline(prices.slice(-1260)),
+      "10y": buildSparkline(prices),
+    },
     source: "yahoo",
     ticker: sourceTicker,
   };
 }
 
 async function fetchYahooForIsin(isin: string): Promise<PerfResult | null> {
-  // Try ISIN directly
-  const direct = await fetchYahoo(isin);
-  if (direct) return buildResultFromYahoo(isin, direct.timestamps, direct.prices);
-
-  // Try alt tickers
+  // Try alt tickers first (known mappings)
   const alts = ALT_TICKERS[isin];
   if (alts) {
     for (const ticker of alts) {
       const alt = await fetchYahoo(ticker);
       if (alt) return buildResultFromYahoo(isin, alt.timestamps, alt.prices, ticker);
     }
+  }
+
+  // Search for ticker by ISIN via Yahoo Search API
+  const ticker = await searchYahooTicker(isin);
+  if (ticker) {
+    const result = await fetchYahoo(ticker);
+    if (result) return buildResultFromYahoo(isin, result.timestamps, result.prices, ticker);
   }
 
   return null;
@@ -167,10 +215,14 @@ async function fetchMorningstar(isin: string): Promise<PerfResult | null> {
         `&securityDataPoints=SecId,Name,ClosePrice,TrailingDate,ReturnM1,ReturnM3,ReturnM6,ReturnM12,ReturnM36,ReturnM60,ReturnM120` +
         `&filters=ISIN:EQ:${isin}&rows=10`;
       const resp = await fetch(url, { headers });
-      if (!resp.ok) continue;
+      if (!resp.ok) {
+        console.log(`[Morningstar] ${isin} ${universe} -> HTTP ${resp.status}`);
+        continue;
+      }
       const data = await resp.json();
       if (data?.total > 0) {
         const r = data.rows[0];
+        console.log(`[Morningstar] ${isin} -> OK (${universe}), price=${r.ClosePrice}`);
         return {
           isin,
           price: r.ClosePrice ?? null,
@@ -189,10 +241,11 @@ async function fetchMorningstar(isin: string): Promise<PerfResult | null> {
           source: "morningstar",
         };
       }
-    } catch {
-      // continue to next universe
+    } catch (e) {
+      console.log(`[Morningstar] ${isin} ${universe} -> error: ${e}`);
     }
   }
+  console.log(`[Morningstar] ${isin} -> not found in any universe`);
   return null;
 }
 
@@ -210,11 +263,14 @@ async function fetchSingle(
     if (r) return r;
     return { isin, price: null, date: null, perf_1m: null, perf_3m: null, perf_6m: null, perf_1y: null, perf_3y: null, perf_5y: null, perf_10y: null, perf_ytd: null, min_1y: null, max_1y: null, sparkline: [], error: "no_data_morningstar" };
   }
-  // cascade: try Yahoo first, then Morningstar
+  // cascade: try Yahoo first (has sparkline/min/max/ytd), then Morningstar as fallback
+  console.log(`[Cascade] ${isin} -> trying Yahoo first`);
   const yahoo = await fetchYahooForIsin(isin);
   if (yahoo) return yahoo;
+  console.log(`[Cascade] ${isin} -> Yahoo failed, trying Morningstar`);
   const ms = await fetchMorningstar(isin);
   if (ms) return ms;
+  console.log(`[Cascade] ${isin} -> all sources failed`);
   return { isin, price: null, date: null, perf_1m: null, perf_3m: null, perf_6m: null, perf_1y: null, perf_3y: null, perf_5y: null, perf_10y: null, perf_ytd: null, min_1y: null, max_1y: null, sparkline: [], error: "no_data_all_sources" };
 }
 

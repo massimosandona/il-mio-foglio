@@ -229,6 +229,14 @@ select.filter-input{cursor:pointer}
 .perf-pos{color:var(--success)}
 .perf-neg{color:var(--danger)}
 .perf-na{color:var(--text-muted)}
+.ptf-chart{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-top:12px}
+.ptf-chart-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.ptf-chart-header h3{font-size:.9rem;color:var(--text-primary);margin:0}
+.ptf-chart-perf{font-size:.85rem;font-weight:600}
+.ptf-chart svg{display:block}
+.btn-spark{background:var(--bg-card);border:1px solid var(--border);color:var(--text-muted);padding:1px 6px;border-radius:4px;cursor:pointer;font-size:.65rem}
+.btn-spark.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-spark:hover{border-color:var(--accent)}
 .sparkline{display:inline-block;vertical-align:middle}
 .sparkline polyline{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .perf-pills{display:flex;gap:4px;flex-wrap:wrap}
@@ -285,7 +293,17 @@ select.filter-input{cursor:pointer}
       <div class="filter-group wide"><label>Categoria</label><select class="filter-input" id="fCategoria"><option value="ALL">Tutte</option></select></div>
       <div class="filter-actions"><button class="btn-reset" id="btnResetFilters">Reset</button></div>
     </div>
-    <div class="catalog-count" id="catalogCount"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px">
+      <div class="catalog-count" id="catalogCount"></div>
+      <div style="display:flex;align-items:center;gap:4px;font-size:.7rem">
+        <span style="color:var(--text-muted)">Sparkline:</span>
+        <button class="btn-spark" data-range="ytd" onclick="setSparkRange('ytd')">YTD</button>
+        <button class="btn-spark" data-range="1y" onclick="setSparkRange('1y')">1A</button>
+        <button class="btn-spark active" data-range="3y" onclick="setSparkRange('3y')">3A</button>
+        <button class="btn-spark" data-range="5y" onclick="setSparkRange('5y')">5A</button>
+        <button class="btn-spark" data-range="10y" onclick="setSparkRange('10y')">10A</button>
+      </div>
+    </div>
     <div class="panel-body"><div class="instrument-list" id="instrumentList"></div></div>
   </div>
 
@@ -304,6 +322,7 @@ select.filter-input{cursor:pointer}
     <div class="panel-body" id="portfolioBody">
       <div class="print-header" id="printHeader">Il Mio Foglio - Portafoglio Personalizzato</div>
       <div id="portfolioContent"></div>
+      <div id="portfolioChartArea"></div>
       <div id="analyticsArea"></div>
     </div>
   </div>
@@ -467,6 +486,7 @@ async function loadFromSupabase(){
     initModelDefaults();
     toast(State.instruments.length+' strumenti caricati da Supabase','success');
   }catch(err){
+    console.error('loadFromSupabase error:',err,err.stack);
     ind.textContent='Errore: '+err.message;
     ind.style.color='var(--danger)';
     toast('Errore caricamento: '+err.message,'error');
@@ -528,7 +548,7 @@ document.getElementById('investAmount').addEventListener('input',e=>{
 
 // ========== FILTERS ==========
 function populateFilterOptions(){
-  const vals=k=>[...new Set(State.instruments.map(i=>i[k]))].filter(Boolean).sort();
+  const vals=k=>Array.from(new Set(State.instruments.map(i=>i[k]))).filter(Boolean).sort();
   const fill=(id,arr)=>{document.getElementById(id).innerHTML='<option value="ALL">Tutt'+(id.includes('Valuta')?'e':'i')+'</option>'+arr.map(v=>`<option value="${escHtml(v)}">${escHtml(v)}</option>`).join('');};
   fill('fValuta',vals('valuta'));fill('fCategoria',vals('categoria'));fill('fMacro',vals('macro'));fill('fGeo',vals('geo'));
 }
@@ -587,7 +607,7 @@ function equalizeWeights(){
   State.portfolio.forEach((p,i)=>{p.weight=i<n-1?w:Math.round((100-(w*(n-1)))*100)/100;});saveState();renderAll();
 }
 function clearPortfolio(){if(State.portfolio.length&&!confirm('Svuotare il portafoglio?'))return;State.portfolio=[];saveState();renderAll();}
-function renderAll(){renderPortfolioTable();renderPortfolioBar();renderAnalytics();renderValidation();renderCatalog();}
+function renderAll(){renderPortfolioTable();renderPortfolioBar();renderPortfolioChart();renderAnalytics();renderValidation();renderCatalog();}
 
 // ========== VALIDATION ==========
 function renderValidation(){
@@ -695,19 +715,135 @@ function toast(m,t='success'){const c=document.getElementById('toastContainer'),
 
 // ========== PERFORMANCE DATA (loaded from Supabase) ==========
 
+let sparkRange='3y';
+function setSparkRange(r){
+  sparkRange=r;
+  document.querySelectorAll('.btn-spark').forEach(b=>b.classList.toggle('active',b.dataset.range===r));
+  renderCatalog();renderPortfolioTable();renderPortfolioChart();
+}
+
+function getSparklinePoints(d){
+  if(!d||!d.sparkline)return null;
+  // New format: object with keys 1y,3y,5y,10y
+  if(typeof d.sparkline==='object'&&!Array.isArray(d.sparkline)){
+    return d.sparkline[sparkRange]||d.sparkline['10y']||null;
+  }
+  // Old format: plain array
+  if(Array.isArray(d.sparkline)&&d.sparkline.length>=2)return d.sparkline;
+  return null;
+}
+
 function renderSparkline(isin,w=60,h=20){
   const d=PerfData[isin];
-  if(!d||!d.sparkline||d.sparkline.length<2)return'';
-  const pts=d.sparkline;
-  const mn=Math.min(...pts),mx=Math.max(...pts);
+  const pts=getSparklinePoints(d);
+  if(!Array.isArray(pts)||pts.length<2)return'';
+  const mn=pts.reduce((a,b)=>a<b?a:b,pts[0]),mx=pts.reduce((a,b)=>a>b?a:b,pts[0]);
   const range=mx-mn||1;
   const coords=pts.map((v,i)=>{
     const x=(i/(pts.length-1))*w;
     const y=h-((v-mn)/range)*h;
     return`${x.toFixed(1)},${y.toFixed(1)}`;
   }).join(' ');
-  const color=pts[pts.length-1]>=pts[0]?'var(--success)':'var(--danger)';
+  const perfKey={ytd:'perf_ytd','1y':'perf_1y','3y':'perf_3y','5y':'perf_5y','10y':'perf_10y'}[sparkRange]||'perf_1y';
+  const perfVal=d[perfKey];
+  const color=perfVal!=null?(perfVal>=0?'var(--success)':'var(--danger)'):(pts[pts.length-1]>=pts[0]?'var(--success)':'var(--danger)');
   return`<svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline points="${coords}" style="stroke:${color}"/></svg>`;
+}
+
+function renderPortfolioChart(){
+  const area=document.getElementById('portfolioChartArea');
+  if(!area)return;
+  const items=State.portfolio.filter(p=>p.weight>0);
+  const totalW=items.reduce((s,p)=>s+p.weight,0);
+  if(!totalW||!items.length){area.innerHTML='';return;}
+
+  // Collect normalized sparklines for each instrument
+  const series=[];
+  for(const p of items){
+    const d=PerfData[p.isin];
+    const pts=getSparklinePoints(d);
+    if(!Array.isArray(pts)||pts.length<2||!pts[0])continue;
+    const norm=pts.map(v=>v/pts[0]); // normalize: start=1
+    series.push({weight:p.weight/totalW,norm});
+  }
+  if(!series.length){area.innerHTML='';return;}
+
+  // All series to same length (30 points typically)
+  const len=Math.min(...series.map(s=>s.norm.length));
+  // Weighted portfolio curve
+  const curve=[];
+  for(let i=0;i<len;i++){
+    let val=0;
+    for(const s of series) val+=s.weight*(s.norm[Math.min(i,s.norm.length-1)]);
+    curve.push(val);
+  }
+
+  // Performance %
+  const perfPct=((curve[curve.length-1]-curve[0])/curve[0]*100);
+  const perfColor=perfPct>=0?'var(--success)':'var(--danger)';
+  const perfSign=perfPct>=0?'+':'';
+
+  // Range label
+  const rangeLabels={ytd:'YTD','1y':'1 Anno','3y':'3 Anni','5y':'5 Anni','10y':'10 Anni'};
+  const rangeLabel=rangeLabels[sparkRange]||sparkRange;
+
+  // SVG chart
+  const W=500,H=120,padT=5,padB=20,padL=45,padR=10;
+  const cw=W-padL-padR,ch=H-padT-padB;
+  const mn=curve.reduce((a,b)=>a<b?a:b,curve[0]);
+  const mx=curve.reduce((a,b)=>a>b?a:b,curve[0]);
+  const rng=mx-mn||0.001;
+
+  // Grid lines & labels (percentage from start)
+  const gridLines=5;
+  let gridSvg='';
+  for(let g=0;g<=gridLines;g++){
+    const y=padT+(g/gridLines)*ch;
+    const val=((mx-(g/gridLines)*rng)-1)*100;
+    gridSvg+=`<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="var(--border)" stroke-width="0.5"/>`;
+    gridSvg+=`<text x="${padL-4}" y="${y+3}" text-anchor="end" fill="var(--text-muted)" font-size="9">${val>=0?'+':''}${val.toFixed(1)}%</text>`;
+  }
+
+  // Zero line
+  const zeroY=padT+((mx-1)/rng)*ch;
+  if(zeroY>=padT&&zeroY<=H-padB){
+    gridSvg+=`<line x1="${padL}" y1="${zeroY}" x2="${W-padR}" y2="${zeroY}" stroke="var(--text-muted)" stroke-width="0.8" stroke-dasharray="4,3"/>`;
+  }
+
+  // Price line
+  const coords=curve.map((v,i)=>{
+    const x=padL+(i/(len-1))*cw;
+    const y=padT+((mx-v)/rng)*ch;
+    return`${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ');
+
+  // Gradient fill
+  const firstX=padL,lastX=padL+cw;
+  const fillCoords=`${firstX.toFixed(1)},${(H-padB).toFixed(1)} ${coords} ${lastX.toFixed(1)},${(H-padB).toFixed(1)}`;
+
+  // Range buttons
+  const ranges=['ytd','1y','3y','5y','10y'];
+  const rangeNames={ytd:'YTD','1y':'1A','3y':'3A','5y':'5A','10y':'10A'};
+  const btns=ranges.map(r=>`<button class="btn-spark${sparkRange===r?' active':''}" data-range="${r}" onclick="setSparkRange('${r}')">${rangeNames[r]}</button>`).join('');
+
+  area.innerHTML=`<div class="ptf-chart">
+    <div class="ptf-chart-header">
+      <h3>📈 Andamento Portafoglio (${rangeLabel})</h3>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="ptf-chart-perf" style="color:${perfColor}">${perfSign}${perfPct.toFixed(2)}%</span>
+        <div style="display:flex;gap:3px">${btns}</div>
+      </div>
+    </div>
+    <svg class="ptf-chart" width="100%" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+      <defs><linearGradient id="ptfFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${perfColor}" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="${perfColor}" stop-opacity="0.01"/>
+      </linearGradient></defs>
+      ${gridSvg}
+      <polygon points="${fillCoords}" fill="url(#ptfFill)"/>
+      <polyline points="${coords}" fill="none" stroke="${perfColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>`;
 }
 
 function renderPerfPills(isin){
@@ -1032,7 +1168,7 @@ async function callEdgeFunction(body){
 async function updateAllPerformance(source='cascade'){
   const btn=document.getElementById('btnUpdatePerf');
   const prog=document.getElementById('perfProgress');
-  const allIsins=[...new Set(State.instruments.map(i=>i.isin))];
+  const allIsins=Array.from(new Set(State.instruments.map(i=>i.isin)));
   const BATCH=25;
   const batches=[];
   for(let i=0;i<allIsins.length;i+=BATCH)batches.push(allIsins.slice(i,i+BATCH));
